@@ -5,8 +5,7 @@ app/public/*.log
 app/public/.DS_Store
 app/public/wp-admin
 app/public/wp-content/languages/*
-app/public/wp-content/themes/ws-starter-theme/node_modules
-app/public/wp-content/themes/ws-starter-theme/assets/vendor
+app/public/wp-content/themes/ws-starter-theme/vendor
 app/public/wp-content/uploads
 app/public/wp-content/upgrade
 app/public/wp-includes
