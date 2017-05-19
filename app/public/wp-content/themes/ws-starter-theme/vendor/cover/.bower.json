@@ -1,0 +1,14 @@
+{
+  "name": "cover",
+  "homepage": "https://github.com/Ascarius/cover",
+  "version": "1.3.0",
+  "_release": "1.3.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "1.3.0",
+    "commit": "56d44c8b025b9393badaf0452894eeb3df997b7d"
+  },
+  "_source": "https://github.com/Ascarius/cover.git",
+  "_target": "*",
+  "_originalSource": "https://github.com/Ascarius/cover.git"
+}
