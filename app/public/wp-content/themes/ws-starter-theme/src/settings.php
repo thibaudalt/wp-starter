@@ -9,13 +9,10 @@
 // -----------------------------
 
 $_wb_settings = array(
-
-    'current_url'  => null,  // Used in single page layout
-    'has_layout'   => true,  // Display/Hide header & footer
-    'is_block'     => false, // Avoid block recursion
-
-    'cache_months' => __DIR__.'/../cache/months.cache',
-
+  'current_url'  => null,  // Used in single page layout
+  'has_layout'   => true,  // Display/Hide header & footer
+  'is_block'     => false, // Avoid block recursion
+  'cache_months' => __DIR__.'/../cache/months.cache',
 );
 
 

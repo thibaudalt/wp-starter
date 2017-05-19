@@ -1,11 +1,4 @@
-<?php
-
-/**
- * The template for 404 error.
- */
-
-?>
-<?php get_template_part('blocks/header'); ?>
+<?php get_header(); ?>
 
     <div class="main">
 
@@ -31,4 +24,4 @@
 
     </div><!-- /.main -->
 
-<?php get_template_part('blocks/footer'); ?>
+<?php get_footer(); ?>

@@ -4,9 +4,9 @@
 // Missing functions
 ////////////////////////////////
 
-if (!function_exists('get_previous_post_link')) {
+if( !function_exists( 'get_previous_post_link' )) {
 
-    function get_previous_post_link($format = '&laquo; %link', $link = '%title', $in_same_cat = false, $excluded_categories = '')
+    function get_previous_post_link($format = '&laquo; %link', $link = '%title', $in_same_cat = false, $excluded_categories = '' )
     {
         ob_start();
         previous_post_link($format, $link, $in_same_cat, $excluded_categories);
@@ -15,9 +15,9 @@ if (!function_exists('get_previous_post_link')) {
 
 }
 
-if (!function_exists('get_next_post_link')) {
+if( !function_exists( 'get_next_post_link' )) {
 
-    function get_next_post_link($format = '%link &raquo;', $link = '%title', $in_same_cat = false, $excluded_categories = '')
+    function get_next_post_link($format = '%link &raquo;', $link = '%title', $in_same_cat = false, $excluded_categories = '' )
     {
         ob_start();
         next_post_link($format, $link, $in_same_cat, $excluded_categories);
@@ -27,13 +27,13 @@ if (!function_exists('get_next_post_link')) {
 }
 
 
-if (!function_exists('get_nav_menu_id_by_location')) {
+if( !function_exists( 'get_nav_menu_id_by_location' )) {
 
     function get_nav_menu_id_by_location($location)
     {
         $locations = get_nav_menu_locations();
 
-        if (array_key_exists($location, $locations)) {
+        if( array_key_exists($location, $locations)) {
             return $locations[$location];
         }
 
@@ -42,7 +42,7 @@ if (!function_exists('get_nav_menu_id_by_location')) {
 
 }
 
-if (!function_exists('get_months')) {
+if( !function_exists( 'get_months' )) {
 
     /**
      * Get months
@@ -52,8 +52,8 @@ if (!function_exists('get_months')) {
      */
     function get_months()
     {
-        $file = wb_get('cache_months');
-        if (file_exists($file)) {
+        $file = wb_get( 'cache_months' );
+        if( file_exists($file)) {
             return unserialize(file_get_contents($file));
         }
 
@@ -75,7 +75,7 @@ if (!function_exists('get_months')) {
             $month->year  = (int) $month->year;
         });
 
-        if (!file_exists($dir = dirname($file))) {
+        if( !file_exists($dir = dirname($file))) {
             mkdir($dir, 0777, true);
         }
 
@@ -108,8 +108,8 @@ function wb_is_ajax()
 
 function wb_json($data)
 {
-    if (!headers_sent()) {
-        header('Content-Type: application/json');
+    if( !headers_sent()) {
+        header( 'Content-Type: application/json' );
     }
     echo json_encode($data);
     exit;
@@ -124,11 +124,11 @@ function wb_link_hack($enable = true)
 {
     static $original = null;
 
-    if (!$url = wb_get('current_url')) {
+    if( !$url = wb_get( 'current_url' )) {
         return;
     }
 
-    if ($enable) {
+    if( $enable) {
         $path = parse_url($url, PHP_URL_PATH);
         $original = $_SERVER['REQUEST_URI'];
         $_SERVER['REQUEST_URI'] = $path;
@@ -152,15 +152,15 @@ function wb_page_title($separator = ' - ', $reverse = true)
     array_shift($items);
 
     // Project's name
-    array_unshift($items, get_bloginfo('name'));
+    array_unshift($items, get_bloginfo( 'name' ));
 
-    if (is_front_page() && ($description = trim(get_bloginfo('description')))) {
-        $items[] = get_bloginfo('description');
+    if( is_front_page() && ($description = trim(get_bloginfo( 'description' )))) {
+        $items[] = get_bloginfo( 'description' );
     }
 
-    $items = array_map('strip_tags', $items);
+    $items = array_map( 'strip_tags', $items);
 
-    if ($reverse) {
+    if( $reverse) {
         $items = array_reverse($items);
     }
 
@@ -179,42 +179,42 @@ function wb_pager($in_same_category = false)
 
     wb_link_hack(true);
 
-    if (is_single()) {
+    if( is_single()) {
 
-        if ($previous_link = get_previous_post_link(
+        if( $previous_link = get_previous_post_link(
             '<li class="previous">%link</li>',
-            __('Next post', 'wb'),
+            __( 'Next post', 'ws-starter' ),
             $in_same_category
         )) {
             $output .= $previous_link;
             $has_links = true;
         }
 
-        if ($next_link = get_next_post_link(
+        if( $next_link = get_next_post_link(
             '<li class="next">%link</li>',
-            __('Previous post', 'wb'),
+            __( 'Previous post', 'ws-starter' ),
             $in_same_category
         )) {
             $output .= $next_link;
             $has_links = true;
         }
 
-    } elseif ($wp_query->max_num_pages > 1 && (is_home() || is_archive() || is_search())) {
+    } elseif( $wp_query->max_num_pages > 1 && (is_home() || is_archive() || is_search())) {
 
-        $previous_label = get_query_var('posts_per_page') == 1
-            ? __('Next post', 'wb')
-            : __('Newer posts', 'wb');
+        $previous_label = get_query_var( 'posts_per_page' ) == 1
+            ? __( 'Next post', 'ws-starter' )
+            : __( 'Newer posts', 'ws-starter' );
 
-        $next_label = get_query_var('posts_per_page') == 1
-            ? __('Previous post', 'wb')
-            : __('Older posts', 'wb');
+        $next_label = get_query_var( 'posts_per_page' ) == 1
+            ? __( 'Previous post', 'ws-starter' )
+            : __( 'Older posts', 'ws-starter' );
 
-        if ($previous_link = get_previous_posts_link($previous_label)) {
+        if( $previous_link = get_previous_posts_link($previous_label)) {
             $output .= '<li class="previous">'.$previous_link.'</li>';
             $has_links = true;
         }
 
-        if ($next_link = get_next_posts_link($next_label)) {
+        if( $next_link = get_next_posts_link($next_label)) {
             $output .= '<li class="next">'.$next_link.'</li>';
             $has_links = true;
         }
@@ -223,7 +223,7 @@ function wb_pager($in_same_category = false)
 
     $output .= '</ul>';
 
-    if ($has_links) {
+    if( $has_links) {
         echo $output;
     }
 
@@ -243,34 +243,34 @@ function wb_pagination($pages = null, $range = 2)
     $output = '';
     $showitems = $range * 2 + 1;
 
-    if (!$paged) {
+    if( !$paged) {
         $paged = 1;
     }
 
-    if (!$pages) {
-        if (!$pages = $wp_query->max_num_pages) {
+    if( !$pages) {
+        if( !$pages = $wp_query->max_num_pages) {
             $pages = 1;
         }
     }
 
-    if ($pages > 1) {
+    if( $pages > 1) {
         wb_link_hack(true);
 
         $output .= '<ul class="pagination">';
 
         // First page
-        if ($paged > 2 && $paged > $range + 1 && $showitems < $pages) {
+        if( $paged > 2 && $paged > $range + 1 && $showitems < $pages) {
             $output .= '<li><a href="'.get_pagenum_link(1).'">&laquo;</a></li>';
         }
 
         // Previous page
-        if ($paged > 1 && $showitems < $pages) {
+        if( $paged > 1 && $showitems < $pages) {
             $output .= '<li><a href="'.get_pagenum_link($paged - 1).'">&lsaquo;</a></li>';
         }
 
         // Page numbers
         for ($i = 1; $i <= $pages; $i++) {
-            if (
+            if(
                 1 != $pages
                 && (
                     !($i >= $paged + $range + 1
@@ -278,7 +278,7 @@ function wb_pagination($pages = null, $range = 2)
                     || $pages <= $showitems
                 )
             ) {
-                if ($paged == $i) {
+                if( $paged == $i) {
                     $output .= '<li class="active"><span class="current">'.$i.'</span></li>';
                 } else {
                     $output .= '<li><a href="'.get_pagenum_link($i).'" class="inactive" >'.$i.'</a></li>';
@@ -287,12 +287,12 @@ function wb_pagination($pages = null, $range = 2)
         }
 
         // Next page
-        if ($paged < $pages && $showitems < $pages) {
+        if( $paged < $pages && $showitems < $pages) {
             $output .= '<li><a href="'.get_pagenum_link($paged + 1).'">&rsaquo;</a></li>';
         }
 
         // Last page
-        if ($paged < $pages - 1 && $paged + $range - 1 < $pages && $showitems < $pages) {
+        if( $paged < $pages - 1 && $paged + $range - 1 < $pages && $showitems < $pages) {
             $output .= '<li><a href="'.get_pagenum_link($pages).'">&raquo;</a></li>';
         }
 
@@ -311,8 +311,8 @@ function wb_posted_on()
 {
     printf(
         '<time class="entry-date" datetime="%s" pubdate>%s</time>',
-        esc_attr(get_the_date('c')),
-        esc_html(get_the_date('j F Y'))
+        esc_attr(get_the_date( 'c' )),
+        esc_html(get_the_date( 'j F Y' ))
     );
 }
 
@@ -333,15 +333,15 @@ function wb_title($separator = ' - ', $reverse = false, $strip_tags = true)
 {
     $items = wb_get_breadcrumbs();
 
-    if (count($items) > 1) {
+    if( count($items) > 1) {
         array_shift($items);
     }
 
-    if ($strip_tags) {
-        $items = array_map('strip_tags', $items);
+    if( $strip_tags) {
+        $items = array_map( 'strip_tags', $items);
     }
 
-    if ($reverse) {
+    if( $reverse) {
         $items = array_reverse($items);
     }
 
@@ -352,15 +352,15 @@ function wb_url_to_slug($url)
 {
     $slug = trim(
         str_replace(
-            array(home_url(), '/', '#'),
-            array('',         '-', ''),
+            array(home_url(), '/', '#' ),
+            array( '',         '-', '' ),
             esc_attr($url)
         ),
         '/-'
     );
 
-    if ('' == $slug) {
-        $slug = __('home', 'wb');
+    if( '' == $slug) {
+        $slug = __( 'home', 'ws-starter' );
     }
 
     return $slug;

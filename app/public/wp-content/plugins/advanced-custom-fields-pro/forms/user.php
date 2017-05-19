@@ -105,14 +105,14 @@ class acf_form_user {
 			return;
 			
 		}
-
+		
 		
 		// load acf scripts
 		acf_enqueue_scripts();
 		
 		
 		// actions
-		add_action('admin_footer',					array($this, 'admin_footer'), 10, 1);
+		add_action('acf/input/admin_footer', array($this, 'admin_footer'), 10, 1);
 		
 	}
 	
@@ -131,6 +131,10 @@ class acf_form_user {
 	*/
 	
 	function register_user() {
+		
+		// update vars
+		$this->form = '#registerform';
+		
 		
 		// render
 		$this->render( 0, 'register', 'div' );
@@ -211,11 +215,7 @@ class acf_form_user {
 		
 		
 		// show title
-		if( $user_form == 'register' ) {
-			
-			$show_title = false;
-		
-		}
+		//if( $user_form === 'register' ) $show_title = false;
 		
 		
 		// args
@@ -224,50 +224,52 @@ class acf_form_user {
 			'user_form'	=> $user_form
 		);
 		
-		if( $user_id ) {
-		
-			$args['user_id'] = $user_id;
-			
-		}
+		if( $user_id ) $args['user_id'] = $user_id;
 		
 		
 		// get field groups
 		$field_groups = acf_get_field_groups( $args );
 		
 		
-		// render
-		if( !empty($field_groups) ) {
-			
-			acf_form_data(array( 
-				'post_id'	=> $post_id, 
-				'nonce'		=> 'user' 
-			));
-			
-			foreach( $field_groups as $field_group ) {
-				
-				$fields = acf_get_fields( $field_group );
-
-				?>
-				<?php if( $show_title && $field_group['style'] == 'default' ): ?>
-					<h3><?php echo $field_group['title']; ?></h3>
-				<?php endif; ?>
-				
-				<?php if( $el == 'tr' ): ?>
-					<table class="form-table">
-						<tbody>
-				<?php endif; ?>
-				
-					<?php acf_render_fields( $post_id, $fields, $el, 'field' ); ?>
-				
-				<?php if( $el == 'tr' ): ?>
-						</tbody>
-					</table>
-				<?php endif; ?>
-				<?php 
-				
-			}
+		// bail early if no field groups
+		if( empty($field_groups) ) return;
 		
+		
+		// form data
+		acf_form_data(array( 
+			'post_id'	=> $post_id, 
+			'nonce'		=> 'user' 
+		));
+		
+		
+		// loop
+		foreach( $field_groups as $field_group ) {
+			
+			// vars
+			$fields = acf_get_fields( $field_group );
+			
+			
+			// title
+			if( $show_title && $field_group['style'] === 'default' ) {
+				
+				echo '<h2>' . $field_group['title'] . '</h2>';
+					
+			}
+			
+			
+			// table start
+			if( $el == 'tr' ) echo '<table class="form-table"><tbody>';
+			
+			
+			// render fields
+			acf_render_fields( $post_id, $fields, $el, $field_group['instruction_placement'] );
+			
+			
+			// table end
+			if( $el == 'tr' ) echo '</tbody></table>';
+			
 		}
+		
 		
 	}
 	
@@ -290,11 +292,56 @@ class acf_form_user {
 ?>
 <style type="text/css">
 
-<?php echo $this->form; ?> p.submit .spinner {
-	vertical-align: top;
-	float: none;
-	margin-top: 4px;
+<?php if( is_admin() ): ?>
+
+/* override for user css */
+.acf-field input[type="text"],
+.acf-field input[type="password"],
+.acf-field input[type="number"],
+.acf-field input[type="search"],
+.acf-field input[type="email"],
+.acf-field input[type="url"],
+.acf-field select {
+    max-width: 25em;
 }
+
+.acf-field textarea {
+	max-width: 500px;
+}
+
+
+/* allow sub fields to display correctly */
+.acf-field .acf-field input[type="text"],
+.acf-field .acf-field input[type="password"],
+.acf-field .acf-field input[type="number"],
+.acf-field .acf-field input[type="search"],
+.acf-field .acf-field input[type="email"],
+.acf-field .acf-field input[type="url"],
+.acf-field .acf-field textarea,
+.acf-field .acf-field select {
+    max-width: none;
+}
+
+<?php else: ?>
+
+#registerform h2 {
+	margin: 1em 0;
+}
+
+#registerform .acf-field .acf-label {
+	margin-bottom: 0;
+}
+
+#registerform .acf-field .acf-label label {
+	font-weight: normal;
+	font-size: 14px;
+}
+
+#registerform p.submit {
+	text-align: right;
+}
+
+<?php endif; ?>
 
 </style>
 <script type="text/javascript">
@@ -307,36 +354,14 @@ class acf_form_user {
 	// create spinner if not exists (may exist in future WP versions)
 	if( !$spinner.exists() ) {
 		
-		// create spinner
-		$spinner = $('<span class="spinner"></span>');
+		// create spinner (use .acf-spinner becuase .spinner CSS not included on register page)
+		$spinner = $('<span class="acf-spinner"></span>');
 		
 		
 		// append
 		$('<?php echo $this->form; ?> p.submit').append( $spinner );
 		
 	}
-	
-	
-	// show spinner on submit
-	$(document).on('submit', '<?php echo $this->form; ?>', function(){
-		
-		// show spinner
-		$spinner.css('display', 'inline-block');
-		
-	});
-	
-	
-	// hide spinner after validation
-	acf.add_filter('validation_complete', function( json, $form ){
-		
-		// hide spinner
-		$spinner.css('display', 'none');
-		
-		
-		// return
-		return json;
-				
-	});
 	
 })(jQuery);	
 </script>

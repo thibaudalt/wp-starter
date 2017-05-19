@@ -1,11 +1,4 @@
-<?php
-
-/**
- * Template Name: Contact Map Page
- */
-
-?>
-<?php get_template_part('blocks/header'); ?>
+<?php get_header(); ?>
 
     <div class="main">
 
@@ -49,4 +42,4 @@ endwhile;
 
     </div><!-- /.main -->
 
-<?php get_template_part('blocks/footer'); ?>
+<?php get_footer(); ?>
