@@ -5805,9 +5805,17 @@
 		},
 	"\/app\/public\/wp-content\/themes\/ws-starter-theme\/acf-json\/group_591f1967ba4af.json": {
 		"ft": 524288,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/app\/public\/wp-content\/themes\/ws-starter-theme\/dist\/group_591f1967ba4af.min.json",
-		"oF": 0,
+		"oF": 1,
+		"oO": 1,
+		"oS": 1
+		},
+	"\/app\/public\/wp-content\/themes\/ws-starter-theme\/acf-json\/group_591f203675af0.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/app\/public\/wp-content\/themes\/ws-starter-theme\/dist\/group_591f203675af0.min.json",
+		"oF": 1,
 		"oO": 1,
 		"oS": 1
 		},
@@ -6574,6 +6582,14 @@
 		"ft": 524288,
 		"oA": 0,
 		"oAP": "\/app\/public\/wp-content\/themes\/ws-starter-theme\/dist\/group_591f1967ba4af.min.min.json",
+		"oF": 0,
+		"oO": 1,
+		"oS": 1
+		},
+	"\/app\/public\/wp-content\/themes\/ws-starter-theme\/dist\/group_591f203675af0.min.json": {
+		"ft": 524288,
+		"oA": 0,
+		"oAP": "\/app\/public\/wp-content\/themes\/ws-starter-theme\/dist\/group_591f203675af0.min.min.json",
 		"oF": 0,
 		"oO": 1,
 		"oS": 1
