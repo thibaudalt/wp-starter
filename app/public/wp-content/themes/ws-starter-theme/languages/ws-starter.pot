@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Westudio Bootstrap 1.0.0\n"
+"Project-Id-Version: We studio - Starter Theme 1.0.0\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tags/wb\n"
 "POT-Creation-Date: 2013-06-07 13:36:13+00:00\n"
 "MIME-Version: 1.0\n"

@@ -1,12 +1,12 @@
-# Copyright (C) 2013 We studio
+# Copyright (C) 2017 We studio
 msgid ""
 msgstr ""
-"Project-Id-Version: Westudio Bootstrap 0.1.0\n"
+"Project-Id-Version: We studio - Starter Theme 0.1.0\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tags/wb\n"
 "POT-Creation-Date: 2013-06-07 13:36:13+00:00\n"
 "PO-Revision-Date: 2015-05-01 10:59+0100\n"
-"Last-Translator: Lionel Gaillard <lionel@we-studio.ch>\n"
-"Language-Team: We studio <lionel@we-studio.ch>\n"
+"Last-Translator: Thibaud <thibaud@we-studio.ch>\n"
+"Language-Team: We studio <thibaud@we-studio.ch>\n"
 "Language: fr_CH\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
