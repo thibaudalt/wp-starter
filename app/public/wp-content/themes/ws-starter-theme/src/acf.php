@@ -19,7 +19,7 @@ if( function_exists('acf_add_options_page') ) {
 	));
 
 	acf_add_options_sub_page( array(
-    'page_title'  => 'Maintenance Mode',
+    'page_title'  => 'Restricted Access',
 		'parent_slug' => $parent['menu_slug'],
 	));
 

@@ -38,6 +38,18 @@
 		"oAP": "\/app\/public\/.htaccess",
 		"oF": 1
 		},
+	"\/app\/public\/.htpasrswd": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/public\/.htpasrswd",
+		"oF": 0
+		},
+	"\/app\/public\/.htpasswd": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/public\/.htpasswd",
+		"oF": 0
+		},
 	"\/app\/public\/index.php": {
 		"ft": 8192,
 		"oA": 1,
@@ -61,6 +73,12 @@
 		"oA": 1,
 		"oAP": "\/app\/public\/wp-activate.php",
 		"oF": 1
+		},
+	"\/app\/public\/wp-admin\/.htaccess": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/public\/wp-admin\/.htaccess",
+		"oF": 0
 		},
 	"\/app\/public\/wp-admin\/about.php": {
 		"ft": 8192,
@@ -4275,6 +4293,12 @@
 		"oAP": "\/app\/public\/wp-content\/maintenance.php",
 		"oF": 0
 		},
+	"\/app\/public\/wp-content\/mu-plugins\/apache-auth.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/public\/wp-content\/mu-plugins\/apache-auth.php",
+		"oF": 0
+		},
 	"\/app\/public\/wp-content\/mu-plugins\/maintenance-mode.php": {
 		"ft": 8192,
 		"oA": 2,
@@ -5819,6 +5843,14 @@
 		"oO": 1,
 		"oS": 1
 		},
+	"\/app\/public\/wp-content\/themes\/ws-starter-theme\/acf-json\/group_5922908dbb1e3.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/app\/public\/wp-content\/themes\/ws-starter-theme\/dist\/group_5922908dbb1e3.min.json",
+		"oF": 1,
+		"oO": 1,
+		"oS": 1
+		},
 	"\/app\/public\/wp-content\/themes\/ws-starter-theme\/acf\/carousel.php": {
 		"ft": 8192,
 		"oA": 2,
@@ -6590,6 +6622,14 @@
 		"ft": 524288,
 		"oA": 0,
 		"oAP": "\/app\/public\/wp-content\/themes\/ws-starter-theme\/dist\/group_591f203675af0.min.min.json",
+		"oF": 0,
+		"oO": 1,
+		"oS": 1
+		},
+	"\/app\/public\/wp-content\/themes\/ws-starter-theme\/dist\/group_5922908dbb1e3.min.json": {
+		"ft": 524288,
+		"oA": 0,
+		"oAP": "\/app\/public\/wp-content\/themes\/ws-starter-theme\/dist\/group_5922908dbb1e3.min.min.json",
 		"oF": 0,
 		"oO": 1,
 		"oS": 1
@@ -16646,6 +16686,306 @@
 		"oAP": "\/app\/public\/xmlrpc.php",
 		"oF": 1
 		},
+	"\/app\/sql\/local.wp_commentmeta-schema.sql": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/sql\/local.wp_commentmeta-schema.sql",
+		"oF": 0
+		},
+	"\/app\/sql\/local.wp_comments-schema.sql": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/sql\/local.wp_comments-schema.sql",
+		"oF": 0
+		},
+	"\/app\/sql\/local.wp_comments.sql": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/sql\/local.wp_comments.sql",
+		"oF": 0
+		},
+	"\/app\/sql\/local.wp_links-schema.sql": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/sql\/local.wp_links-schema.sql",
+		"oF": 0
+		},
+	"\/app\/sql\/local.wp_options-schema.sql": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/sql\/local.wp_options-schema.sql",
+		"oF": 0
+		},
+	"\/app\/sql\/local.wp_options.sql": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/sql\/local.wp_options.sql",
+		"oF": 0
+		},
+	"\/app\/sql\/local.wp_postmeta-schema.sql": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/sql\/local.wp_postmeta-schema.sql",
+		"oF": 0
+		},
+	"\/app\/sql\/local.wp_postmeta.sql": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/sql\/local.wp_postmeta.sql",
+		"oF": 0
+		},
+	"\/app\/sql\/local.wp_posts-schema.sql": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/sql\/local.wp_posts-schema.sql",
+		"oF": 0
+		},
+	"\/app\/sql\/local.wp_posts.sql": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/sql\/local.wp_posts.sql",
+		"oF": 0
+		},
+	"\/app\/sql\/local.wp_term_relationships-schema.sql": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/sql\/local.wp_term_relationships-schema.sql",
+		"oF": 0
+		},
+	"\/app\/sql\/local.wp_term_relationships.sql": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/sql\/local.wp_term_relationships.sql",
+		"oF": 0
+		},
+	"\/app\/sql\/local.wp_term_taxonomy-schema.sql": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/sql\/local.wp_term_taxonomy-schema.sql",
+		"oF": 0
+		},
+	"\/app\/sql\/local.wp_term_taxonomy.sql": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/sql\/local.wp_term_taxonomy.sql",
+		"oF": 0
+		},
+	"\/app\/sql\/local.wp_termmeta-schema.sql": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/sql\/local.wp_termmeta-schema.sql",
+		"oF": 0
+		},
+	"\/app\/sql\/local.wp_terms-schema.sql": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/sql\/local.wp_terms-schema.sql",
+		"oF": 0
+		},
+	"\/app\/sql\/local.wp_terms.sql": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/sql\/local.wp_terms.sql",
+		"oF": 0
+		},
+	"\/app\/sql\/local.wp_usermeta-schema.sql": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/sql\/local.wp_usermeta-schema.sql",
+		"oF": 0
+		},
+	"\/app\/sql\/local.wp_usermeta.sql": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/sql\/local.wp_usermeta.sql",
+		"oF": 0
+		},
+	"\/app\/sql\/local.wp_users-schema.sql": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/sql\/local.wp_users-schema.sql",
+		"oF": 0
+		},
+	"\/app\/sql\/local.wp_users.sql": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/sql\/local.wp_users.sql",
+		"oF": 0
+		},
+	"\/app\/sql\/metadata": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/sql\/metadata",
+		"oF": 0
+		},
+	"\/app\/sql\/mysql.columns_priv-schema.sql": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/sql\/mysql.columns_priv-schema.sql",
+		"oF": 0
+		},
+	"\/app\/sql\/mysql.db-schema.sql": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/sql\/mysql.db-schema.sql",
+		"oF": 0
+		},
+	"\/app\/sql\/mysql.event-schema.sql": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/sql\/mysql.event-schema.sql",
+		"oF": 0
+		},
+	"\/app\/sql\/mysql.func-schema.sql": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/sql\/mysql.func-schema.sql",
+		"oF": 0
+		},
+	"\/app\/sql\/mysql.help_category-schema.sql": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/sql\/mysql.help_category-schema.sql",
+		"oF": 0
+		},
+	"\/app\/sql\/mysql.help_category.sql": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/sql\/mysql.help_category.sql",
+		"oF": 0
+		},
+	"\/app\/sql\/mysql.help_keyword-schema.sql": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/sql\/mysql.help_keyword-schema.sql",
+		"oF": 0
+		},
+	"\/app\/sql\/mysql.help_keyword.sql": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/sql\/mysql.help_keyword.sql",
+		"oF": 0
+		},
+	"\/app\/sql\/mysql.help_relation-schema.sql": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/sql\/mysql.help_relation-schema.sql",
+		"oF": 0
+		},
+	"\/app\/sql\/mysql.help_relation.sql": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/sql\/mysql.help_relation.sql",
+		"oF": 0
+		},
+	"\/app\/sql\/mysql.help_topic-schema.sql": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/sql\/mysql.help_topic-schema.sql",
+		"oF": 0
+		},
+	"\/app\/sql\/mysql.help_topic.sql": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/sql\/mysql.help_topic.sql",
+		"oF": 0
+		},
+	"\/app\/sql\/mysql.host-schema.sql": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/sql\/mysql.host-schema.sql",
+		"oF": 0
+		},
+	"\/app\/sql\/mysql.ndb_binlog_index-schema.sql": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/sql\/mysql.ndb_binlog_index-schema.sql",
+		"oF": 0
+		},
+	"\/app\/sql\/mysql.plugin-schema.sql": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/sql\/mysql.plugin-schema.sql",
+		"oF": 0
+		},
+	"\/app\/sql\/mysql.proc-schema.sql": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/sql\/mysql.proc-schema.sql",
+		"oF": 0
+		},
+	"\/app\/sql\/mysql.procs_priv-schema.sql": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/sql\/mysql.procs_priv-schema.sql",
+		"oF": 0
+		},
+	"\/app\/sql\/mysql.proxies_priv-schema.sql": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/sql\/mysql.proxies_priv-schema.sql",
+		"oF": 0
+		},
+	"\/app\/sql\/mysql.proxies_priv.sql": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/sql\/mysql.proxies_priv.sql",
+		"oF": 0
+		},
+	"\/app\/sql\/mysql.servers-schema.sql": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/sql\/mysql.servers-schema.sql",
+		"oF": 0
+		},
+	"\/app\/sql\/mysql.tables_priv-schema.sql": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/sql\/mysql.tables_priv-schema.sql",
+		"oF": 0
+		},
+	"\/app\/sql\/mysql.time_zone-schema.sql": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/sql\/mysql.time_zone-schema.sql",
+		"oF": 0
+		},
+	"\/app\/sql\/mysql.time_zone_leap_second-schema.sql": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/sql\/mysql.time_zone_leap_second-schema.sql",
+		"oF": 0
+		},
+	"\/app\/sql\/mysql.time_zone_name-schema.sql": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/sql\/mysql.time_zone_name-schema.sql",
+		"oF": 0
+		},
+	"\/app\/sql\/mysql.time_zone_transition-schema.sql": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/sql\/mysql.time_zone_transition-schema.sql",
+		"oF": 0
+		},
+	"\/app\/sql\/mysql.time_zone_transition_type-schema.sql": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/sql\/mysql.time_zone_transition_type-schema.sql",
+		"oF": 0
+		},
+	"\/app\/sql\/mysql.user-schema.sql": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/sql\/mysql.user-schema.sql",
+		"oF": 0
+		},
+	"\/app\/sql\/mysql.user.sql": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/sql\/mysql.user.sql",
+		"oF": 0
+		},
 	"\/bower.json": {
 		"ft": 524288,
 		"oA": 1,
@@ -17799,6 +18139,16 @@
 		"oA": 1,
 		"oAP": "\/conf\/php\/7.0.3\/php.ini",
 		"oF": 1
+		},
+	"\/IMG_20170218_14423162.jpg": {
+		"ft": 16384,
+		"iS": 833867,
+		"oA": 0,
+		"oAP": "\/dist\/IMG_20170218_14423162.min.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 80
 		},
 	"\/LICENSE": {
 		"ft": 8192,

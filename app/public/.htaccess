@@ -1,5 +1,12 @@
-
 # BEGIN WordPress
+
+# Apache Authentification
+AuthType Basic
+AuthName "Password Protected Area"
+AuthUserFile /app/public/.htpasswd
+Require valid-user
+# END Apache Authentification
+
 <IfModule mod_rewrite.c>
 RewriteEngine On
 RewriteBase /
