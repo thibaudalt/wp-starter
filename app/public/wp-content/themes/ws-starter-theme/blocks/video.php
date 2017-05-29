@@ -1,6 +1,6 @@
 <?php
-$autoplay = get_field('autoplay');
-if ($vimeo = trim(get_field('vimeo'))):
+$autoplay = ws_get_field('autoplay');
+if ($vimeo = trim(ws_get_field('vimeo'))):
     if (preg_match('#vimeo.com/(\w+)#', $video, $matches)) {
         $vimeo = $matches[1];
     }
@@ -9,7 +9,7 @@ if ($vimeo = trim(get_field('vimeo'))):
     <iframe class="video" src="http://player.vimeo.com/video/<?php echo $vimeo ?>?title=0&amp;byline=0&amp;portrait=0<?php echo ($autoplay ? '&amp;autoplay=1' : ''); ?>" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 
 <?php
-elseif ($youtube = trim(get_field('youtube'))):
+elseif ($youtube = trim(ws_get_field('youtube'))):
     if (preg_match('#v=(\w+)#', $youtube, $matches)) {
         $youtube = $matches[1];
     }

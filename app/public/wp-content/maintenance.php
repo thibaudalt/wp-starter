@@ -1,8 +1,8 @@
 <?php
 	$name 	= get_bloginfo( 'name' );
-	$title 	= get_field( 'maintenance_mode_title', 'option' );
-	$text 	= get_field( 'maintenance_mode_text', 'option' );
-	$bg 		= get_field( 'maintenance_mode_background_color', 'option' ) ?: '#3f7bad';
+	$title 	= ws_get_field( 'maintenance_mode_title', 'option' );
+	$text 	= ws_get_field( 'maintenance_mode_text', 'option' );
+	$bg 		= ws_get_field( 'maintenance_mode_background_color', 'option' ) ?: '#3f7bad';
 ?>
 
 <!DOCTYPE html>

@@ -3,7 +3,7 @@ if (!function_exists('get_field')):
   return;
 endif;
 
-if (!($blocks = get_field('blocks_after'))):
+if (!($blocks = ws_get_field('blocks_after'))):
   return;
 endif;
 ?>

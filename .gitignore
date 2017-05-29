@@ -6,6 +6,7 @@ app/public/.DS_Store
 app/public/wp-admin
 app/public/wp-content/languages/*
 app/public/wp-content/themes/ws-starter-theme/vendor
+app/public/wp-content/plugins/advanced-custom-fields-pro
 app/public/wp-content/uploads
 app/public/wp-content/upgrade
 app/public/wp-includes

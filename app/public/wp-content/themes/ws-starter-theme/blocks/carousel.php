@@ -3,7 +3,7 @@ if (!function_exists('get_field')):
   return;
 endif;
 
-if (!($images = get_field('gallery'))):
+if (!($images = ws_get_field('gallery'))):
   return;
 endif;
 
