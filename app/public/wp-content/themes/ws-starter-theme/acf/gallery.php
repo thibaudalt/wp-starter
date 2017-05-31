@@ -13,32 +13,32 @@ define('GALLERY_WRAP_AROUND',         FALSE);               // (Boolean)  If tru
 if( function_exists('get_sub_field') && have_rows(constant('GALLERY_MAIN_FIELD')) ):
   while( have_rows(constant('GALLERY_MAIN_FIELD')) ) : the_row();
     if( get_row_layout() === constant('GALLERY_FLEX_FIELD') ):
-      $ID               = get_the_id();                                                 // App\pre_print('$ID', $ID); 
-      $images           = get_sub_field(constant('GALLERY_FLEX_FIELD').'_images');      // App\pre_print('$images', $images); 
-      $show_lightbox    = get_sub_field(constant('GALLERY_FLEX_FIELD').'_lightbox');    // App\pre_print('$show_lightbox', $show_lightbox); 
-      $show_title       = get_sub_field(constant('GALLERY_FLEX_FIELD').'_title');       // App\pre_print('$show_title', $show_title); 
-      $show_caption     = get_sub_field(constant('GALLERY_FLEX_FIELD').'_caption');     // App\pre_print('$show_caption', $show_caption); 
-      $col_lg           = get_sub_field(constant('GALLERY_FLEX_FIELD').'_col_lg');      // App\pre_print('$col_lg', $col_lg); 
-      $col_md           = get_sub_field(constant('GALLERY_FLEX_FIELD').'_col_md');      // App\pre_print('$col_md', $col_md); 
-      $col_xs           = get_sub_field(constant('GALLERY_FLEX_FIELD').'_col_xs');      // App\pre_print('$col_xs', $col_xs); 
+      $ID               = get_the_id();                                                 // acf_dump('$ID', $ID); 
+      $images           = get_sub_field(constant('GALLERY_FLEX_FIELD').'_images');      // acf_dump('$images', $images); 
+      $show_lightbox    = get_sub_field(constant('GALLERY_FLEX_FIELD').'_lightbox');    // acf_dump('$show_lightbox', $show_lightbox); 
+      $show_title       = get_sub_field(constant('GALLERY_FLEX_FIELD').'_title');       // acf_dump('$show_title', $show_title); 
+      $show_caption     = get_sub_field(constant('GALLERY_FLEX_FIELD').'_caption');     // acf_dump('$show_caption', $show_caption); 
+      $col_lg           = get_sub_field(constant('GALLERY_FLEX_FIELD').'_col_lg');      // acf_dump('$col_lg', $col_lg); 
+      $col_md           = get_sub_field(constant('GALLERY_FLEX_FIELD').'_col_md');      // acf_dump('$col_md', $col_md); 
+      $col_xs           = get_sub_field(constant('GALLERY_FLEX_FIELD').'_col_xs');      // acf_dump('$col_xs', $col_xs); 
       
       $size = '90x90';
       $col_xs == 4 || $col_md == 3 || $col_lg == 2 ? $size = '160x160' : '';
       $col_xs == 6 || $col_md == 4 || $col_lg == 3 ? $size = '255x255' : '';
       $col_lg == 4 ? $size = '350x350' : '';
-      $col_lg == 6 ? $size = '510x510' : ''; // App\pre_print('$size',$size); ?> 
+      $col_lg == 6 ? $size = '510x510' : ''; // acf_dump('$size',$size); ?> 
 
       <div id="gallery-<?php echo $ID ?>" class="gallery">
         <div class="row">
           
           <?php foreach( $images as $i => $image ):
-                  $id         = $image['id'];                       // App\pre_print('$id', $id);
-                  $title      = $image['title'];                    // App\pre_print('$title', $title);
-                  $caption    = $image['caption'];                  // App\pre_print('$caption', $caption);
-                  $full       = $image['sizes']['1920x1080'];       // App\pre_print('$full', $full);                   
-                  $src        = $image['sizes'][$size];             //  App\pre_print('$src', $src);
-                  $width      = $image['sizes'][$size.'-width'];    // App\pre_print('$width', $width);
-                  $height     = $image['sizes'][$size.'-height'];   // App\pre_print('$height', $height); 
+                  $id         = $image['id'];                       // acf_dump('$id', $id);
+                  $title      = $image['title'];                    // acf_dump('$title', $title);
+                  $caption    = $image['caption'];                  // acf_dump('$caption', $caption);
+                  $full       = $image['sizes']['1920x1080'];       // acf_dump('$full', $full);                   
+                  $src        = $image['sizes'][$size];             //  acf_dump('$src', $src);
+                  $width      = $image['sizes'][$size.'-width'];    // acf_dump('$width', $width);
+                  $height     = $image['sizes'][$size.'-height'];   // acf_dump('$height', $height); 
                   
                   if( ($show_title && $title) && ($show_caption && $caption) ): $data_title = $title.' - '.$caption;
                   elseif( $show_title && $title ): $data_title = $title;

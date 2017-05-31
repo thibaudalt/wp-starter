@@ -9,7 +9,7 @@ while (have_posts()):
 
         <div <?php post_class(); ?>>
 
-          <?php get_template_part('blocks/carousel') ?>
+          <?php get_template_part('acf/carousel') ?>
 
 <?php if (!wb_get('is_block')): ?>
       <div class="container">

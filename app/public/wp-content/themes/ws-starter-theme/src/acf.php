@@ -48,3 +48,10 @@ if( function_exists('acf_add_options_page') ) {
 	));
 
 }
+
+// Print in style
+function acf_dump( $key, $value ) {
+  echo '<pre style="width:100%;"><b>' . $key. ' : </b>';
+  var_dump( $value );
+  echo '</pre>';
+}

@@ -25,25 +25,25 @@ if( function_exists('get_sub_field') && have_rows(constant('MOSAIC_MAIN_FIELD'))
   
   while( have_rows(constant('MOSAIC_MAIN_FIELD')) ) : the_row();
     if( get_row_layout() === constant('MOSAIC_FLEX_FIELD') ):
-      $ID             = get_the_id();                                               // App\pre_print('$ID', $ID); 
-      $articles       = get_sub_field(constant('MOSAIC_FLEX_FIELD').'_articles');   // App\pre_print('$articles', $articles);
-      $show_date      = get_sub_field(constant('MOSAIC_FLEX_FIELD').'_date');       // App\pre_print('$show_date', $show_date); 
-      $show_title     = get_sub_field(constant('MOSAIC_FLEX_FIELD').'_title');      // App\pre_print('$show_title', $show_title); 
-      $nb_articles    = count($articles);                                           // App\pre_print('$nb_articles', $nb_articles); ?> 
+      $ID             = get_the_id();                                               // acf_dump('$ID', $ID); 
+      $articles       = get_sub_field(constant('MOSAIC_FLEX_FIELD').'_articles');   // acf_dump('$articles', $articles);
+      $show_date      = get_sub_field(constant('MOSAIC_FLEX_FIELD').'_date');       // acf_dump('$show_date', $show_date); 
+      $show_title     = get_sub_field(constant('MOSAIC_FLEX_FIELD').'_title');      // acf_dump('$show_title', $show_title); 
+      $nb_articles    = count($articles);                                           // acf_dump('$nb_articles', $nb_articles); ?> 
       
       <div id="mosaic-<?php echo $ID ?>" class="mosaic">
         <div class="row">
           
           <?php foreach( $articles as $i => $article ):
-                  $id           = $article->ID;                                             // App\pre_print('$id', $id);
-                  $date         = $article->post_date;                                      // App\pre_print('$date', $date);
-                  $title        = $article->post_title;                                     // App\pre_print('$title', $title);
-                  $url          = get_permalink($id);                                       // App\pre_print('$url', $url);
-                  $width        = get_mosaic_size($i, $nb_articles)[0];                     // App\pre_print('$width', $width);
-                  $height       = get_mosaic_size($i, $nb_articles)[1];                     // App\pre_print('$height', $height);
-                  $thumb_id     = get_post_thumbnail_id($id);                               // App\pre_print('$thumb_id', $thumb_id);
-                  $thumb_data   = wp_get_attachment_image_src($thumb_id, 'col-'.$width);    // App\pre_print('$thumb', $thumb); 
-                  $thumb_src    = $thumb_data[0];                                           // App\pre_print('$src', $src); ?>
+                  $id           = $article->ID;                                             // acf_dump('$id', $id);
+                  $date         = $article->post_date;                                      // acf_dump('$date', $date);
+                  $title        = $article->post_title;                                     // acf_dump('$title', $title);
+                  $url          = get_permalink($id);                                       // acf_dump('$url', $url);
+                  $width        = get_mosaic_size($i, $nb_articles)[0];                     // acf_dump('$width', $width);
+                  $height       = get_mosaic_size($i, $nb_articles)[1];                     // acf_dump('$height', $height);
+                  $thumb_id     = get_post_thumbnail_id($id);                               // acf_dump('$thumb_id', $thumb_id);
+                  $thumb_data   = wp_get_attachment_image_src($thumb_id, 'col-'.$width);    // acf_dump('$thumb', $thumb); 
+                  $thumb_src    = $thumb_data[0];                                           // acf_dump('$src', $src); ?>
                   
                   <div class="mosaic-inner col-sm-<?php echo $width ?> row-<?php echo $height ?>">
                     <a  id="<?php echo 'mosaic-'.$ID.'-item-'.$i ?>" 

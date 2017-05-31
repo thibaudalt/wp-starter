@@ -32,24 +32,24 @@ if( function_exists('get_sub_field') && have_rows(constant('MASONRY_MAIN_FIELD')
 
   while( have_rows(constant('MASONRY_MAIN_FIELD')) ) : the_row();
     if( get_row_layout() === constant('MASONRY_FLEX_FIELD') ):
-      $ID               = get_the_id();                                                 // App\pre_print('$ID', $ID); 
-      $images           = get_sub_field(constant('MASONRY_FLEX_FIELD').'_images');      //App\pre_print('$images', $images);
-      $show_lightbox    = get_sub_field(constant('MASONRY_FLEX_FIELD').'_lightbox');    // App\pre_print('$show_lightbox', $show_lightbox); 
-      $show_title       = get_sub_field(constant('MASONRY_FLEX_FIELD').'_title');       // App\pre_print('$show_title', $show_title); 
-      $show_caption     = get_sub_field(constant('MASONRY_FLEX_FIELD').'_caption');     // App\pre_print('$show_caption', $show_caption); 
-      $nb_images        = count($images);                                               // App\pre_print('$nb_images', $nb_images); ?> 
+      $ID               = get_the_id();                                                 // acf_dump('$ID', $ID); 
+      $images           = get_sub_field(constant('MASONRY_FLEX_FIELD').'_images');      //acf_dump('$images', $images);
+      $show_lightbox    = get_sub_field(constant('MASONRY_FLEX_FIELD').'_lightbox');    // acf_dump('$show_lightbox', $show_lightbox); 
+      $show_title       = get_sub_field(constant('MASONRY_FLEX_FIELD').'_title');       // acf_dump('$show_title', $show_title); 
+      $show_caption     = get_sub_field(constant('MASONRY_FLEX_FIELD').'_caption');     // acf_dump('$show_caption', $show_caption); 
+      $nb_images        = count($images);                                               // acf_dump('$nb_images', $nb_images); ?> 
       
       <div id="masonry-<?php echo $ID ?>" class="masonry">
         <div class="row">
           
           <?php foreach( $images as $i => $image ):
-                  $id         = $image['id'];                           // App\pre_print('$id', $id);
-                  $title      = $image['title'];                        // App\pre_print('$title', $title);
-                  $caption    = $image['caption'];                      // App\pre_print('$caption', $caption);
-                  $width      = get_masonry_size($i, $nb_images)[0];    // App\pre_print('$width', $width);
-                  $height     = get_masonry_size($i, $nb_images)[1];    // App\pre_print('$height', $height); 
-                  $full       = $image['sizes']['1920x1080'];           // App\pre_print('$full', $full);                   
-                  $src        = $image['sizes']['col-'.$width];         // App\pre_print('$src', $src);
+                  $id         = $image['id'];                           // acf_dump('$id', $id);
+                  $title      = $image['title'];                        // acf_dump('$title', $title);
+                  $caption    = $image['caption'];                      // acf_dump('$caption', $caption);
+                  $width      = get_masonry_size($i, $nb_images)[0];    // acf_dump('$width', $width);
+                  $height     = get_masonry_size($i, $nb_images)[1];    // acf_dump('$height', $height); 
+                  $full       = $image['sizes']['1920x1080'];           // acf_dump('$full', $full);                   
+                  $src        = $image['sizes']['col-'.$width];         // acf_dump('$src', $src);
                   
                   if( ($show_title && $title) && ($show_caption && $caption) ): $data_title = $title.' - '.$caption;
                   elseif( $show_title && $title ): $data_title = $title;

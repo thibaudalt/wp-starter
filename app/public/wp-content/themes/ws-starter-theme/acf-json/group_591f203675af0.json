@@ -5,7 +5,7 @@
         {
             "key": "field_591f203679766",
             "label": "Interval",
-            "name": "carousel_interval",
+            "name": "carousel_options_interval",
             "type": "number",
             "instructions": "Delay between automatically cycling in ms.",
             "required": 0,
@@ -26,7 +26,7 @@
         {
             "key": "field_591f2280e96b0",
             "label": "Pause on hover",
-            "name": "carousel_pause",
+            "name": "carousel_options_pause",
             "type": "true_false",
             "instructions": "Pauses the cycling on mouse over.",
             "required": 0,
@@ -45,7 +45,7 @@
         {
             "key": "field_591f22f4e96b1",
             "label": "Cycle continuously",
-            "name": "carousel_wrap",
+            "name": "carousel_options_wrap",
             "type": "true_false",
             "instructions": "Cycle continuously or have hard stops.",
             "required": 0,
@@ -64,7 +64,7 @@
         {
             "key": "field_591f2309e96b2",
             "label": "React to keyboard",
-            "name": "carousel_keyboard",
+            "name": "carousel_options_keyboard",
             "type": "true_false",
             "instructions": "React to keyboard events or not.",
             "required": 0,
@@ -98,5 +98,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1495437410
+    "modified": 1496131850
 }
