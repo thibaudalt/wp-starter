@@ -61,10 +61,10 @@
                                 "id": ""
                             },
                             "choices": {
-                                "1920x1080": "Full screen",
                                 "1920x180": "Small",
                                 "1920x480": "Medium",
-                                "1920x780": "Large"
+                                "1920x780": "Large",
+                                "1920x1080": "Full screen"
                             },
                             "allow_null": 0,
                             "other_choice": 0,
@@ -588,5 +588,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1496217266
+    "modified": 1497430184
 }

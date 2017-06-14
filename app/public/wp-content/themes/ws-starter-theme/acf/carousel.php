@@ -1,27 +1,31 @@
 <?php
 
-define( 'CAROUSEL_MAIN_FIELD',     'layout' );            // (String)   Name of main field
-define( 'CAROUSEL_FLEX_FIELD',     'layout_carousel' );   // (String)   Name of flex field
-define( 'CAROUSEL_OPTIONS_FIELD',  'carousel_options' );  // (String)   Name of options field
+const CAROUSEL_MAIN_FIELD     = 'layout';            // (String) Name of main field
+const CAROUSEL_FLEX_FIELD     = 'layout_carousel';   // (String) Name of flex field
+const CAROUSEL_OPTIONS_FIELD  = 'carousel_options';  // (String) Name of options field
 
-if( function_exists( 'get_sub_field' ) && have_rows( constant( 'CAROUSEL_MAIN_FIELD' ) ) ):
-  while( have_rows( constant( 'CAROUSEL_MAIN_FIELD' ) ) ) : the_row();
-    if( get_row_layout() === constant( 'CAROUSEL_FLEX_FIELD' ) ):
-      $ID                 = get_the_id();                                                        // acf_dump( '$ID', $ID);
-      $images             = get_sub_field( constant( 'CAROUSEL_FLEX_FIELD' ).'_images' );        // acf_dump( '$images', $images);
-      $size               = get_sub_field( constant( 'CAROUSEL_FLEX_FIELD' ).'_size' );          // acf_dump( '$size', $size);
-      $show_title         = get_sub_field( constant( 'CAROUSEL_FLEX_FIELD' ).'_title' );         // acf_dump( '$show_title', $show_title);
-      $show_caption       = get_sub_field( constant( 'CAROUSEL_FLEX_FIELD' ).'_caption' );       // acf_dump( '$show_caption', $show_caption);
-      $show_controls      = get_sub_field( constant( 'CAROUSEL_FLEX_FIELD' ).'_controls' );      // acf_dump( '$show_controls', $show_controls);
-      $show_indicators    = get_sub_field( constant( 'CAROUSEL_FLEX_FIELD' ).'_indicators' );    // acf_dump( '$show_indicators', $show_indicators); ?>
+if( function_exists( 'get_sub_field' ) && have_rows( CAROUSEL_MAIN_FIELD ) ):
+  while( have_rows( CAROUSEL_MAIN_FIELD ) ) : the_row();
+    if( get_row_layout() === CAROUSEL_FLEX_FIELD ):
+      $ID                 = get_the_id();                                                             // acf_dump( '$ID', $ID );
+      $images             = get_sub_field( CAROUSEL_FLEX_FIELD    . '_images' );                      // acf_dump( '$images', $images );
+      $size               = get_sub_field( CAROUSEL_FLEX_FIELD    . '_size' );                        // acf_dump( '$size', $size );
+      $show_title         = get_sub_field( CAROUSEL_FLEX_FIELD    . '_title' );                       // acf_dump( '$show_title', $show_title );
+      $show_caption       = get_sub_field( CAROUSEL_FLEX_FIELD    . '_caption' );                     // acf_dump( '$show_caption', $show_caption );
+      $show_controls      = get_sub_field( CAROUSEL_FLEX_FIELD    . '_controls' );                    // acf_dump( '$show_controls', $show_controls );
+      $show_indicators    = get_sub_field( CAROUSEL_FLEX_FIELD    . '_indicators' );                  // acf_dump( '$show_indicators', $show_indicators );
+      $interval           = ws_get_option( CAROUSEL_OPTIONS_FIELD . '_interval', 5000 );              // acf_dump( '$interval', $interval );
+      $pause              = ws_get_option( CAROUSEL_OPTIONS_FIELD . '_pause', null, 'hover' );        // acf_dump( '$pause', $pause );
+      $wrap               = ws_get_option( CAROUSEL_OPTIONS_FIELD . '_wrap', 'false', 'true' );       // acf_dump( '$wrap', $wrap );
+      $keyboard           = ws_get_option( CAROUSEL_OPTIONS_FIELD . '_keyboard', 'false', 'true' );   // acf_dump( '$keyboard', $keyboard );  ?>
 
       <div  id="carousel-<?php echo $ID ?>"
             class="carousel slide"
             data-ride="carousel"
-            data-interval="<?php echo ( ws_get_field( constant( 'CAROUSEL_OPTIONS_FIELD' ) . '_interval', 'option' ) ?: 10000 ); ?>"
-            data-pause="<?php echo ( ws_get_field( constant( 'CAROUSEL_OPTIONS_FIELD' ) . '_pause', 'option' ) ? 'hover' : 'null' ); ?>"
-            data-wrap="<?php echo ( ws_get_field( constant( 'CAROUSEL_OPTIONS_FIELD' ) . '_wrap', 'option' ) ?: true ); ?>"
-            data-keyboard="<?php echo ( ws_get_field( constant( 'CAROUSEL_OPTIONS_FIELD' ) . '_keyboard', 'option' ) ?: false ); ?>">
+            data-interval="<?php echo $interval; ?>"
+            data-pause="<?php echo $pause; ?>"
+            data-wrap="<?php echo $wrap; ?>"
+            data-keyboard="<?php echo $keyboard; ?>">
 
         <div class="carousel-inner" role="listbox">
           <?php foreach( $images as $i => $image ):
@@ -33,8 +37,9 @@ if( function_exists( 'get_sub_field' ) && have_rows( constant( 'CAROUSEL_MAIN_FI
                 $width      = $image['sizes'][$size.'-width'];                // acf_dump( '$width', $width);
                 $height     = $image['sizes'][$size.'-height'];               // acf_dump( '$height', $height); ?>
 
-          <div id="<?php echo 'carousel-'.$ID.'-item-'.$i ?>" class="carousel-item<?php echo ($i == 0 ? ' active' : '' ); ?>">
-            <img  src="<?php echo $src ?>"
+          <div id="<?php echo 'carousel-'.$ID.'-item-'.$i ?>" class="carousel-item<?php if( !$i ) echo ' active'; ?>">
+            <img  class="d-block img-fluid"
+                  src="<?php echo $src ?>"
                   srcset="<?php echo $srcset ?>"
                   alt="<?php echo $title ?>"
                   width="<?php echo $width ?>"
@@ -55,14 +60,19 @@ if( function_exists( 'get_sub_field' ) && have_rows( constant( 'CAROUSEL_MAIN_FI
         <?php if( count($images) > 1 ): ?>
 
           <?php if( $show_controls ): ?>
-            <a class="carousel-control left" href="#carousel-<?php echo $ID ?>" role="button" data-slide="prev"><span class="icon-prev"></span></a>
-            <a class="carousel-control right" href="#carousel-<?php echo $ID ?>" role="button" data-slide="next"><span class="icon-next"></span></a>
+            <a class="carousel-control-prev" href="#carousel-<?php echo $ID ?>" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span></a>
+            <a class="carousel-control-next" href="#carousel-<?php echo $ID ?>" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
           <?php endif; ?>
 
           <?php if( $show_indicators ): ?>
             <ol class="carousel-indicators">
               <?php foreach( $images as $i => $image ): ?>
-                <li data-target="#carousel-<?php echo $ID ?>" data-slide-to="<?php echo $i ?>" class="<?php echo ($i == 0 ? ' active' : '' ); ?>"></li>
+                <li data-target="#carousel-<?php echo $ID ?>" data-slide-to="<?php echo $i ?>" <?php if( !$i ) echo 'class="active"'; ?>></li>
               <?php endforeach; ?>
             </ol>
           <?php endif; ?>
