@@ -42,7 +42,7 @@ foreach ($images as $i => $image):
 <?php endif;?>
         </div>
 <?php endforeach; ?>
-      </div><!-- /.carousel-inner -->
+      </div><!-- .carousel-inner -->
 
 <?php if ($count > 1): ?>
 
@@ -67,4 +67,4 @@ foreach ($images as $i => $image):
 
 <?php endif ?>
 
-    </div><!-- /.carousel -->
+    </div><!-- .carousel -->

@@ -2,7 +2,7 @@
 
   <div class="main">
 
-    <div class="page archive">
+    <div class="page home">
       <div class="container">
 
         <div class="page-header">

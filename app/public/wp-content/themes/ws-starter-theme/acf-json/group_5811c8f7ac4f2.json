@@ -574,9 +574,23 @@
     "location": [
         [
             {
-                "param": "page_template",
+                "param": "post_type",
                 "operator": "==",
-                "value": "default"
+                "value": "post"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "page"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "project"
             }
         ]
     ],
@@ -588,5 +602,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1497430184
+    "modified": 1497529375
 }

@@ -4,6 +4,11 @@
 // ! Advanced Custom Fields
 ////////////////////////////////////////////////////////////////////////////////
 
+// Register get_template_part function for acf
+function ws_get_acf( $file, $variables = null ) {
+	return ws_get_template_part( 'acf/' . $file, $variables );
+}
+
 // Register custom get_field function
 function ws_get_field( $field, $id = NULL, $format = NULL ) {
 	return class_exists('acf') ? get_field( $field, $id, $format ) : false;

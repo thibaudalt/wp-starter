@@ -74,6 +74,8 @@ add_action( 'after_setup_theme', function() {
     add_theme_support( 'automatic-feed-links' );
     add_theme_support( 'post-thumbnails' );
 
+    add_image_size( 'brand', 40, 40, true );
+
     add_image_size( '510x510', 510, 510, true );
     add_image_size( '1920x180', 1920, 180, true );
     add_image_size( '1920x480', 1920, 480, true );

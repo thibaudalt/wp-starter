@@ -57,12 +57,12 @@ if( function_exists('get_sub_field') && have_rows(constant('MOSAIC_MAIN_FIELD'))
                           </div>
                         <?php endif; ?>
                     </a>
-                  </div><!-- /.mosaic-inner -->
+                  </div><!-- .mosaic-inner -->
  
           <?php endforeach; ?>
           
-        </div><!-- /.row -->
-      </div><!-- /.mosaic -->
+        </div><!-- .row -->
+      </div><!-- .mosaic -->
       
 <?php 
     endif;

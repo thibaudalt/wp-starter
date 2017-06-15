@@ -65,12 +65,12 @@ if( function_exists('get_sub_field') && have_rows(constant('MASONRY_MAIN_FIELD')
                         <?php echo( $show_lightbox ? ' data-lightbox="masonry-'.$ID.'"' : '' ); ?>
                         <?php echo( $show_lightbox && $data_title ? ' data-title="'.$data_title.'"' : '' ); ?>>
                     </a>
-                  </div><!-- /.masonry-inner -->
+                  </div><!-- .masonry-inner -->
  
           <?php endforeach; ?>
           
-        </div><!-- /.row -->
-      </div><!-- /.masonry -->
+        </div><!-- .row -->
+      </div><!-- .masonry -->
       
       <?php if( $show_lightbox ): ?>
         <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.9.0/css/lightbox.min.css" rel="stylesheet">

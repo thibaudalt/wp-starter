@@ -1,4 +1,23 @@
 @import "bourbon";
 @import "../../../vendor/bootstrap/scss/bootstrap.scss";
+@import "../../../vendor/components-font-awesome/css/font-awesome.css";
 @import "_variables.scss";
 // @import "_offcanvas.scss";
+
+* {
+  outline: none !important;
+}
+
+body {
+  padding-top: $header-height;
+}
+
+header {
+  height: $header-height;
+}
+
+footer {
+  height: $footer-height;
+}
+
+@import "_pages.scss"

@@ -1,43 +1,36 @@
-<?php get_header(); ?>
+<?php get_header() ?>
 
-    <div class="main">
+  <div class="main">
 
-<?php
-while (have_posts()):
-    the_post();
-?>
+    <?php while ( have_posts() ): the_post() ?>
 
-        <div <?php post_class('page'); ?>>
+      <div <?php post_class( 'front-page' ) ?>>
 
-          <?php get_template_part('acf/carousel') ?>
+        <?php ws_get_acf( 'layouts' ) ?>
 
-<?php if (!wb_get('is_block')): ?>
-      <div class="container">
-<?php endif ?>
+        <div class="container">
 
           <div class="page-header">
-            <h1 class="page-title"><?php the_title(); ?></h1>
-          </div>
+            <?php get_template_part( 'blocks/edit-buttons' ) ?>
+            <h1 class="page-title"><?php the_title() ?></h1>
+          </div><!-- .page-header -->
 
           <div class="page-body">
-            <?php get_template_part('blocks/edit-buttons') ?>
             <div class="content">
-              <?php the_content(); ?>
+              <?php the_content() ?>
             </div>
-          </div>
+          </div><!-- .page-body -->
 
-        <?php get_template_part('blocks/blocks', 'after') ?>
+          <div class="page-footer">
 
-<?php if (!wb_get('is_block')): ?>
-      </div><!-- /.container -->
-<?php endif ?>
+          </div><!-- .page-footer -->
 
-        </div><!-- /.page -->
+        </div><!-- .container -->
 
-<?php
-endwhile;
-?>
+      </div><!-- .front-page -->
 
-    </div><!-- /.main -->
+    <?php endwhile; ?>
 
-<?php get_footer(); ?>
+  </div><!-- .main -->
+
+<?php get_footer() ?>

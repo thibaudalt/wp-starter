@@ -1,70 +1,40 @@
-<?php
-if (!wb_has_layout()):
-  return;
-endif;
-?>
 <!DOCTYPE html>
-<!--[if lt IE 7]>     <html class="no-js lt-ie9 lt-ie8 lt-ie7" <?php language_attributes(); ?>><![endif]-->
-<!--[if IE 7]>        <html class="no-js lt-ie9 lt-ie8" <?php language_attributes(); ?>><![endif]-->
-<!--[if IE 8]>        <html class="no-js lt-ie9" <?php language_attributes(); ?>><![endif]-->
-<!--[if gt IE 8]><!--><html class="no-js" <?php language_attributes(); ?>><!--<![endif]-->
+<html class="no-js" <?php language_attributes() ?>>
+
 <head>
-  <meta charset="<?php bloginfo('charset'); ?>" />
+  <meta charset="<?php bloginfo( 'charset' ) ?>" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="author" content="We studio" />
-
-  <title><?php wb_page_title(); ?></title>
-
-  <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
-
-  <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/assets/images/favicon.ico" type="image/x-icon" />
-
-  <!--[if lt IE 9]>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
-  <![endif]-->
-
-  <?php wp_head(); ?>
-
-  <!--[if lt IE 9]>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
-  <![endif]-->
-
+  <title><?php wb_page_title() ?></title>
+  <link rel="pingback" href="<?php bloginfo( 'pingback_url' ) ?>" />
+  <?php ws_get_block( 'favicons' ) ?>
+  <?php wp_head() ?>
 </head>
-<body <?php body_class(); ?>>
 
-  <header class="header navbar navbar-default navbar-fixed-top">
+<body <?php body_class() ?>>
+
+  <header class="header navbar navbar-toggleable-md fixed-top navbar-light bg-faded">
     <div class="container">
 
-      <div class="navbar-header">
-        <a
-          class="navbar-brand"
-          href="<?php echo home_url(); ?>"
-          title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>"
-          rel="home"><?php bloginfo('name'); ?></a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        <button
-          type="button"
-          class="offcanvas-toggle"
-          data-toggle="offcanvas"
-          data-target="#offcanvas"
-          title="<?php _e('Menu', 'bootstrap'); ?>">
-          <i class="glyphicon glyphicon-menu-hamburger"></i>
-        </button>
+      <a class="navbar-brand p-0" href="<?php echo home_url() ?>" title="<?php echo get_bloginfo( 'name' ) ?>" rel="home">
+        <img src="<?php echo get_site_icon_url( 40 ) ?>" alt="<?php echo get_bloginfo( 'name' ) ?>"/>
+      </a>
 
-      </div><!-- /.navbar-header -->
+      <div id="main-menu" class="collapse navbar-collapse">
 
-      <nav id="main-menu" class="collapse navbar-collapse">
         <?php
-        wp_nav_menu(array(
-          'theme_location' => 'main',
-          'menu_class'     => 'nav navbar-nav',
-          'depth'          => 2,
-          'walker'         => 'dropdowns',
-        ));
+          wp_nav_menu( array(
+            'theme_location' => 'main',
+            'menu_class'     => 'navbar-nav mr-auto',
+            'depth'          => 2,
+          ) )
         ?>
-      </nav>
 
-    </div><!-- ./container -->
-  </header><!-- /.navbar-default -->
+      </div><!-- .main-menu -->
 
-  <?php get_template_part('blocks/offcanvas') ?>
+    </div><!-- .container -->
+  </header><!-- .header -->

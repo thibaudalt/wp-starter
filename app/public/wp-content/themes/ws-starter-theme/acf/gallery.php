@@ -58,12 +58,12 @@ if( function_exists('get_sub_field') && have_rows(constant('GALLERY_MAIN_FIELD')
                             width="<?php echo $width ?>" 
                             height="<?php echo $height ?>"/>
                     </a>
-                  </div><!-- /.gallery-inner -->
+                  </div><!-- .gallery-inner -->
             
           <?php endforeach; ?>
           
-        </div><!-- /.row -->
-      </div><!-- /.gallery -->
+        </div><!-- .row -->
+      </div><!-- .gallery -->
       
       <?php if( $show_lightbox ): ?>
         <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.9.0/css/lightbox.min.css" rel="stylesheet">

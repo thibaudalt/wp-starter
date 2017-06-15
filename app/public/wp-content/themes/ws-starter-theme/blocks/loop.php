@@ -20,5 +20,5 @@
   <div class="post-body">
     <?php get_template_part('blocks/edit-buttons') ?>
     <?php the_excerpt() ?>
-  </div><!-- /.post-body -->
-</article><!-- /.post -->
+  </div><!-- .post-body -->
+</article><!-- .post -->

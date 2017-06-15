@@ -26,8 +26,8 @@ class Westudio_Bootstrap_Menu_Walker extends Walker_Nav_Menu
      */
     public function start_el(&$output, $item, $depth = 0, $args = array(), $id = 0)
     {
-        $item_attributes = $this->get_item_attributes($item, $depth, $args, $id);
-        $link_attributes = $this->get_link_attributes($item, $depth, $args, $id);
+        $item_attributes = $this->get_item_attributes($item, $depth, $args, $id, 'li');
+        $link_attributes = $this->get_link_attributes($item, $depth, $args, $id, 'a');
 
         $output .= PHP_EOL;
         $output .= str_repeat('  ', $depth);
@@ -80,11 +80,17 @@ class Westudio_Bootstrap_Menu_Walker extends Walker_Nav_Menu
      * @param  array $classes
      * @return array
      */
-    protected function classes_to_attributes($attributes, $classes)
+    protected function classes_to_attributes($attributes, $classes, $tag = null)
     {
         if (!empty($attributes['class'])) {
             $classes = array_merge($classes, explode(' ', $attributes['class']));
         }
+
+        if( $tag === 'a' )
+          array_push( $classes, 'nav-link');
+
+        if( $tag === 'li' )
+          array_push( $classes, 'nav-item');
 
         if ($classes) {
             $attributes['class'] = join(' ', $classes);
@@ -124,12 +130,12 @@ class Westudio_Bootstrap_Menu_Walker extends Walker_Nav_Menu
      * @param  integer $id
      * @return array
      */
-    protected function get_item_attributes($item, $depth, $args, $id)
+    protected function get_item_attributes($item, $depth, $args, $id, $tag = null)
     {
         $attributes = array();
 
         $classes    = $this->get_item_classes($item, $depth, $args, $id);
-        $attributes = $this->classes_to_attributes($attributes, $classes);
+        $attributes = $this->classes_to_attributes($attributes, $classes, $tag);
 
         return $attributes;
     }
@@ -215,7 +221,7 @@ class Westudio_Bootstrap_Menu_Walker extends Walker_Nav_Menu
      * @param  integer $id
      * @return array
      */
-    protected function get_link_attributes($item, $depth, $args, $id)
+    protected function get_link_attributes($item, $depth, $args, $id, $tag = null)
     {
         $attributes = array();
 
@@ -236,7 +242,7 @@ class Westudio_Bootstrap_Menu_Walker extends Walker_Nav_Menu
         }
 
         $classes = $this->get_link_classes($item, $depth, $args, $id);
-        $attributes = $this->classes_to_attributes($attributes, $classes);
+        $attributes = $this->classes_to_attributes($attributes, $classes, $tag);
 
         return $attributes;
     }

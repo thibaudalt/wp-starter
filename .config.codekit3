@@ -5959,6 +5959,12 @@
 		"oAP": "\/app\/public\/wp-content\/themes\/ws-starter-theme\/acf\/gallery.php",
 		"oF": 0
 		},
+	"\/app\/public\/wp-content\/themes\/ws-starter-theme\/acf\/layouts.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/public\/wp-content\/themes\/ws-starter-theme\/acf\/layouts.php",
+		"oF": 0
+		},
 	"\/app\/public\/wp-content\/themes\/ws-starter-theme\/acf\/mansory.php": {
 		"ft": 8192,
 		"oA": 2,
@@ -6564,6 +6570,19 @@
 		"oS": 3,
 		"uL": 1
 		},
+	"\/app\/public\/wp-content\/themes\/ws-starter-theme\/assets\/styles\/src\/_pages.scss": {
+		"aP": 1,
+		"bl": 1,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/app\/public\/wp-content\/themes\/ws-starter-theme\/assets\/styles\/dist\/_pages.min.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
 	"\/app\/public\/wp-content\/themes\/ws-starter-theme\/assets\/styles\/src\/_variables.scss": {
 		"aP": 1,
 		"bl": 1,
@@ -6638,6 +6657,12 @@
 		"oAP": "\/app\/public\/wp-content\/themes\/ws-starter-theme\/blocks\/edit-buttons.php",
 		"oF": 0
 		},
+	"\/app\/public\/wp-content\/themes\/ws-starter-theme\/blocks\/favicons.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/public\/wp-content\/themes\/ws-starter-theme\/blocks\/favicons.php",
+		"oF": 0
+		},
 	"\/app\/public\/wp-content\/themes\/ws-starter-theme\/blocks\/flash-news.php": {
 		"ft": 8192,
 		"oA": 2,
@@ -6710,30 +6735,6 @@
 		"oAP": "\/app\/public\/wp-content\/themes\/ws-starter-theme\/blocks\/video.php",
 		"oF": 0
 		},
-	"\/app\/public\/wp-content\/themes\/ws-starter-theme\/dist\/group_591f1967ba4af.min.json": {
-		"ft": 524288,
-		"oA": 0,
-		"oAP": "\/app\/public\/wp-content\/themes\/ws-starter-theme\/dist\/group_591f1967ba4af.min.min.json",
-		"oF": 0,
-		"oO": 1,
-		"oS": 1
-		},
-	"\/app\/public\/wp-content\/themes\/ws-starter-theme\/dist\/group_591f203675af0.min.json": {
-		"ft": 524288,
-		"oA": 0,
-		"oAP": "\/app\/public\/wp-content\/themes\/ws-starter-theme\/dist\/group_591f203675af0.min.min.json",
-		"oF": 0,
-		"oO": 1,
-		"oS": 1
-		},
-	"\/app\/public\/wp-content\/themes\/ws-starter-theme\/dist\/group_5922908dbb1e3.min.json": {
-		"ft": 524288,
-		"oA": 0,
-		"oAP": "\/app\/public\/wp-content\/themes\/ws-starter-theme\/dist\/group_5922908dbb1e3.min.min.json",
-		"oF": 0,
-		"oO": 1,
-		"oS": 1
-		},
 	"\/app\/public\/wp-content\/themes\/ws-starter-theme\/footer.php": {
 		"ft": 8192,
 		"oA": 2,
@@ -6756,6 +6757,12 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/app\/public\/wp-content\/themes\/ws-starter-theme\/header.php",
+		"oF": 0
+		},
+	"\/app\/public\/wp-content\/themes\/ws-starter-theme\/home.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/public\/wp-content\/themes\/ws-starter-theme\/home.php",
 		"oF": 0
 		},
 	"\/app\/public\/wp-content\/themes\/ws-starter-theme\/index.php": {
@@ -6814,12 +6821,6 @@
 		"opt": 0,
 		"oT": 1,
 		"q": 80
-		},
-	"\/app\/public\/wp-content\/themes\/ws-starter-theme\/sidebar.php": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/app\/public\/wp-content\/themes\/ws-starter-theme\/sidebar.php",
-		"oF": 0
 		},
 	"\/app\/public\/wp-content\/themes\/ws-starter-theme\/single.php": {
 		"ft": 8192,
@@ -8593,6 +8594,546 @@
 		"oA": 1,
 		"oAP": "\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/bootstrap\/scss\/utilities\/_visibility.scss",
 		"oF": 1,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/components-font-awesome\/.bower.json": {
+		"ft": 524288,
+		"oA": 2,
+		"oAP": "\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/components-font-awesome\/.bower.json",
+		"oF": 0,
+		"oO": 1,
+		"oS": 1
+		},
+	"\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/components-font-awesome\/.gitignore": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/components-font-awesome\/.gitignore",
+		"oF": 0
+		},
+	"\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/components-font-awesome\/.npmignore": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/components-font-awesome\/.npmignore",
+		"oF": 0
+		},
+	"\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/components-font-awesome\/bower.json": {
+		"ft": 524288,
+		"oA": 2,
+		"oAP": "\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/components-font-awesome\/bower.json",
+		"oF": 0,
+		"oO": 1,
+		"oS": 1
+		},
+	"\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/components-font-awesome\/css\/font-awesome.css": {
+		"aP": 1,
+		"bl": 1,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/components-font-awesome\/css\/font-awesome.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/components-font-awesome\/css\/font-awesome.css.map": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/components-font-awesome\/css\/font-awesome.css.map",
+		"oF": 0
+		},
+	"\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/components-font-awesome\/css\/font-awesome.min.css": {
+		"aP": 1,
+		"bl": 1,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/components-font-awesome\/css\/font-awesome.min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/components-font-awesome\/fonts\/fontawesome-webfont.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/components-font-awesome\/fonts\/fontawesome-webfont.eot",
+		"oF": 0
+		},
+	"\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/components-font-awesome\/fonts\/fontawesome-webfont.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/components-font-awesome\/fonts\/fontawesome-webfont.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/components-font-awesome\/fonts\/fontawesome-webfont.ttf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/components-font-awesome\/fonts\/fontawesome-webfont.ttf",
+		"oF": 0
+		},
+	"\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/components-font-awesome\/fonts\/fontawesome-webfont.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/components-font-awesome\/fonts\/fontawesome-webfont.woff",
+		"oF": 0
+		},
+	"\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/components-font-awesome\/fonts\/fontawesome-webfont.woff2": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/components-font-awesome\/fonts\/fontawesome-webfont.woff2",
+		"oF": 0
+		},
+	"\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/components-font-awesome\/fonts\/FontAwesome.otf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/components-font-awesome\/fonts\/FontAwesome.otf",
+		"oF": 0
+		},
+	"\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/components-font-awesome\/less\/animated.less": {
+		"aP": 1,
+		"bl": 1,
+		"dJ": 1,
+		"ft": 1,
+		"ie": 1,
+		"iI": 1,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/components-font-awesome\/less\/animated.less",
+		"oF": 0,
+		"oS": 1,
+		"rU": 1,
+		"sI": 1,
+		"sM": 1,
+		"sU": 1
+		},
+	"\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/components-font-awesome\/less\/bordered-pulled.less": {
+		"aP": 1,
+		"bl": 1,
+		"dJ": 1,
+		"ft": 1,
+		"ie": 1,
+		"iI": 1,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/components-font-awesome\/less\/bordered-pulled.less",
+		"oF": 0,
+		"oS": 1,
+		"rU": 1,
+		"sI": 1,
+		"sM": 1,
+		"sU": 1
+		},
+	"\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/components-font-awesome\/less\/core.less": {
+		"aP": 1,
+		"bl": 1,
+		"dJ": 1,
+		"ft": 1,
+		"ie": 1,
+		"iI": 1,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/components-font-awesome\/less\/core.less",
+		"oF": 0,
+		"oS": 1,
+		"rU": 1,
+		"sI": 1,
+		"sM": 1,
+		"sU": 1
+		},
+	"\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/components-font-awesome\/less\/fixed-width.less": {
+		"aP": 1,
+		"bl": 1,
+		"dJ": 1,
+		"ft": 1,
+		"ie": 1,
+		"iI": 1,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/components-font-awesome\/less\/fixed-width.less",
+		"oF": 0,
+		"oS": 1,
+		"rU": 1,
+		"sI": 1,
+		"sM": 1,
+		"sU": 1
+		},
+	"\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/components-font-awesome\/less\/font-awesome.less": {
+		"aP": 1,
+		"bl": 1,
+		"dJ": 1,
+		"ft": 1,
+		"ie": 1,
+		"iI": 1,
+		"ma": 1,
+		"oA": 2,
+		"oAP": "\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/components-font-awesome\/less\/font-awesome.less",
+		"oF": 0,
+		"oS": 1,
+		"rU": 1,
+		"sI": 1,
+		"sM": 1,
+		"sU": 1
+		},
+	"\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/components-font-awesome\/less\/icons.less": {
+		"aP": 1,
+		"bl": 1,
+		"dJ": 1,
+		"ft": 1,
+		"ie": 1,
+		"iI": 1,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/components-font-awesome\/less\/icons.less",
+		"oF": 0,
+		"oS": 1,
+		"rU": 1,
+		"sI": 1,
+		"sM": 1,
+		"sU": 1
+		},
+	"\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/components-font-awesome\/less\/larger.less": {
+		"aP": 1,
+		"bl": 1,
+		"dJ": 1,
+		"ft": 1,
+		"ie": 1,
+		"iI": 1,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/components-font-awesome\/less\/larger.less",
+		"oF": 0,
+		"oS": 1,
+		"rU": 1,
+		"sI": 1,
+		"sM": 1,
+		"sU": 1
+		},
+	"\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/components-font-awesome\/less\/list.less": {
+		"aP": 1,
+		"bl": 1,
+		"dJ": 1,
+		"ft": 1,
+		"ie": 1,
+		"iI": 1,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/components-font-awesome\/less\/list.less",
+		"oF": 0,
+		"oS": 1,
+		"rU": 1,
+		"sI": 1,
+		"sM": 1,
+		"sU": 1
+		},
+	"\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/components-font-awesome\/less\/mixins.less": {
+		"aP": 1,
+		"bl": 1,
+		"dJ": 1,
+		"ft": 1,
+		"ie": 1,
+		"iI": 1,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/components-font-awesome\/less\/mixins.less",
+		"oF": 0,
+		"oS": 1,
+		"rU": 1,
+		"sI": 1,
+		"sM": 1,
+		"sU": 1
+		},
+	"\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/components-font-awesome\/less\/path.less": {
+		"aP": 1,
+		"bl": 1,
+		"dJ": 1,
+		"ft": 1,
+		"ie": 1,
+		"iI": 1,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/components-font-awesome\/less\/path.less",
+		"oF": 0,
+		"oS": 1,
+		"rU": 1,
+		"sI": 1,
+		"sM": 1,
+		"sU": 1
+		},
+	"\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/components-font-awesome\/less\/rotated-flipped.less": {
+		"aP": 1,
+		"bl": 1,
+		"dJ": 1,
+		"ft": 1,
+		"ie": 1,
+		"iI": 1,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/components-font-awesome\/less\/rotated-flipped.less",
+		"oF": 0,
+		"oS": 1,
+		"rU": 1,
+		"sI": 1,
+		"sM": 1,
+		"sU": 1
+		},
+	"\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/components-font-awesome\/less\/screen-reader.less": {
+		"aP": 1,
+		"bl": 1,
+		"dJ": 1,
+		"ft": 1,
+		"ie": 1,
+		"iI": 1,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/components-font-awesome\/less\/screen-reader.less",
+		"oF": 0,
+		"oS": 1,
+		"rU": 1,
+		"sI": 1,
+		"sM": 1,
+		"sU": 1
+		},
+	"\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/components-font-awesome\/less\/stacked.less": {
+		"aP": 1,
+		"bl": 1,
+		"dJ": 1,
+		"ft": 1,
+		"ie": 1,
+		"iI": 1,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/components-font-awesome\/less\/stacked.less",
+		"oF": 0,
+		"oS": 1,
+		"rU": 1,
+		"sI": 1,
+		"sM": 1,
+		"sU": 1
+		},
+	"\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/components-font-awesome\/less\/variables.less": {
+		"aP": 1,
+		"bl": 1,
+		"dJ": 1,
+		"ft": 1,
+		"ie": 1,
+		"iI": 1,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/components-font-awesome\/less\/variables.less",
+		"oF": 0,
+		"oS": 1,
+		"rU": 1,
+		"sI": 1,
+		"sM": 1,
+		"sU": 1
+		},
+	"\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/components-font-awesome\/package.json": {
+		"ft": 524288,
+		"oA": 2,
+		"oAP": "\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/components-font-awesome\/package.json",
+		"oF": 0,
+		"oO": 1,
+		"oS": 1
+		},
+	"\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/components-font-awesome\/README.md": {
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"eLB": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 2,
+		"oAP": "\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/components-font-awesome\/README.md",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 1,
+		"pME": 1,
+		"rFN": 1,
+		"uCM": 1
+		},
+	"\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/components-font-awesome\/scss\/_animated.scss": {
+		"aP": 1,
+		"bl": 1,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/components-font-awesome\/scss\/_animated.scss",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/components-font-awesome\/scss\/_bordered-pulled.scss": {
+		"aP": 1,
+		"bl": 1,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/components-font-awesome\/scss\/_bordered-pulled.scss",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/components-font-awesome\/scss\/_core.scss": {
+		"aP": 1,
+		"bl": 1,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/components-font-awesome\/scss\/_core.scss",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/components-font-awesome\/scss\/_fixed-width.scss": {
+		"aP": 1,
+		"bl": 1,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/components-font-awesome\/scss\/_fixed-width.scss",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/components-font-awesome\/scss\/_icons.scss": {
+		"aP": 1,
+		"bl": 1,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/components-font-awesome\/scss\/_icons.scss",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/components-font-awesome\/scss\/_larger.scss": {
+		"aP": 1,
+		"bl": 1,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/components-font-awesome\/scss\/_larger.scss",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/components-font-awesome\/scss\/_list.scss": {
+		"aP": 1,
+		"bl": 1,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/components-font-awesome\/scss\/_list.scss",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/components-font-awesome\/scss\/_mixins.scss": {
+		"aP": 1,
+		"bl": 1,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/components-font-awesome\/scss\/_mixins.scss",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/components-font-awesome\/scss\/_path.scss": {
+		"aP": 1,
+		"bl": 1,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/components-font-awesome\/scss\/_path.scss",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/components-font-awesome\/scss\/_rotated-flipped.scss": {
+		"aP": 1,
+		"bl": 1,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/components-font-awesome\/scss\/_rotated-flipped.scss",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/components-font-awesome\/scss\/_screen-reader.scss": {
+		"aP": 1,
+		"bl": 1,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/components-font-awesome\/scss\/_screen-reader.scss",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/components-font-awesome\/scss\/_stacked.scss": {
+		"aP": 1,
+		"bl": 1,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/components-font-awesome\/scss\/_stacked.scss",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/components-font-awesome\/scss\/_variables.scss": {
+		"aP": 1,
+		"bl": 1,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/components-font-awesome\/scss\/_variables.scss",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/components-font-awesome\/scss\/font-awesome.scss": {
+		"aP": 1,
+		"bl": 1,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 2,
+		"oAP": "\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/components-font-awesome\/scss\/font-awesome.scss",
+		"oF": 0,
 		"oS": 3,
 		"uL": 1
 		},
@@ -11234,41 +11775,59 @@
 		"oO": 1,
 		"oS": 1
 		},
-	"\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/wp-acf-starter\/acf\/carousel.php": {
-		"ft": 8192,
+	"\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/wp-acf-starter\/acf-json\/group_591f020fd5988.json": {
+		"ft": 524288,
 		"oA": 2,
-		"oAP": "\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/wp-acf-starter\/acf\/..\/..\/..\/acf\/carousel.php",
-		"oF": 3
+		"oAP": "\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/wp-acf-starter\/acf-json\/group_591f020fd5988.json",
+		"oF": 0,
+		"oO": 1,
+		"oS": 1
 		},
-	"\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/wp-acf-starter\/acf\/gallery.php": {
-		"ft": 8192,
+	"\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/wp-acf-starter\/acf-json\/group_591f203675af0.json": {
+		"ft": 524288,
 		"oA": 2,
-		"oAP": "\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/wp-acf-starter\/acf\/..\/..\/..\/acf\/gallery.php",
-		"oF": 2
+		"oAP": "\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/wp-acf-starter\/acf-json\/group_591f203675af0.json",
+		"oF": 0,
+		"oO": 1,
+		"oS": 1
 		},
-	"\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/wp-acf-starter\/acf\/map.php": {
-		"ft": 8192,
+	"\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/wp-acf-starter\/acf-json\/group_5922908dbb1e3.json": {
+		"ft": 524288,
 		"oA": 2,
-		"oAP": "\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/wp-acf-starter\/acf\/..\/..\/..\/acf\/map.php",
-		"oF": 2
-		},
-	"\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/wp-acf-starter\/acf\/masonry.php": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/wp-acf-starter\/acf\/..\/..\/..\/acf\/mansory.php",
-		"oF": 2
-		},
-	"\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/wp-acf-starter\/acf\/mosaic.php": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/wp-acf-starter\/acf\/..\/..\/..\/acf\/mosaic.php",
-		"oF": 2
+		"oAP": "\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/wp-acf-starter\/acf-json\/group_5922908dbb1e3.json",
+		"oF": 0,
+		"oO": 1,
+		"oS": 1
 		},
 	"\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/wp-acf-starter\/LICENSE": {
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/wp-acf-starter\/LICENSE",
 		"oF": 1
+		},
+	"\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/wp-acf-starter\/mu-plugins\/apache-auth.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/wp-acf-starter\/mu-plugins\/apache-auth.php",
+		"oF": 0
+		},
+	"\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/wp-acf-starter\/mu-plugins\/maintenance-mode.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/wp-acf-starter\/mu-plugins\/maintenance-mode.php",
+		"oF": 0
+		},
+	"\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/wp-acf-starter\/options-page\/acf.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/wp-acf-starter\/options-page\/acf.php",
+		"oF": 0
+		},
+	"\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/wp-acf-starter\/options-page\/maintenance.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/wp-acf-starter\/options-page\/maintenance.php",
+		"oF": 0
 		},
 	"\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/wp-acf-starter\/README.md": {
 		"cS": 0,
@@ -11287,6 +11846,42 @@
 		"pME": 1,
 		"rFN": 1,
 		"uCM": 1
+		},
+	"\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/wp-acf-starter\/templates\/carousel.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/wp-acf-starter\/templates\/carousel.php",
+		"oF": 0
+		},
+	"\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/wp-acf-starter\/templates\/gallery.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/wp-acf-starter\/templates\/gallery.php",
+		"oF": 0
+		},
+	"\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/wp-acf-starter\/templates\/mansory.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/wp-acf-starter\/templates\/mansory.php",
+		"oF": 0
+		},
+	"\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/wp-acf-starter\/templates\/map.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/wp-acf-starter\/templates\/map.php",
+		"oF": 0
+		},
+	"\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/wp-acf-starter\/templates\/masonry.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/wp-acf-starter\/templates\/masonry.php",
+		"oF": 0
+		},
+	"\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/wp-acf-starter\/templates\/mosaic.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/wp-acf-starter\/templates\/mosaic.php",
+		"oF": 0
 		},
 	"\/app\/public\/wp-content\/themes\/ws-starter-theme\/vendor\/wp-custom-admin\/.bower.json": {
 		"ft": 524288,
@@ -11396,6 +11991,16 @@
 		"opt": 0,
 		"q": 80
 		},
+	"\/app\/public\/wp-content\/uploads\/2017\/05\/john-cobb-13961-40x40.jpg": {
+		"ft": 16384,
+		"iS": 1321,
+		"oA": 0,
+		"oAP": "\/app\/public\/wp-content\/uploads\/2017\/dist\/john-cobb-13961-40x40.min.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 80
+		},
 	"\/app\/public\/wp-content\/uploads\/2017\/05\/john-cobb-13961-510x510.jpg": {
 		"ft": 16384,
 		"iS": 67401,
@@ -11443,7 +12048,7 @@
 		"oAP": "\/app\/public\/wp-content\/uploads\/2017\/dist\/michael-mroczek-124413-150x150.min.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 80
 		},
 	"\/app\/public\/wp-content\/uploads\/2017\/05\/michael-mroczek-124413-1920x1080.jpg": {
@@ -11493,6 +12098,16 @@
 		"oAP": "\/app\/public\/wp-content\/uploads\/2017\/dist\/michael-mroczek-124413-300x200.min.jpg",
 		"oF": 0,
 		"oIPL": 0,
+		"opt": 1,
+		"q": 80
+		},
+	"\/app\/public\/wp-content\/uploads\/2017\/05\/michael-mroczek-124413-40x40.jpg": {
+		"ft": 16384,
+		"iS": 1294,
+		"oA": 0,
+		"oAP": "\/app\/public\/wp-content\/uploads\/2017\/dist\/michael-mroczek-124413-40x40.min.jpg",
+		"oF": 0,
+		"oIPL": 0,
 		"opt": 0,
 		"q": 80
 		},
@@ -11513,7 +12128,7 @@
 		"oAP": "\/app\/public\/wp-content\/uploads\/2017\/dist\/michael-mroczek-124413-768x512.min.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 80
 		},
 	"\/app\/public\/wp-content\/uploads\/2017\/05\/michael-mroczek-124413.jpg": {
@@ -11533,7 +12148,7 @@
 		"oAP": "\/app\/public\/wp-content\/uploads\/2017\/dist\/steinar-engeland-154411-1024x683.min.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 80
 		},
 	"\/app\/public\/wp-content\/uploads\/2017\/05\/steinar-engeland-154411-150x150.jpg": {
@@ -11553,7 +12168,7 @@
 		"oAP": "\/app\/public\/wp-content\/uploads\/2017\/dist\/steinar-engeland-154411-1920x1080.min.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 80
 		},
 	"\/app\/public\/wp-content\/uploads\/2017\/05\/steinar-engeland-154411-1920x180.jpg": {
@@ -11563,7 +12178,7 @@
 		"oAP": "\/app\/public\/wp-content\/uploads\/2017\/dist\/steinar-engeland-154411-1920x180.min.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 80
 		},
 	"\/app\/public\/wp-content\/uploads\/2017\/05\/steinar-engeland-154411-1920x480.jpg": {
@@ -11573,7 +12188,7 @@
 		"oAP": "\/app\/public\/wp-content\/uploads\/2017\/dist\/steinar-engeland-154411-1920x480.min.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 80
 		},
 	"\/app\/public\/wp-content\/uploads\/2017\/05\/steinar-engeland-154411-1920x780.jpg": {
@@ -11583,7 +12198,7 @@
 		"oAP": "\/app\/public\/wp-content\/uploads\/2017\/dist\/steinar-engeland-154411-1920x780.min.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 80
 		},
 	"\/app\/public\/wp-content\/uploads\/2017\/05\/steinar-engeland-154411-300x200.jpg": {
@@ -11596,6 +12211,16 @@
 		"opt": 0,
 		"q": 80
 		},
+	"\/app\/public\/wp-content\/uploads\/2017\/05\/steinar-engeland-154411-40x40.jpg": {
+		"ft": 16384,
+		"iS": 1468,
+		"oA": 0,
+		"oAP": "\/app\/public\/wp-content\/uploads\/2017\/dist\/steinar-engeland-154411-40x40.min.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 80
+		},
 	"\/app\/public\/wp-content\/uploads\/2017\/05\/steinar-engeland-154411-510x510.jpg": {
 		"ft": 16384,
 		"iS": 116617,
@@ -11603,7 +12228,7 @@
 		"oAP": "\/app\/public\/wp-content\/uploads\/2017\/dist\/steinar-engeland-154411-510x510.min.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 80
 		},
 	"\/app\/public\/wp-content\/uploads\/2017\/05\/steinar-engeland-154411-768x512.jpg": {
@@ -11621,6 +12246,150 @@
 		"iS": 9519168,
 		"oA": 0,
 		"oAP": "\/app\/public\/wp-content\/uploads\/2017\/dist\/steinar-engeland-154411.min.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 80
+		},
+	"\/app\/public\/wp-content\/uploads\/2017\/06\/we-150x150.png": {
+		"ft": 32768,
+		"iS": 20296,
+		"oA": 0,
+		"oAP": "\/app\/public\/wp-content\/uploads\/2017\/dist\/we-150x150.min.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 80
+		},
+	"\/app\/public\/wp-content\/uploads\/2017\/06\/we-256x180.png": {
+		"ft": 32768,
+		"iS": 5464,
+		"oA": 0,
+		"oAP": "\/app\/public\/wp-content\/uploads\/2017\/dist\/we-256x180.min.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 80
+		},
+	"\/app\/public\/wp-content\/uploads\/2017\/06\/we-40x40.png": {
+		"ft": 32768,
+		"iS": 1745,
+		"oA": 0,
+		"oAP": "\/app\/public\/wp-content\/uploads\/2017\/dist\/we-40x40.min.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 80
+		},
+	"\/app\/public\/wp-content\/uploads\/2017\/06\/we.png": {
+		"ft": 32768,
+		"iS": 8187,
+		"oA": 0,
+		"oAP": "\/app\/public\/wp-content\/uploads\/2017\/dist\/we.min.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 80
+		},
+	"\/app\/public\/wp-content\/uploads\/2017\/dist\/john-cobb-13961-1920x480.min.jpg": {
+		"ft": 16384,
+		"iS": 189570,
+		"oA": 0,
+		"oAP": "\/app\/public\/wp-content\/uploads\/2017\/dist\/john-cobb-13961-1920x480.min.min.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 80
+		},
+	"\/app\/public\/wp-content\/uploads\/2017\/dist\/michael-mroczek-124413-150x150.min.jpg": {
+		"ft": 16384,
+		"iS": 8354,
+		"oA": 0,
+		"oAP": "\/app\/public\/wp-content\/uploads\/2017\/dist\/michael-mroczek-124413-150x150.min.min.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 80
+		},
+	"\/app\/public\/wp-content\/uploads\/2017\/dist\/michael-mroczek-124413-300x200.min.jpg": {
+		"ft": 16384,
+		"iS": 21102,
+		"oA": 0,
+		"oAP": "\/app\/public\/wp-content\/uploads\/2017\/dist\/michael-mroczek-124413-300x200.min.min.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 80
+		},
+	"\/app\/public\/wp-content\/uploads\/2017\/dist\/michael-mroczek-124413-768x512.min.jpg": {
+		"ft": 16384,
+		"iS": 122575,
+		"oA": 0,
+		"oAP": "\/app\/public\/wp-content\/uploads\/2017\/dist\/michael-mroczek-124413-768x512.min.min.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 80
+		},
+	"\/app\/public\/wp-content\/uploads\/2017\/dist\/steinar-engeland-154411-1024x683.min.jpg": {
+		"ft": 16384,
+		"iS": 273463,
+		"oA": 0,
+		"oAP": "\/app\/public\/wp-content\/uploads\/2017\/dist\/steinar-engeland-154411-1024x683.min.min.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 80
+		},
+	"\/app\/public\/wp-content\/uploads\/2017\/dist\/steinar-engeland-154411-1920x1080.min.jpg": {
+		"ft": 16384,
+		"iS": 703685,
+		"oA": 0,
+		"oAP": "\/app\/public\/wp-content\/uploads\/2017\/dist\/steinar-engeland-154411-1920x1080.min.min.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 80
+		},
+	"\/app\/public\/wp-content\/uploads\/2017\/dist\/steinar-engeland-154411-1920x180.min.jpg": {
+		"ft": 16384,
+		"iS": 128238,
+		"oA": 0,
+		"oAP": "\/app\/public\/wp-content\/uploads\/2017\/dist\/steinar-engeland-154411-1920x180.min.min.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 80
+		},
+	"\/app\/public\/wp-content\/uploads\/2017\/dist\/steinar-engeland-154411-1920x480.min.jpg": {
+		"ft": 16384,
+		"iS": 335069,
+		"oA": 0,
+		"oAP": "\/app\/public\/wp-content\/uploads\/2017\/dist\/steinar-engeland-154411-1920x480.min.min.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 80
+		},
+	"\/app\/public\/wp-content\/uploads\/2017\/dist\/steinar-engeland-154411-1920x780.min.jpg": {
+		"ft": 16384,
+		"iS": 525276,
+		"oA": 0,
+		"oAP": "\/app\/public\/wp-content\/uploads\/2017\/dist\/steinar-engeland-154411-1920x780.min.min.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 80
+		},
+	"\/app\/public\/wp-content\/uploads\/2017\/dist\/steinar-engeland-154411-510x510.min.jpg": {
+		"ft": 16384,
+		"iS": 110926,
+		"oA": 0,
+		"oAP": "\/app\/public\/wp-content\/uploads\/2017\/dist\/steinar-engeland-154411-510x510.min.min.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,

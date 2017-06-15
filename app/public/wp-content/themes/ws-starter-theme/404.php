@@ -2,26 +2,23 @@
 
     <div class="main">
 
-<?php if (!wb_get('is_block')): ?>
       <div class="container">
-<?php endif ?>
 
-        <div class="page not-found">
+        <div class="page 404">
 
           <div class="page-header">
-            <h1><?php _e( 'Page not found', 'wb' ); ?></h1>
-          </div>
+            <h1 class="page-title"><?php _e( 'Page not found', 'ws-starter' ); ?></h1>
+          </div><!-- .page-header -->
 
           <div class="page-body">
-            <p><?php _e( 'It seems than what you\'re looking for is no longer here.', 'wb' ); ?></p>
-          </div>
+            <p><?php _e( 'It seems than what you\'re looking for is no longer here.', 'ws-starter' ); ?></p>
+            <a href="<?php echo home_url() ?>" title="<?php _e( 'Back to the homepage', 'ws-starter' ); ?>" rel="home"><?php _e( 'Back to the homepage', 'ws-starter' ); ?></a>
+          </div><!-- .page-body -->
 
-        </div><!-- /.page -->
+        </div><!-- .page -->
 
-<?php if (!wb_get('is_block')): ?>
-      </div><!-- /.container -->
-<?php endif ?>
+      </div><!-- .container -->
 
-    </div><!-- /.main -->
+    </div><!-- .main -->
 
 <?php get_footer(); ?>
