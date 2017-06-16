@@ -1,9 +1,5 @@
 <?php
 
-////////////////////////////////////////////////////////////////////////////////
-// Init
-////////////////////////////////////////////////////////////////////////////////
-
 // Registers custom post types
 add_action( 'init', function() {
 
@@ -46,41 +42,31 @@ add_action( 'init', function() {
     'after_title'   => '</h1>'
   ));
 
-  register_sidebar(array(
-    'name'          => 'Footer',
-    'id'            => 'footer',
-    'description'   => 'Footer blocks',
-    'before_widget' => '<section id="%1$s" class="widget %2$s">',
-    'after_widget'  => '</section>',
-    'before_title'  => '<h1>',
-    'after_title'   => '</h1>'
-  ));
-
 });
-
-////////////////////////////////////////////////////////////////////////////////
-// Setup
-////////////////////////////////////////////////////////////////////////////////
 
 add_action( 'after_setup_theme', function() {
 
-    load_theme_textdomain( 'ws-starter', get_template_directory() . '/languages' );
+  load_theme_textdomain( 'ws-starter', get_template_directory() . '/languages' );
 
-    register_nav_menus(array(
-      'main'   => __( 'Main', 'ws-starter' ),
-      'footer' => __( 'Footer', 'ws-starter' )
-    ));
+  register_nav_menus(array(
+    'main'   => __( 'Main', 'ws-starter' )
+  ));
 
-    add_theme_support( 'automatic-feed-links' );
-    add_theme_support( 'post-thumbnails' );
+  add_theme_support( 'automatic-feed-links' );
+  add_theme_support( 'post-thumbnails' );
 
-    add_image_size( 'brand', 40, 40, true );
-
-    add_image_size( '510x510', 510, 510, true );
-    add_image_size( '1920x180', 1920, 180, true );
-    add_image_size( '1920x480', 1920, 480, true );
-    add_image_size( '1920x780', 1920, 780, true );
-    add_image_size( '1920x1080', 1920, 1080, true );
+  add_image_size('col-4', 370);
+  add_image_size('col-8', 750);
+  add_image_size('col-12', 1130);
+  add_image_size( '90x90', 90, 90, true );
+  add_image_size( '160x160', 160, 160, true );
+  add_image_size( '255x255', 255, 255, true );
+  add_image_size( '350x350', 350, 350, true );
+  add_image_size( '510x510', 510, 510, true );
+  add_image_size( '1920x180', 1920, 180, true );
+  add_image_size( '1920x480', 1920, 480, true );
+  add_image_size( '1920x780', 1920, 780, true );
+  add_image_size( '1920x1080', 1920, 1080, true );
 
 });
 

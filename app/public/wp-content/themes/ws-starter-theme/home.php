@@ -6,7 +6,7 @@
       <div class="container">
 
         <div class="page-header">
-          <h1 class="page-title"><?php wb_title(); ?></h1>
+          <h1 class="page-title"><?php get_the_title(); ?></h1>
         </div><!-- .page-header -->
 
         <div class="row">
@@ -17,7 +17,7 @@
 
               <?php if ( have_posts() ) :
                       while ( have_posts() ) : the_post();
-                        ws_get_block( 'loop' );
+                        get_article();
                       endwhile;
                     else: ?>
 
@@ -30,14 +30,12 @@
             </div><!-- .page-body -->
 
             <div class="page-footer">
-              <?php wb_pagination(); ?>
+
             </div><!-- .page-footer -->
 
           </div>
 
-          <div class="col-sm-3">
-            <?php get_sidebar(); ?>
-          </div>
+          <?php get_sidebar(); ?>
 
         </div><!-- .row -->
 

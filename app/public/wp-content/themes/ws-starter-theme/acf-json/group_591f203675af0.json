@@ -3,6 +3,25 @@
     "title": "Carousel Options",
     "fields": [
         {
+            "key": "field_5943ff6afaeac",
+            "label": "Full width",
+            "name": "carousel_options_full_width",
+            "type": "true_false",
+            "instructions": "The carousel takes the full width of the page or not.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
             "key": "field_591f203679766",
             "label": "Interval",
             "name": "carousel_options_interval",
@@ -86,7 +105,7 @@
             {
                 "param": "options_page",
                 "operator": "==",
-                "value": "acf-options-general"
+                "value": "acf-options-layouts"
             }
         ]
     ],
@@ -98,5 +117,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1496131850
+    "modified": 1497628590
 }

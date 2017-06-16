@@ -1,16 +1,16 @@
 <?php
 
-  $ID              = get_the_id();                                                              // acf_dump( '$ID', $ID );
-  $images          = get_sub_field( $args[ 'FLEX_FIELD' ] . '_images' );                        // acf_dump( '$images', $images );
-  $size            = get_sub_field( $args[ 'FLEX_FIELD' ] . '_size' );                          // acf_dump( '$size', $size );
-  $show_title      = get_sub_field( $args[ 'FLEX_FIELD' ] . '_title' );                         // acf_dump( '$show_title', $show_title );
-  $show_caption    = get_sub_field( $args[ 'FLEX_FIELD' ] . '_caption' );                       // acf_dump( '$show_caption', $show_caption );
-  $show_controls   = get_sub_field( $args[ 'FLEX_FIELD' ] . '_controls' );                      // acf_dump( '$show_controls', $show_controls );
-  $show_indicators = get_sub_field( $args[ 'FLEX_FIELD' ] . '_indicators' );                    // acf_dump( '$show_indicators', $show_indicators );
-  $interval        = ws_get_option( $args[ 'OPTIONS_FIELD' ] . '_interval', 5000 );             // acf_dump( '$interval', $interval );
-  $pause           = ws_get_option( $args[ 'OPTIONS_FIELD' ] . '_pause', null, 'hover' );       // acf_dump( '$pause', $pause );
-  $wrap            = ws_get_option( $args[ 'OPTIONS_FIELD' ] . '_wrap', 'false', 'true' );      // acf_dump( '$wrap', $wrap );
-  $keyboard        = ws_get_option( $args[ 'OPTIONS_FIELD' ] . '_keyboard', 'false', 'true' );  // acf_dump( '$keyboard', $keyboard );
+  $ID              = get_the_id();                                                        // acf_dump( '$ID', $ID );
+  $images          = get_sub_field( $args[ 'FLEX' ] . '_images' );                        // acf_dump( '$images', $images );
+  $size            = get_sub_field( $args[ 'FLEX' ] . '_size' );                          // acf_dump( '$size', $size );
+  $show_title      = get_sub_field( $args[ 'FLEX' ] . '_title' );                         // acf_dump( '$show_title', $show_title );
+  $show_caption    = get_sub_field( $args[ 'FLEX' ] . '_caption' );                       // acf_dump( '$show_caption', $show_caption );
+  $show_controls   = get_sub_field( $args[ 'FLEX' ] . '_controls' );                      // acf_dump( '$show_controls', $show_controls );
+  $show_indicators = get_sub_field( $args[ 'FLEX' ] . '_indicators' );                    // acf_dump( '$show_indicators', $show_indicators );
+  $interval        = get_acf_option( $args[ 'OPTION' ] . '_interval', 5000 );             // acf_dump( '$interval', $interval );
+  $pause           = get_acf_option( $args[ 'OPTION' ] . '_pause', null, 'hover' );       // acf_dump( '$pause', $pause );
+  $wrap            = get_acf_option( $args[ 'OPTION' ] . '_wrap', 'false', 'true' );      // acf_dump( '$wrap', $wrap );
+  $keyboard        = get_acf_option( $args[ 'OPTION' ] . '_keyboard', 'false', 'true' );  // acf_dump( '$keyboard', $keyboard );
 
 ?>
 

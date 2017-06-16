@@ -1,26 +1,47 @@
 <?php
 
-////////////////////////////////////////////////////////////////////////////////
-// ! Advanced Custom Fields
-////////////////////////////////////////////////////////////////////////////////
-
-// Register get_template_part function for acf
-function ws_get_acf( $file, $variables = null ) {
-	return ws_get_template_part( 'acf/' . $file, $variables );
-}
-
-// Register custom get_field function
-function ws_get_field( $field, $id = NULL, $format = NULL ) {
-	return class_exists('acf') ? get_field( $field, $id, $format ) : false;
-}
-
-// Register custom get_field function for option page
-function ws_get_option( $field, $fallback = false, $success = true ) {
+ // Register custom get_field function for option page
+function get_acf_option( $field, $fallback = false, $success = true ) {
 	if ( !class_exists('acf') ) return false;
 	if ( get_field_object( $field, 'option' )['type'] == 'true_false' )
 		return get_field( $field, 'option' ) ? $success : $fallback;
 	else
 		return get_field( $field, 'option' ) ?: $fallback;
+}
+
+// Register get_template_part function for acf templates
+function get_acf_template( $file, $variables = null ) {
+	return ws_get_template_part( 'acf/' . $file, $variables );
+}
+
+// Register get_template_part function for acf layouts
+function get_acf_layouts() {
+	return get_template_part( 'acf/layouts' );
+}
+
+// Register get_template_part function for acf map
+function get_map() {
+	return get_template_part( 'acf/map' );
+}
+
+// Register get_template_part function for the carousel
+function get_carousel( $show = CAROUSEL_FULL_WIDTH, $flex_field = 'layout_carousel', $options_field ='carousel_options' ) {
+	return !$show ?: get_acf_template( 'carousel', [ 'FLEX' => $flex_field, 'OPTION' => $options_field ] );
+}
+
+// Register get_template_part function for the gallery
+function get_gallery( $flex_field = 'layout_gallery', $options_field ='gallery_options' ) {
+	return get_acf_template( 'gallery', [ 'FLEX' => $flex_field, 'OPTION' => $options_field ] );
+}
+
+// Register get_template_part function for the mosaic
+function get_mosaic( $flex_field = 'layout_mosaic', $options_field ='mosaic_options' ) {
+	return get_acf_template( 'mosaic', [ 'FLEX' => $flex_field, 'OPTION' => $options_field ] );
+}
+
+// Register get_template_part function for the masonry
+function get_masonry( $flex_field = 'layout_masonry', $options_field ='masonry_options' ) {
+	return get_acf_template( 'masonry', [ 'FLEX' => $flex_field, 'OPTION' => $options_field ] );
 }
 
 // Check if ACF Pro plugin is installed and activated
@@ -56,6 +77,11 @@ if( function_exists('acf_add_options_page') ) :
 
 	acf_add_options_sub_page( array(
 		'page_title'  => 'General',
+		'parent_slug' => $parent['menu_slug'],
+	));
+
+	acf_add_options_sub_page( array(
+		'page_title'  => 'Layouts',
 		'parent_slug' => $parent['menu_slug'],
 	));
 

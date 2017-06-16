@@ -1,0 +1,15 @@
+.widget {
+  @extend .mb-3;
+  @extend .pb-3;
+  border-bottom: 1px solid $gray-lighter;
+
+  h1 {
+    @extend .h3;
+  }
+
+  ul {
+    @extend .nav;
+    @extend .nav-pills;
+  }
+
+}

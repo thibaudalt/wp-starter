@@ -27,7 +27,7 @@
                             "label": "Images",
                             "name": "layout_carousel_images",
                             "type": "gallery",
-                            "instructions": "The images that will be displayed in the carousel.<\/br>Select between 1 and 10.",
+                            "instructions": "The images that will be displayed in the carousel.<\/br>Select between 1 and 6.",
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
@@ -36,7 +36,7 @@
                                 "id": ""
                             },
                             "min": 1,
-                            "max": 10,
+                            "max": 6,
                             "insert": "append",
                             "library": "all",
                             "min_width": "",
@@ -97,7 +97,7 @@
                             "label": "Caption",
                             "name": "layout_carousel_caption",
                             "type": "true_false",
-                            "instructions": "Show \/ Hide the images captions.",
+                            "instructions": "Show \/ Hide the images caption.",
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
@@ -155,145 +155,139 @@
                 },
                 "5811f98e9bfbc": {
                     "key": "5811f98e9bfbc",
-                    "name": "gallery",
-                    "label": "Galerie",
+                    "name": "layout_gallery",
+                    "label": "Gallery",
                     "display": "row",
                     "sub_fields": [
                         {
                             "key": "field_5811f98e9bfbd",
-                            "label": "Photos",
-                            "name": "gallery_images",
+                            "label": "Images",
+                            "name": "layout_gallery_images",
                             "type": "gallery",
-                            "instructions": "",
-                            "required": 1,
-                            "conditional_logic": "",
+                            "instructions": "The images that will be displayed in the gallery.\r\nSelect between 1 and 12.",
+                            "required": 0,
+                            "conditional_logic": 0,
                             "wrapper": {
                                 "width": "",
                                 "class": "",
                                 "id": ""
                             },
+                            "min": 1,
+                            "max": 12,
                             "insert": "append",
-                            "library": "",
-                            "max": "",
-                            "max_height": "",
-                            "max_size": "",
-                            "max_width": "",
-                            "mime_types": "",
-                            "min": "",
+                            "library": "all",
+                            "min_width": "",
                             "min_height": "",
                             "min_size": "",
-                            "min_width": "",
-                            "preview_size": "thumbnail"
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": ""
                         },
                         {
                             "key": "field_581c9c3ebd56c",
-                            "label": "Images par ligne (Desktop)",
-                            "name": "gallery_col_lg",
+                            "label": "Images per line (Desktop)",
+                            "name": "layout_gallery_col_lg",
                             "type": "radio",
-                            "instructions": "Nombres d'images par lignes pour les ordinateur.",
-                            "required": 1,
+                            "instructions": "Number of images per line for computers.",
+                            "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
                                 "width": "",
                                 "class": "",
                                 "id": ""
                             },
-                            "allow_null": 0,
                             "choices": {
-                                "1": 12,
-                                "2": 6,
-                                "3": 4,
-                                "4": 3,
-                                "6": 2
+                                "1": "12",
+                                "2": "6",
+                                "3": "4",
+                                "4": "3",
+                                "6": "2"
                             },
-                            "default_value": "",
-                            "layout": "horizontal",
+                            "allow_null": 0,
                             "other_choice": 0,
-                            "return_format": "value",
-                            "save_other_choice": 0
+                            "save_other_choice": 0,
+                            "default_value": 1,
+                            "layout": "horizontal",
+                            "return_format": "value"
                         },
                         {
                             "key": "field_581c9e89fef05",
-                            "label": "Images par ligne (Tablet)",
-                            "name": "gallery_col_md",
+                            "label": "Images per line (Tablet)",
+                            "name": "layout_gallery_col_md",
                             "type": "radio",
-                            "instructions": "Nombres d'images par lignes pour les tablettes.",
-                            "required": 1,
+                            "instructions": "Number of images per line for tablets.",
+                            "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
                                 "width": "",
                                 "class": "",
                                 "id": ""
                             },
-                            "allow_null": 0,
                             "choices": {
-                                "2": 6,
-                                "3": 4,
-                                "4": 3,
-                                "6": 2
+                                "2": "6",
+                                "3": "4",
+                                "4": "3",
+                                "6": "2"
                             },
-                            "default_value": "",
-                            "layout": "horizontal",
+                            "allow_null": 0,
                             "other_choice": 0,
-                            "return_format": "value",
-                            "save_other_choice": 0
+                            "save_other_choice": 0,
+                            "default_value": 2,
+                            "layout": "horizontal",
+                            "return_format": "value"
                         },
                         {
                             "key": "field_581c9edafef06",
-                            "label": "Images par ligne (Phone)",
-                            "name": "gallery_col_xs",
+                            "label": "Images per line (Phone)",
+                            "name": "layout_gallery_col_xs",
                             "type": "radio",
-                            "instructions": "Nombres d'images par lignes pour les téléphones.",
-                            "required": 1,
+                            "instructions": "Number of images per line for phones.",
+                            "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
                                 "width": "",
                                 "class": "",
                                 "id": ""
                             },
-                            "allow_null": 0,
                             "choices": {
-                                "3": 4,
-                                "4": 3,
-                                "6": 2
+                                "3": "4",
+                                "4": "3",
+                                "6": "2"
                             },
-                            "default_value": "",
-                            "layout": "horizontal",
+                            "allow_null": 0,
                             "other_choice": 0,
-                            "return_format": "value",
-                            "save_other_choice": 0
+                            "save_other_choice": 0,
+                            "default_value": 3,
+                            "layout": "horizontal",
+                            "return_format": "value"
                         },
                         {
                             "key": "field_581c6f4357abc",
                             "label": "Lightbox",
-                            "name": "gallery_lightbox",
-                            "type": "radio",
-                            "instructions": "Afficher la lightbox.",
-                            "required": 1,
+                            "name": "layout_gallery_lightbox",
+                            "type": "true_false",
+                            "instructions": "Show \/ Hide the image lightbox.",
+                            "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
                                 "width": "",
                                 "class": "",
                                 "id": ""
                             },
-                            "allow_null": 0,
-                            "choices": [
-                                "Non",
-                                "Oui"
-                            ],
-                            "default_value": "",
-                            "layout": "horizontal",
-                            "other_choice": 0,
-                            "return_format": "value",
-                            "save_other_choice": 0
+                            "message": "",
+                            "default_value": 0,
+                            "ui": 1,
+                            "ui_on_text": "Show",
+                            "ui_off_text": "Hide"
                         },
                         {
                             "key": "field_581c58e521c21",
-                            "label": "Titre",
-                            "name": "gallery_title",
-                            "type": "radio",
-                            "instructions": "Afficher les titres des images.",
-                            "required": 1,
+                            "label": "Title",
+                            "name": "layout_gallery_title",
+                            "type": "true_false",
+                            "instructions": "Show \/ Hide the images title.",
+                            "required": 0,
                             "conditional_logic": [
                                 [
                                     {
@@ -308,24 +302,19 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "allow_null": 0,
-                            "choices": [
-                                "Non",
-                                "Oui"
-                            ],
-                            "default_value": "",
-                            "layout": "horizontal",
-                            "other_choice": 0,
-                            "return_format": "value",
-                            "save_other_choice": 0
+                            "message": "",
+                            "default_value": 0,
+                            "ui": 1,
+                            "ui_on_text": "Show",
+                            "ui_off_text": "Hide"
                         },
                         {
                             "key": "field_581c591f8b81e",
-                            "label": "Légende",
-                            "name": "gallery_caption",
-                            "type": "radio",
-                            "instructions": "Afficher les légendes des images.",
-                            "required": 1,
+                            "label": "Caption",
+                            "name": "layout_gallery_caption",
+                            "type": "true_false",
+                            "instructions": "Show \/ Hide the images caption.",
+                            "required": 0,
                             "conditional_logic": [
                                 [
                                     {
@@ -340,16 +329,11 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "allow_null": 0,
-                            "choices": [
-                                "Non",
-                                "Oui"
-                            ],
-                            "default_value": "",
-                            "layout": "horizontal",
-                            "other_choice": 0,
-                            "return_format": "value",
-                            "save_other_choice": 0
+                            "message": "",
+                            "default_value": 0,
+                            "ui": 1,
+                            "ui_on_text": "Show",
+                            "ui_off_text": "Hide"
                         }
                     ],
                     "min": "0",
@@ -441,73 +425,67 @@
                     "min": "0",
                     "max": "1"
                 },
-                "58a2d63956a62": {
-                    "key": "58a2d63956a62",
-                    "name": "masonry",
+                "5943eebfbc9b9": {
+                    "key": "5943eebfbc9b9",
+                    "name": "layout_masonry",
                     "label": "Masonry",
                     "display": "row",
                     "sub_fields": [
                         {
-                            "key": "field_58a2d63956a63",
-                            "label": "Photos",
-                            "name": "masonry_images",
+                            "key": "field_5943eebfbc9ba",
+                            "label": "Images",
+                            "name": "layout_masonry_images",
                             "type": "gallery",
-                            "instructions": "",
-                            "required": 1,
+                            "instructions": "The images that will be displayed in the gallery.\r\nSelect between 1 and 14.",
+                            "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
                                 "width": "",
                                 "class": "",
                                 "id": ""
                             },
+                            "min": 1,
+                            "max": 14,
                             "insert": "append",
                             "library": "all",
-                            "max": "",
-                            "max_height": "",
-                            "max_size": "",
-                            "max_width": "",
-                            "mime_types": "",
-                            "min": "",
+                            "min_width": "",
                             "min_height": "",
                             "min_size": "",
-                            "min_width": "",
-                            "preview_size": "thumbnail"
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": ""
                         },
                         {
-                            "key": "field_58a2d63956a67",
+                            "key": "field_5943eebfbc9be",
                             "label": "Lightbox",
-                            "name": "masonry_lightbox",
-                            "type": "radio",
-                            "instructions": "Afficher la lightbox.",
-                            "required": 1,
+                            "name": "layout_masonry_lightbox",
+                            "type": "true_false",
+                            "instructions": "Show \/ Hide the image lightbox.",
+                            "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
                                 "width": "",
                                 "class": "",
                                 "id": ""
                             },
-                            "allow_null": 0,
-                            "choices": [
-                                "Non",
-                                "Oui"
-                            ],
-                            "default_value": "",
-                            "layout": "horizontal",
-                            "other_choice": 0,
-                            "return_format": "value",
-                            "save_other_choice": 0
+                            "message": "",
+                            "default_value": 0,
+                            "ui": 1,
+                            "ui_on_text": "Show",
+                            "ui_off_text": "Hide"
                         },
                         {
-                            "key": "field_58a2d63956a68",
-                            "label": "Titre",
-                            "name": "masonry_title",
-                            "type": "radio",
-                            "instructions": "Afficher les titres des images.",
-                            "required": 1,
+                            "key": "field_5943eebfbc9bf",
+                            "label": "Title",
+                            "name": "layout_masonry_title",
+                            "type": "true_false",
+                            "instructions": "Show \/ Hide the images title.",
+                            "required": 0,
                             "conditional_logic": [
                                 [
                                     {
-                                        "field": "field_58a2d63956a67",
+                                        "field": "field_5943eebfbc9be",
                                         "operator": "==",
                                         "value": "1"
                                     }
@@ -518,28 +496,23 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "allow_null": 0,
-                            "choices": [
-                                "Non",
-                                "Oui"
-                            ],
-                            "default_value": "",
-                            "layout": "horizontal",
-                            "other_choice": 0,
-                            "return_format": "value",
-                            "save_other_choice": 0
+                            "message": "",
+                            "default_value": 0,
+                            "ui": 1,
+                            "ui_on_text": "Show",
+                            "ui_off_text": "Hide"
                         },
                         {
-                            "key": "field_58a2d63956a69",
-                            "label": "Légende",
-                            "name": "masonry_caption",
-                            "type": "radio",
-                            "instructions": "Afficher les légendes des images.",
-                            "required": 1,
+                            "key": "field_5943eebfbc9c0",
+                            "label": "Caption",
+                            "name": "layout_masonry_caption",
+                            "type": "true_false",
+                            "instructions": "Show \/ Hide the images caption.",
+                            "required": 0,
                             "conditional_logic": [
                                 [
                                     {
-                                        "field": "field_58a2d63956a67",
+                                        "field": "field_5943eebfbc9be",
                                         "operator": "==",
                                         "value": "1"
                                     }
@@ -550,16 +523,11 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "allow_null": 0,
-                            "choices": [
-                                "Non",
-                                "Oui"
-                            ],
-                            "default_value": "",
-                            "layout": "horizontal",
-                            "other_choice": 0,
-                            "return_format": "value",
-                            "save_other_choice": 0
+                            "message": "",
+                            "default_value": 0,
+                            "ui": 1,
+                            "ui_on_text": "Show",
+                            "ui_off_text": "Hide"
                         }
                     ],
                     "min": "0",
@@ -602,5 +570,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1497529375
+    "modified": 1497628513
 }

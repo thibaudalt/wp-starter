@@ -1,0 +1,169 @@
+{
+    "key": "group_5943ed088ca42",
+    "title": "Masonry Options",
+    "fields": [
+        {
+            "key": "field_5943ed08915ce",
+            "label": "Nav on touch devices",
+            "name": "masonry_options_nav_touch",
+            "type": "true_false",
+            "instructions": "Show \/ Hide Nav on touch devices.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "Show",
+            "ui_off_text": "Hide"
+        },
+        {
+            "key": "field_5943ed0891603",
+            "label": "Lightbox images numbers",
+            "name": "masonry_options_images_numbers",
+            "type": "true_false",
+            "instructions": "Show \/ Hide the text below the caption.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "Show",
+            "ui_off_text": "Hide"
+        },
+        {
+            "key": "field_5943ed0891635",
+            "label": "Lightbox images label",
+            "name": "masonry_options_album_label",
+            "type": "text",
+            "instructions": "The text displayed below the caption.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5943ed0891603",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Image %1 sur %2",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5943ed0891666",
+            "label": "Lightbox page scrolling",
+            "name": "masonry_options_page_scrolling",
+            "type": "true_false",
+            "instructions": "Enable \/ Disabled the page scrolling.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5943ed0891696",
+            "label": "Lightbox cycle continuously",
+            "name": "masonry_options_wrap",
+            "type": "true_false",
+            "instructions": "Cycle continuously or have hard stops.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5943ed08916c5",
+            "label": "Lightbox fade duration",
+            "name": "masonry_options_fade",
+            "type": "number",
+            "instructions": "The time for the Lightbox to show up in ms.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 500,
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": "",
+            "max": "",
+            "step": ""
+        },
+        {
+            "key": "field_5943ed0891754",
+            "label": "Lightbox resize duration",
+            "name": "masonry_options_resize",
+            "type": "number",
+            "instructions": "The time for the container to animate transition in ms",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 500,
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": "",
+            "max": "",
+            "step": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-layouts"
+            }
+        ]
+    ],
+    "menu_order": 10,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "left",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1497623865
+}

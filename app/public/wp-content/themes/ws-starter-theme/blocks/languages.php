@@ -1,31 +1,16 @@
 <?php
+  if ( !function_exists( 'icl_get_languages' ) || !defined( 'ICL_LANGUAGE_CODE' ) )
+    return;
+?>
 
-if (!function_exists('icl_get_languages') || !defined('ICL_LANGUAGE_CODE')):
-  return;
-endif;
+<ul class="languages nav navbar-nav">
 
-$languages = icl_get_languages();
+  <?php foreach ( icl_get_languages() as $lang ) : ?>
 
-if ($languages):
-?>
-<ul class="languages">
-<?php
-  foreach ($languages as $lang):
-    $code = $lang['language_code'];
-    $url  = $lang['url'];
+    <li class="nav-item <?php if ( $lang['language_code'] == ICL_LANGUAGE_CODE ) echo 'active'; ?>">
+      <a class="p-1 nav-link" href="<?php echo $lang[ 'url' ]; ?>"><?php echo strtoupper($lang['language_code']); ?></a>
+    </li>
 
-    if ($code == ICL_LANGUAGE_CODE):
-?>
-  <li class="active"><a href="<?php echo $url; ?>"><?php echo strtoupper($code); ?></a></li>
-<?php
-    else:
-?>
-  <li><a href="<?php echo $url; ?>"><?php echo strtoupper($code); ?></a></li>
-<?php
-    endif;
-  endforeach;
-?>
-</ul>
-<?php
-endif;
-?>
+  <?php endforeach; ?>
+
+</ul><!-- .languages -->

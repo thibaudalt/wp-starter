@@ -5,9 +5,9 @@
   <meta charset="<?php bloginfo( 'charset' ) ?>" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="author" content="We studio" />
-  <title><?php wb_page_title() ?></title>
+  <title><?php get_page_title() ?></title>
   <link rel="pingback" href="<?php bloginfo( 'pingback_url' ) ?>" />
-  <?php ws_get_block( 'favicons' ) ?>
+  <?php get_favicons() ?>
   <?php wp_head() ?>
 </head>
 
@@ -21,7 +21,7 @@
       </button>
 
       <a class="navbar-brand p-0" href="<?php echo home_url() ?>" title="<?php echo get_bloginfo( 'name' ) ?>" rel="home">
-        <img src="<?php echo get_site_icon_url( 40 ) ?>" alt="<?php echo get_bloginfo( 'name' ) ?>"/>
+        <img src="<?php echo get_template_directory_uri() ?>/assets/images/brand.png" alt="<?php echo get_bloginfo( 'name' ) ?>"/>
       </a>
 
       <div id="main-menu" class="collapse navbar-collapse">
@@ -35,6 +35,10 @@
         ?>
 
       </div><!-- .main-menu -->
+
+      <nav class="languages navbar-text">
+        <?php get_languages() ?>
+      </nav><!-- /.languages -->
 
     </div><!-- .container -->
   </header><!-- .header -->

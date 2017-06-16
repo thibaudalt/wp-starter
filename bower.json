@@ -38,5 +38,8 @@
     "wp-acf-starter": "https://github.com/thibaudalt/wp-acf-starter.git",
     "wp-custom-admin": "https://github.com/thibaudalt/wp-custom-admin.git",
     "cover": "https://github.com/Ascarius/cover.git"
+  },
+  "resolutions": {
+    "jquery": ">=1.9.1"
   }
 }

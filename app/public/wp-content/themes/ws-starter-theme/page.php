@@ -6,12 +6,14 @@
 
       <div <?php post_class() ?>>
 
-        <?php ws_get_acf( 'layouts' ) ?>
+        <?php get_carousel() ?>
 
         <div class="container">
 
+          <?php get_acf_layouts() ?>
+
           <div class="page-header">
-            <?php get_template_part( 'blocks/edit-buttons' ) ?>
+            <?php get_edit_button() ?>
             <h1 class="page-title"><?php the_title() ?></h1>
           </div><!-- .page-header -->
 

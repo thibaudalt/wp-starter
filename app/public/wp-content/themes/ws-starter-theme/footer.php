@@ -1,13 +1,19 @@
-<footer class="footer navbar navbar-light bg-faded">
+<footer class="footer navbar navbar-toggleable-md navbar-light bg-faded">
   <div class="container">
 
-    <nav class="credits pull-right">
+    <div class="collapse navbar-collapse">
 
-      <small>&copy <?php echo get_bloginfo('name').' '.date('Y') ?> | <?php __( 'Developed by', 'ws-starter' ) ?>
-        <a href="https://we-studio.ch/" target="_blank">We studio</a>
-      </small>
+      <?php get_socials_networks() ?>
 
-    </nav><!-- /.credits -->
+      <nav class="credits navbar-text">
+
+        <small>&copy <?php echo get_bloginfo('name').' '.date('Y') ?> | <?php __( 'Developed by', 'ws-starter' ) ?>
+          <a href="https://we-studio.ch/" target="_blank">We studio</a>
+        </small>
+
+      </nav><!-- /.credits -->
+
+    </div><!-- .footer-menu -->
 
   </div><!-- /.container -->
 </footer><!-- /.footer -->

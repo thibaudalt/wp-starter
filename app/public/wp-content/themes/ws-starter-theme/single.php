@@ -6,24 +6,24 @@
 
       <div <?php post_class() ?>>
 
-        <?php ws_get_acf( 'layouts' ) ?>
+        <?php get_acf_layouts() ?>
 
         <div class="container">
 
-          <div class="post-header mt-3">
-            <?php get_template_part( 'blocks/edit-buttons' ) ?>
-            <h1 class="post-title"><?php the_title() ?></h1>
-          </div><!-- .post-header -->
+          <div class="page-header">
+            <?php get_edit_button() ?>
+            <h1 class="page-title"><?php the_title() ?></h1>
+          </div><!-- .page-header -->
 
-          <div class="post-body">
+          <div class="page-body">
             <div class="content">
               <?php the_content() ?>
             </div>
-          </div><!-- .post-body -->
+          </div><!-- .page-body -->
 
-          <div class="post-footer">
-            <?php wb_pager() ?>
-          </div><!-- .post-footer -->
+          <div class="page-footer">
+            <?php get_navigation() ?>
+          </div><!-- .page-footer -->
 
         </div><!-- .container -->
 

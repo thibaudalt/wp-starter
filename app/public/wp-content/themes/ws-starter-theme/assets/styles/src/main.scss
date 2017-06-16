@@ -1,23 +1,10 @@
 @import "bourbon";
 @import "../../../vendor/bootstrap/scss/bootstrap.scss";
 @import "../../../vendor/components-font-awesome/css/font-awesome.css";
+@import "../../../vendor/lightbox2/dist/css/lightbox.css";
 @import "_variables.scss";
-// @import "_offcanvas.scss";
-
-* {
-  outline: none !important;
-}
-
-body {
-  padding-top: $header-height;
-}
-
-header {
-  height: $header-height;
-}
-
-footer {
-  height: $footer-height;
-}
-
-@import "_pages.scss"
+@import "_reboot.scss";
+@import "_masonry.scss";
+@import "_mosaic.scss";
+@import "_pages.scss";
+@import "_archives.scss";

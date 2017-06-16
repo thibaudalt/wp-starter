@@ -7,7 +7,7 @@ define('MAP_DRAGGABLE',           TRUE);    // (Boolean)  False prevent the map 
 define('MAP_SCROLLWHEEL',         TRUE);    // (Boolean)  False disables scrollwheel zooming on the map
 define('MAP_ZOOM',                14);      // (Number)   The initial Map zoom level
 
-if( function_exists('get_field') && $map = ws_get_field(constant('MAP_MAIN_FIELD')) ):
+if( function_exists('get_field') && $map = get_field(constant('MAP_MAIN_FIELD')) ):
   $ID         = get_the_id();       // acf_dump('$ID', $ID);
   $address    = $map['address'];    // acf_dump('$addr', $addr);
   $lat        = $map['lat'];        // acf_dump('$lat', $lat);
