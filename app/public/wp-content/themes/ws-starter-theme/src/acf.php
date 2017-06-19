@@ -1,49 +1,5 @@
 <?php
 
- // Register custom get_field function for option page
-function get_acf_option( $field, $fallback = false, $success = true ) {
-	if ( !class_exists('acf') ) return false;
-	if ( get_field_object( $field, 'option' )['type'] == 'true_false' )
-		return get_field( $field, 'option' ) ? $success : $fallback;
-	else
-		return get_field( $field, 'option' ) ?: $fallback;
-}
-
-// Register get_template_part function for acf templates
-function get_acf_template( $file, $variables = null ) {
-	return ws_get_template_part( 'acf/' . $file, $variables );
-}
-
-// Register get_template_part function for acf layouts
-function get_acf_layouts() {
-	return get_template_part( 'acf/layouts' );
-}
-
-// Register get_template_part function for acf map
-function get_map() {
-	return get_template_part( 'acf/map' );
-}
-
-// Register get_template_part function for the carousel
-function get_carousel( $show = CAROUSEL_FULL_WIDTH, $flex_field = 'layout_carousel', $options_field ='carousel_options' ) {
-	return !$show ?: get_acf_template( 'carousel', [ 'FLEX' => $flex_field, 'OPTION' => $options_field ] );
-}
-
-// Register get_template_part function for the gallery
-function get_gallery( $flex_field = 'layout_gallery', $options_field ='gallery_options' ) {
-	return get_acf_template( 'gallery', [ 'FLEX' => $flex_field, 'OPTION' => $options_field ] );
-}
-
-// Register get_template_part function for the mosaic
-function get_mosaic( $flex_field = 'layout_mosaic', $options_field ='mosaic_options' ) {
-	return get_acf_template( 'mosaic', [ 'FLEX' => $flex_field, 'OPTION' => $options_field ] );
-}
-
-// Register get_template_part function for the masonry
-function get_masonry( $flex_field = 'layout_masonry', $options_field ='masonry_options' ) {
-	return get_acf_template( 'masonry', [ 'FLEX' => $flex_field, 'OPTION' => $options_field ] );
-}
-
 // Check if ACF Pro plugin is installed and activated
 if ( !class_exists('acf') ) :
 
@@ -91,6 +47,56 @@ if( function_exists('acf_add_options_page') ) :
 	));
 
 endif;
+
+// Register custom get_field function for option page
+function get_acf_option( $field, $fallback = false, $success = true ) {
+	if ( !class_exists('acf') ) return false;
+	if ( get_field_object( $field, 'option' )['type'] == 'true_false' )
+		return get_field( $field, 'option' ) ? $success : $fallback;
+	else
+		return get_field( $field, 'option' ) ?: $fallback;
+}
+
+// Register get_template_part function for acf templates
+function get_acf_template( $file, $variables = null ) {
+	return ws_get_template_part( 'acf/' . $file, $variables );
+}
+
+// Register get_template_part function for acf layouts
+function get_acf_layouts( $variables = null ) {
+	return ws_get_template_part( 'acf/layouts', $variables );
+}
+
+// Register get_template_part function for the carousel
+function get_carousel( $flex_field = CAROUSEL_FLEX_FIELD, $options_field = CAROUSEL_OPTIONS_FIELD ) {
+	return get_acf_layouts( [ 'LAYOUT' => 'carousel', 'FLEX' => $flex_field, 'OPTION' => $options_field ] );
+}
+
+// Register get_template_part function for the gallery
+function get_gallery( $flex_field = GALLERY_FLEX_FIELD, $options_field = GALLERY_OPTIONS_FIELD ) {
+	return get_acf_layouts( [ 'LAYOUT' => 'gallery', 'FLEX' => $flex_field, 'OPTION' => $options_field ] );
+}
+
+// Register get_template_part function for the mosaic
+function get_mosaic( $flex_field = MOSAIC_FLEX_FIELD, $options_field = MOSAIC_OPTIONS_FIELD ) {
+	return get_acf_layouts( [ 'LAYOUT' => 'mosaic', 'FLEX' => $flex_field, 'OPTION' => $options_field ] );
+}
+
+// Register get_template_part function for the masonry
+function get_masonry( $flex_field = MASONRY_FLEX_FIELD, $options_field = MASONRY_OPTIONS_FIELD ) {
+	return get_acf_layouts( [ 'LAYOUT' => 'masonry', 'FLEX' => $flex_field, 'OPTION' => $options_field ] );
+}
+
+// Register get_template_part function for acf map
+function get_map() {
+	return get_template_part( 'acf/map' );
+}
+
+// Set Google Maps API settings
+add_action( 'acf/init', function() {
+	define( 'GOOGLE_MAPS_API_KEY',    'AIzaSyA0x4svfKCtZu-UygFHO-KrmLgvVyf04is' );
+	acf_update_setting( 'google_api_key', GOOGLE_MAPS_API_KEY );
+});
 
 // Print in style
 function acf_dump( $key, $value ) {

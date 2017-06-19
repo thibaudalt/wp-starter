@@ -83,9 +83,9 @@ function wb_are_links_enabled()
     return WB_LINKS_ENABLED;
 }
 
-function wb_excerpt_length()
+function EXCERPT_LENGTH()
 {
-    return WB_EXCERPT_LENGTH;
+    return EXCERPT_LENGTH;
 }
 
 

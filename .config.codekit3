@@ -17054,6 +17054,14 @@
 		"oO": 1,
 		"oS": 1
 		},
+	"\/app\/public\/wp-content\/themes\/ws-starter-theme\/acf-json\/group_59478d4382410.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/app\/public\/wp-content\/themes\/ws-starter-theme\/dist\/group_59478d4382410.min.json",
+		"oF": 0,
+		"oO": 1,
+		"oS": 1
+		},
 	"\/app\/public\/wp-content\/themes\/ws-starter-theme\/acf\/carousel.php": {
 		"ft": 8192,
 		"oA": 2,
@@ -17679,6 +17687,19 @@
 		"oS": 3,
 		"uL": 1
 		},
+	"\/app\/public\/wp-content\/themes\/ws-starter-theme\/assets\/styles\/src\/_map.scss": {
+		"aP": 1,
+		"bl": 1,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/app\/public\/wp-content\/themes\/ws-starter-theme\/assets\/styles\/dist\/_map.min.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
 	"\/app\/public\/wp-content\/themes\/ws-starter-theme\/assets\/styles\/src\/_masonry.scss": {
 		"aP": 1,
 		"bl": 1,
@@ -17701,19 +17722,6 @@
 		"ma": 1,
 		"oA": 1,
 		"oAP": "\/app\/public\/wp-content\/themes\/ws-starter-theme\/assets\/styles\/dist\/_mosaic.min.css",
-		"oF": 0,
-		"oS": 3,
-		"uL": 1
-		},
-	"\/app\/public\/wp-content\/themes\/ws-starter-theme\/assets\/styles\/src\/_osaic.scss": {
-		"aP": 1,
-		"bl": 1,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "\/app\/public\/wp-content\/themes\/ws-starter-theme\/assets\/styles\/dist\/_osaic.min.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1

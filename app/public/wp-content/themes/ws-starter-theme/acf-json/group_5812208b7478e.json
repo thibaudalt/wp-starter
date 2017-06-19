@@ -1,10 +1,10 @@
 {
     "key": "group_5812208b7478e",
-    "title": "Carte",
+    "title": "Google Maps",
     "fields": [
         {
             "key": "field_581220d60d7b3",
-            "label": "Carte",
+            "label": "Map",
             "name": "map",
             "type": "google_map",
             "instructions": "",
@@ -17,8 +17,8 @@
             },
             "center_lat": "",
             "center_lng": "",
-            "height": "",
-            "zoom": ""
+            "zoom": "",
+            "height": ""
         }
     ],
     "location": [
@@ -38,5 +38,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1497534103
+    "modified": 1497861763
 }

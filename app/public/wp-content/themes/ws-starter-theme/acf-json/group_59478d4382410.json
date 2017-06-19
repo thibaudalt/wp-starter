@@ -1,0 +1,121 @@
+{
+    "key": "group_59478d4382410",
+    "title": "Google Maps Options",
+    "fields": [
+        {
+            "key": "field_59478e22fb775",
+            "label": "Zoom level",
+            "name": "map_options_zoom",
+            "type": "number",
+            "instructions": "The initial Map zoom level.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 14,
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": 1,
+            "max": 20,
+            "step": 1
+        },
+        {
+            "key": "field_59478d4386fee",
+            "label": "Enable user interface",
+            "name": "map_options_ui",
+            "type": "true_false",
+            "instructions": "Enable \/ Disable all default user interfaces.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_59478dac904e7",
+            "label": "Enable click zoom",
+            "name": "map_options_click_zoom",
+            "type": "true_false",
+            "instructions": "Enable \/ Disable zoom and center on double click.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_59478dd8fb773",
+            "label": "Enable draggable",
+            "name": "map_options_draggable",
+            "type": "true_false",
+            "instructions": "Enable \/ Disable the map from being dragged.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_59478e06fb774",
+            "label": "Enable scrollwheel",
+            "name": "map_options_scrollwheel",
+            "type": "true_false",
+            "instructions": "Enable \/ Disable scrollwheel zooming on the map.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-general"
+            }
+        ]
+    ],
+    "menu_order": 10,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "left",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1497861921
+}

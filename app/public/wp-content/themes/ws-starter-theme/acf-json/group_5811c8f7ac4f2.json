@@ -341,16 +341,16 @@
                 },
                 "583551cd52bc5": {
                     "key": "583551cd52bc5",
-                    "name": "mosaic",
-                    "label": "Mosaïque",
+                    "name": "layout_mosaic",
+                    "label": "Mosaic",
                     "display": "row",
                     "sub_fields": [
                         {
                             "key": "field_5835522952bcd",
-                            "label": "Articles",
-                            "name": "mosaic_articles",
+                            "label": "Posts",
+                            "name": "layout_mosaic_posts",
                             "type": "relationship",
-                            "instructions": "",
+                            "instructions": "The posts that will be displayed in the mosaic.\r\nSelect between 1 and 16.",
                             "required": 1,
                             "conditional_logic": 0,
                             "wrapper": {
@@ -358,27 +358,24 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "elements": [
-                                "featured_image"
-                            ],
-                            "filters": [
-                                "search",
-                                "taxonomy"
-                            ],
-                            "max": 16,
-                            "min": 1,
                             "post_type": [
                                 "post"
                             ],
-                            "return_format": "object",
-                            "taxonomy": []
+                            "taxonomy": [],
+                            "filters": "",
+                            "elements": [
+                                "featured_image"
+                            ],
+                            "min": 1,
+                            "max": 16,
+                            "return_format": "object"
                         },
                         {
                             "key": "field_583559f76f8da",
                             "label": "Date",
-                            "name": "mosaic_date",
-                            "type": "radio",
-                            "instructions": "Afficher les dates de publication des articles.",
+                            "name": "layout_mosaic_date",
+                            "type": "true_false",
+                            "instructions": "Show \/ Hide the posts date.",
                             "required": 1,
                             "conditional_logic": 0,
                             "wrapper": {
@@ -386,23 +383,18 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "allow_null": 0,
-                            "choices": [
-                                "Non",
-                                "Oui"
-                            ],
-                            "default_value": "",
-                            "layout": "horizontal",
-                            "other_choice": 0,
-                            "return_format": "value",
-                            "save_other_choice": 0
+                            "message": "",
+                            "default_value": 0,
+                            "ui": 1,
+                            "ui_on_text": "Show",
+                            "ui_off_text": "Hide"
                         },
                         {
                             "key": "field_583551cd52bcb",
-                            "label": "Titre",
-                            "name": "mosaic_title",
-                            "type": "radio",
-                            "instructions": "Afficher les titres des articles.",
+                            "label": "Title",
+                            "name": "layout_mosaic_title",
+                            "type": "true_false",
+                            "instructions": "Show \/ Hide the posts title.",
                             "required": 1,
                             "conditional_logic": 0,
                             "wrapper": {
@@ -410,16 +402,11 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "allow_null": 0,
-                            "choices": [
-                                "Non",
-                                "Oui"
-                            ],
-                            "default_value": "",
-                            "layout": "horizontal",
-                            "other_choice": 0,
-                            "return_format": "value",
-                            "save_other_choice": 0
+                            "message": "",
+                            "default_value": 0,
+                            "ui": 1,
+                            "ui_on_text": "Show",
+                            "ui_off_text": "Hide"
                         }
                     ],
                     "min": "0",
@@ -570,5 +557,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1497628513
+    "modified": 1497860902
 }
