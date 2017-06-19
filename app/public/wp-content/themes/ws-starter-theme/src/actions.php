@@ -72,6 +72,12 @@ add_action( 'after_setup_theme', function() {
 
 // Enqueues CSS and JS files
 add_action( 'wp_enqueue_scripts', function() {
-  wp_enqueue_style( 'ws-starter-css', get_template_directory_uri().'/assets/styles/dist/main.min.css', false , null );
-  wp_enqueue_script( 'ws-starter-js', get_template_directory_uri().'/assets/scripts/dist/main.min.js', array( 'jquery' ), null);
+  wp_enqueue_style( 'ws-starter-css', get_template_directory_uri() . '/assets/styles/dist/main.min.css', false , null );
+  wp_enqueue_script( 'ws-starter-js', get_template_directory_uri() . '/assets/scripts/dist/main.min.js', array( 'jquery' ), null);
+});
+
+// Annoying JQMIGRATE
+add_action( 'wp_default_scripts', function( $scripts ) {
+  if ( ! empty( $scripts->registered['jquery'] ) )
+    $scripts->registered['jquery']->deps = array_diff( $scripts->registered['jquery']->deps, array( 'jquery-migrate' ) );
 });
