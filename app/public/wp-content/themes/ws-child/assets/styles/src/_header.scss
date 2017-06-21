@@ -1,0 +1,39 @@
+.header {
+
+  a {
+    color: $gray-light;
+
+    &:hover,
+    &:focus {
+      color: $link-color;
+    }
+
+  }
+
+  .main-menu {
+    display: inline-block;
+    padding: 6px 16px;
+    height: 44px;
+
+    ul {
+      display: inline-block;
+    }
+
+    li {
+      display: inline-block;
+      float: left;
+    }
+
+    a {
+      padding: 4px 8px;
+    }
+
+  }
+
+  .languages {
+    padding: 10px 0;
+    float: right;
+    @extend .hidden-sm-down;
+  }
+
+}

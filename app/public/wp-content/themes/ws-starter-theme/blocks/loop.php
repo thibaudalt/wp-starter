@@ -7,7 +7,7 @@
         <?php if ( has_post_thumbnail() ): ?>
           <?php the_post_thumbnail( '510x510', array('class' => 'post-image') ) ?>
         <?php else: ?>
-          <img src="<?php echo get_template_directory_uri() ?>/assets/images/placeholder.jpg" alt="<?php echo get_bloginfo( 'name' ) ?>"/>
+          <img src="<?php the_asset( 'placeholder.jpg' ) ?>" alt="<?php bloginfo( 'name' ) ?>"/>
         <?php endif; ?>
       </a>
 

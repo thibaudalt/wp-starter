@@ -37,6 +37,16 @@ function get_favicons() {
 	return get_template_part( 'blocks/favicons' );
 }
 
+// Register get_template_part function for offcanvas
+function get_offcanvas() {
+	return get_template_part( 'blocks/offcanvas' );
+}
+
+// Register get_template_part function for socials networks meta
+function get_socials_meta() {
+	return get_template_part( 'blocks/socials', 'meta' );
+}
+
 // Register get_template_part function for socials networks
 function get_socials_networks() {
 	return get_template_part( 'blocks/socials', 'networks' );
@@ -50,6 +60,16 @@ function get_navigation() {
 // Register get_template_part function for navigation
 function get_article() {
 	return get_template_part( 'blocks/loop' );
+}
+
+// Register get_stylesheet_directory_uri function for assets
+function get_asset( $file, $folder = 'images' ) {
+  return get_stylesheet_directory_uri() . '/assets/' . $folder . '/' . $file;
+}
+
+// Register get_stylesheet_directory_uri function for assets
+function the_asset( $file, $folder = 'images' ) {
+  echo get_asset( $file, $folder );
 }
 
 // Returns the good occurrence size

@@ -34,10 +34,7 @@
   "private": true,
   "devDependencies": {
     "bootstrap": "^4.0.0",
-    "jquery": "^3.2.1",
-    "wp-acf-starter": "https://github.com/thibaudalt/wp-acf-starter.git",
-    "wp-custom-admin": "https://github.com/thibaudalt/wp-custom-admin.git",
-    "cover": "https://github.com/Ascarius/cover.git"
+    "jquery": "^3.2.1"
   },
   "resolutions": {
     "jquery": ">=1.9.1"

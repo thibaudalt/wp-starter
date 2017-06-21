@@ -57,6 +57,11 @@ function get_acf_option( $field, $fallback = false, $success = true ) {
 		return get_field( $field, 'option' ) ?: $fallback;
 }
 
+// Register custom the_field function for option page
+function acf_option( $field, $fallback = false, $success = true ) {
+	echo get_acf_option( $field, $fallback, $success );
+}
+
 // Register get_template_part function for acf templates
 function get_acf_template( $file, $variables = null ) {
 	return ws_get_template_part( 'acf/' . $file, $variables );

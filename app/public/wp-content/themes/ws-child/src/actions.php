@@ -2,6 +2,6 @@
 
 // Enqueues CSS and JS files
 add_action( 'wp_enqueue_scripts', function() {
-  wp_enqueue_style( 'ws-starter-css', get_template_directory_uri() . '/assets/styles/dist/main.min.css', false , null );
-  wp_enqueue_script( 'ws-starter-js', get_template_directory_uri() . '/assets/scripts/dist/main.min.js', array( 'jquery' ), null);
+  wp_enqueue_style( 'ws-starter-css', get_asset( 'main.min.css', 'styles/dist' ) , false , null );
+  wp_enqueue_script( 'ws-starter-js', get_asset( 'main.min.js', 'scripts/dist' ), array( 'jquery' ), null);
 });

@@ -1,0 +1,19 @@
+.languages {
+	display: inline-block;
+
+	li {
+    display: inline-block;
+    float: left;
+
+	  a {
+	    border-right: 1px solid $gray-lighter;
+	    line-height: 1;
+	  }
+
+	  &:last-child a {
+	    border: 0;
+	  }
+
+	}
+
+}

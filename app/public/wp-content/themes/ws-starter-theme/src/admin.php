@@ -10,7 +10,7 @@ add_action('login_head', function() {
 		width: auto !important;
 		height: 144px !important;
 		background-size: auto !important;
-		background-image: url('.get_stylesheet_directory_uri().'/assets/favicons/android-chrome-144x144.png) !important;
+		background-image: url(' . get_asset( 'login.png' ) . ') !important;
 		}</style>');
 });
 
@@ -47,7 +47,7 @@ add_action( 'login_head', function() {
 
 // Favicon in WordPress admin
 add_action( 'admin_head', function() {
- echo '<link rel="Shortcut Icon" type="image/x-icon" href="'.get_stylesheet_directory_uri().'/assets/favicons/favicon.ico" />';
+ echo '<link rel="Shortcut Icon" type="image/x-icon" href="' . get_asset( 'favicon.ico', 'favicons' ) . '" />';
 });
 
 // Customize WordPress Footer Credits

@@ -1,8 +1,8 @@
 <?php
 	$name 	= get_bloginfo( 'name' );
-	$title 	= ws_get_field( 'maintenance_mode_title', 'option' );
-	$text 	= ws_get_field( 'maintenance_mode_text', 'option' );
-	$bg 		= ws_get_field( 'maintenance_mode_background_color', 'option' ) ?: '#3f7bad';
+	$title 	= get_acf_option( 'maintenance_mode_title' ); 										 		// acf_dump( '$title', $title );
+	$text 	= get_acf_option( 'maintenance_mode_text' ); 												 	// acf_dump( '$text', $text );
+	$bg 		= get_acf_option( 'maintenance_mode_background_color', '#3f7bad' ); 	// acf_dump( '$bg', $bg );
 ?>
 
 <!DOCTYPE html>
@@ -21,9 +21,9 @@
 			<div class="container">
 				<div class="content">
 					<h1><?php echo $name; ?></h1>
-					<img src="<?php echo get_bloginfo( 'template_directory' ); ?>/assets/favicons/android-chrome-144x144.png" alt="<?php echo $name; ?>">
-					<?php if($title): ?><h2><?php echo $title; ?></h2><?php endif; ?>
-					<?php if($text): ?><p><?php echo $text; ?></p><?php endif; ?>
+					<img src="<?php the_asset( 'login.png' ) ?>" alt="<?php echo $name; ?>">
+					<?php if ( $title ) : ?><h2><?php echo $title; ?></h2><?php endif; ?>
+					<?php if ( $text ) : ?><p><?php echo $text; ?></p><?php endif; ?>
 				</div>
 			</div>
 		</div>

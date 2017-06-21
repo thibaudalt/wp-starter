@@ -1,0 +1,39 @@
+.socials-networks {
+  display: inline-block;
+
+  li {
+    display: inline-block;
+    float: left;
+  }
+
+  .facebook a:hover {
+    color: #3b5998;
+  }
+
+  .twitter a:hover {
+    color: #1da1f2;
+  }
+
+  .gplus a:hover {
+    color: #dd4b39;
+  }
+
+  .mail a:hover {
+    color: #239ab9;
+  }
+
+  .rss a:hover {
+    color: #f26522;
+  }
+
+  @include media-breakpoint-down(sm) {
+    width: 100%;
+    text-align: center;
+
+    li {
+      float: none;
+    }
+
+  }
+
+}

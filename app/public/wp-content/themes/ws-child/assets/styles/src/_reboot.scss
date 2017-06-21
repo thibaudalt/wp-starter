@@ -1,0 +1,51 @@
+* {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+body {
+  padding-top: $header-height;
+}
+
+header {
+  height: $header-height;
+}
+
+footer {
+  height: $footer-height;
+
+  @include media-breakpoint-down(sm) {
+    height: $footer-height-xs;
+  }
+
+}
+
+img {
+  @extend .img-fluid;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  display: inline-block;
+  transition: all 400ms;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+
+}
+
+.current-menu-item > a,
+.active > a {
+  color: $link-color !important;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}

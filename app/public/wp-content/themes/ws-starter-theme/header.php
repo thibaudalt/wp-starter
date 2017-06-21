@@ -2,43 +2,46 @@
 <html class="no-js" <?php language_attributes() ?>>
 
 <head>
+
   <meta charset="<?php bloginfo( 'charset' ) ?>" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="author" content="We studio" />
-  <title><?php get_page_title() ?></title>
   <link rel="pingback" href="<?php bloginfo( 'pingback_url' ) ?>" />
+
+  <meta name="viewport"     content="width=device-width, initial-scale=1.0" />
+  <meta name="author"       content="We studio" />
+  <meta name="description"  content="<?php bloginfo( 'description' ); ?>"/>
+  <meta name="keywords"     content="<?php acf_option( 'meta_keywords' ); ?>"/>
+
+  <title><?php get_page_title() ?></title>
+
   <?php get_favicons() ?>
+
+  <?php get_socials_meta() ?>
+
   <?php wp_head() ?>
+
 </head>
 
 <body <?php body_class() ?>>
 
-  <header class="header navbar navbar-toggleable-md fixed-top navbar-light bg-faded">
+  <header class="header py-2 fixed-top bg-faded">
     <div class="container">
 
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <a class="navbar-brand p-0" href="<?php echo home_url() ?>" title="<?php echo get_bloginfo( 'name' ) ?>" rel="home">
-        <img src="<?php echo get_template_directory_uri() ?>/assets/images/brand.png" alt="<?php echo get_bloginfo( 'name' ) ?>"/>
+      <a class="brand float-left" href="<?php echo home_url() ?>" title="<?php bloginfo( 'name' ) ?>" rel="home">
+        <img src="<?php the_asset( 'brand.png' ) ?>" alt="<?php bloginfo( 'name' ) ?>"/>
       </a>
 
-      <div id="main-menu" class="collapse navbar-collapse">
+      <?php
+        wp_nav_menu( array(
+          'theme_location'  => 'main',
+          'menu_id'         => 'main-menu',
+          'container_class' => 'main-menu hidden-sm-down',
+          'depth'           => 2,
+        ) )
+      ?>
 
-        <?php
-          wp_nav_menu( array(
-            'theme_location' => 'main',
-            'menu_class'     => 'navbar-nav mr-auto',
-            'depth'          => 2,
-          ) )
-        ?>
+      <?php get_languages() ?>
 
-      </div><!-- .main-menu -->
-
-      <nav class="languages navbar-text">
-        <?php get_languages() ?>
-      </nav><!-- /.languages -->
+      <?php get_offcanvas() ?>
 
     </div><!-- .container -->
   </header><!-- .header -->

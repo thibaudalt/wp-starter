@@ -1,0 +1,63 @@
+.offcanvas {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  padding-top: 60px;
+  overflow-y: auto;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  transition: left 400ms;
+  z-index: 99;
+
+  &.active {
+    left: 0;
+  }
+
+  hr {
+    margin: 16px;
+  }
+
+  .languages {
+    width: 100%;
+    text-align: center;
+
+    li {
+      float: none;
+    }
+
+  }
+
+  .offcanvas-menu {
+    display:block;
+    width: 100%;
+    text-align: center;
+
+    li {
+
+      width: 100%;
+    }
+
+    a {
+      width: 100%;
+      padding: 4px 8px;
+    }
+
+  }
+
+}
+
+.btn-offcanvas,
+.btn-close {
+  position: absolute;
+  top: 0; right: 0;
+  border: 0;
+  padding: 15px 21px;
+  font-size: 24px;
+  color: $brand-primary;
+  background: transparent !important;
+}
+
+.btn-offcanvas {
+  margin-top: -8px;
+}
