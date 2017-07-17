@@ -8,7 +8,7 @@
 ?>
 
 <div id="mosaic-<?php echo $ID ?>" class="mosaic">
-  <div class="row">
+  <div class="row d-block">
 
     <?php foreach( $articles as $i => $article ):
             $id           = $article->ID;                                                     // acf_dump('$id', $id);
@@ -22,7 +22,7 @@
             $fallback     = get_template_directory_uri() . '/assets/images/placeholder.jpg';  // acf_dump('$fallback', $fallback);
             $thumb_src    = $thumb_data[0] ?: $fallback;                                      // acf_dump('$src', $src); ?>
 
-            <div class="mosaic-inner col-sm-<?php echo $width ?> row-<?php echo $height ?>">
+            <div class="mosaic-inner float-left col-sm-<?php echo $width ?> row-<?php echo $height ?>">
               <a  id="<?php echo 'mosaic-'.$ID.'-item-'.$i ?>"
                   class="thumbnail"
                   href="<?php echo $url; ?>"

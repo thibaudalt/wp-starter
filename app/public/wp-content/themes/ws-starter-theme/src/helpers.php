@@ -74,6 +74,8 @@ function the_asset( $file, $folder = 'images' ) {
 
 // Returns the good occurrence size
 function get_mosaic_size( $i, $count ) {
+  if ( $i >= $count )
+    return [2,1];
   $isLast = ( $i === $count - 1 );
   switch( $i % 16 ):
     case 0: case 10: return $isLast ? [12,2] : [8,2];

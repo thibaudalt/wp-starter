@@ -55,6 +55,7 @@ add_action( 'after_setup_theme', function() {
   add_theme_support( 'automatic-feed-links' );
   add_theme_support( 'post-thumbnails' );
 
+  add_image_size('col-2', 370);
   add_image_size('col-4', 370);
   add_image_size('col-8', 750);
   add_image_size('col-12', 1130);
