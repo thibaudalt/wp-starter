@@ -81,3 +81,15 @@ add_action( 'wp_default_scripts', function( $scripts ) {
   if ( ! empty( $scripts->registered['jquery'] ) )
     $scripts->registered['jquery']->deps = array_diff( $scripts->registered['jquery']->deps, array( 'jquery-migrate' ) );
 });
+
+// Change the search results URL
+add_action( 'template_redirect', function() {
+  if ( is_search() && ! empty( $_GET['s'] ) ) :
+    wp_redirect( home_url('/search/') . urlencode( get_query_var( 's' ) ) );
+    exit();
+  endif;
+});
+
+add_action( 'init', function() {
+  add_rewrite_rule( 'search(/([^/]+))?(/([^/]+))?(/([^/]+))?/?', 'index.php?s=$matches[2]&paged=$matches[6]', 'top' );
+});

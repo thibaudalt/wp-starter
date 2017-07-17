@@ -39,7 +39,7 @@
         ) )
       ?>
 
-      <?php get_languages() ?>
+      <?php get_languages( 'hidden-sm-down' ) ?>
 
       <?php get_offcanvas() ?>
 

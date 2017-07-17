@@ -1,0 +1,28 @@
+<h1>Features</h1>
+
+<ul>
+<li>[wpmlcore-2371] <code>wpml_language_form_input_field</code>, which changed the hidden input field rendered by the <code>wpml_add_language_form_field</code> action</li>
+<li>[wpmlcore-2177] Added constant that hides the WPML Dashboard widget: ICL_HIDE_DASHBOARD_WIDGET</li>
+<li>[wpmlcore-1626] <code>wpml_translation_validation_data</code>, which is called when validating data submitted by the translation editor (arguments: <code>$validation_results</code>, <code>$data_to_validate</code>)</li>
+</ul>
+
+<h1>Fixes</h1>
+
+<ul>
+<li>[wpmlcore-2402] Fixed issue when visiting User Profile or Translation Interface page as non-admin translator when hidden languages are active</li>
+<li>[wpmlcore-2388] Ability to upload svg files for custom flags</li>
+<li>[wpmlcore-2386] Fixed stylesheet and login urls being translated incorrectly when homeurl are siteurl different.</li>
+<li>[wpmlcore-2385] Fixed loss of languages order when activating/deactivating languages</li>
+<li>[wpmlcore-2384] Fixed loss of already active languages when activating/deactivating languages</li>
+<li>[wpmlcore-2370] Fix issue when installing WPML in multisites with different admin language set for default site</li>
+<li>[wpmlcore-2369] Fix other caching issues when using W3TC</li>
+<li>[wpmlcore-2366] Fixed issue with admin messages not hiding</li>
+<li>[wpmlcore-2364] Fix warning in WPML_Query_Parser::parse_query()</li>
+<li>[wpmlcore-2363] Cache calls to add flags to post list column</li>
+<li>[wpmlcore-2361] Fixed post meta data set to be copied to translations, not being copied when editing the original post.</li>
+<li>[wpmlcore-2349] Cache get_source_language_by_trid to improve performance</li>
+<li>[wpmlcore-2347] Fix caching of page on front and post on front when using W3TC</li>
+<li>[wpmlcore-2345] Fix caching of locale when using W3TC</li>
+<li>[wpmlcore-2274] Fixed Warning: mkdir(): No such file or directory</li>
+<li>[wpmlcore-2027] Fixed a corner case where get_permalink() was not working when &quot;%category%&quot; was included in Permalink</li>
+</ul>

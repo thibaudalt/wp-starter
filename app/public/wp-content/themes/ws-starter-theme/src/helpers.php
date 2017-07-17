@@ -28,8 +28,8 @@ function get_edit_button() {
 }
 
 // Register get_template_part function for languages
-function get_languages() {
-	return get_template_part( 'blocks/languages' );
+function get_languages( $class = null ) {
+	return ws_get_template_part( 'blocks/languages', [  'CLASS' => $class ] );
 }
 
 // Register get_template_part function for favicons

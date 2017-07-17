@@ -19,13 +19,9 @@
   }
 
   .languages {
-    width: 100%;
-    text-align: center;
-
-    li {
-      float: none;
-    }
-
+    display: table;
+    margin: auto;
+    float: none;
   }
 
   .offcanvas-menu {

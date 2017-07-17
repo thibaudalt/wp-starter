@@ -3,7 +3,7 @@
     return;
 ?>
 
-<ul class="languages">
+<ul class="languages <?php echo $args[ 'CLASS' ] ?>">
 
   <?php foreach ( icl_get_languages() as $lang ) : ?>
 
