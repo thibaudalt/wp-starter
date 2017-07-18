@@ -38,12 +38,6 @@
 		"oAP": "\/app\/public\/.htaccess",
 		"oF": 1
 		},
-	"\/app\/public\/.htpasrswd": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/app\/public\/.htpasrswd",
-		"oF": 0
-		},
 	"\/app\/public\/.htpasswd": {
 		"ft": 8192,
 		"oA": 2,
