@@ -20,13 +20,13 @@
   <div class="row d-block">
 
     <?php foreach( $images as $i => $image ):
-            $id         = $image[ 'id' ];                                             // acf_dump( '$id', $id );
-            $title      = $image[ 'title' ];                                          // acf_dump( '$title', $title );
-            $caption    = $image[ 'caption' ];                                        // acf_dump( '$caption', $caption );
-            $width      = get_mosaic_size( $i, $max_images )[0];    // acf_dump( '$width', $width );
-            $height     = get_mosaic_size( $i, $max_images )[1];    // acf_dump( '$height', $height );
-            $full       = $image[ 'sizes' ][ '1920x1080' ];                           // acf_dump( '$full', $full );
-            $src        = $image[ 'sizes' ][ 'col-' . $width ];                       // acf_dump( '$src', $src );
+            $id         = $image[ 'id' ];                         // acf_dump( '$id', $id );
+            $title      = $image[ 'title' ];                      // acf_dump( '$title', $title );
+            $caption    = $image[ 'caption' ];                    // acf_dump( '$caption', $caption );
+            $width      = get_mosaic_size( $i, $max_images )[0];  // acf_dump( '$width', $width );
+            $height     = get_mosaic_size( $i, $max_images )[1];  // acf_dump( '$height', $height );
+            $full       = $image[ 'sizes' ][ '1920x1080' ];       // acf_dump( '$full', $full );
+            $src        = $image[ 'sizes' ][ 'col-' . $width ];   // acf_dump( '$src', $src );
 
             if( ( $show_title && $title ) && ( $show_caption && $caption ) )
               $data_title = $title.' - ' . $caption;

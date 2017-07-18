@@ -17580,6 +17580,15 @@
 		"oAP": "\/app\/public\/wp-content\/themes\/ws-child\/assets\/scripts\/dist\/main.min.js.map",
 		"oF": 0
 		},
+	"\/app\/public\/wp-content\/themes\/ws-child\/assets\/scripts\/src\/analytics.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/app\/public\/wp-content\/themes\/ws-child\/assets\/scripts\/dist\/analytics.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
 	"\/app\/public\/wp-content\/themes\/ws-child\/assets\/scripts\/src\/main.js": {
 		"ft": 64,
 		"mi": 1,
@@ -39462,6 +39471,12 @@
 			"followForSyntaxChecking": 1,
 			"linkedFileAbbreviatedPath": "\/app\/public\/wp-content\/themes\/ws-child\/assets\/scripts\/src\/offcanvas.js",
 			"position": 4,
+			"type": 1
+			},
+		{
+			"followForSyntaxChecking": 1,
+			"linkedFileAbbreviatedPath": "\/app\/public\/wp-content\/themes\/ws-child\/assets\/scripts\/src\/analytics.js",
+			"position": 5,
 			"type": 1
 			}
 		]
