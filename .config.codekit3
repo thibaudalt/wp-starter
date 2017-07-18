@@ -17099,10 +17099,74 @@
 		"oO": 1,
 		"oS": 1
 		},
+	"\/app\/public\/wp-content\/themes\/ws-child\/acf-json\/group_5812208b7478e.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/app\/public\/wp-content\/themes\/ws-child\/dist\/group_5812208b7478e.min.json",
+		"oF": 0,
+		"oO": 1,
+		"oS": 1
+		},
+	"\/app\/public\/wp-content\/themes\/ws-child\/acf-json\/group_591f020fd5988.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/app\/public\/wp-content\/themes\/ws-child\/dist\/group_591f020fd5988.min.json",
+		"oF": 0,
+		"oO": 1,
+		"oS": 1
+		},
 	"\/app\/public\/wp-content\/themes\/ws-child\/acf-json\/group_591f1967ba4af.json": {
 		"ft": 524288,
 		"oA": 1,
 		"oAP": "\/app\/public\/wp-content\/themes\/ws-child\/dist\/group_591f1967ba4af.min.json",
+		"oF": 0,
+		"oO": 1,
+		"oS": 1
+		},
+	"\/app\/public\/wp-content\/themes\/ws-child\/acf-json\/group_591f203675af0.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/app\/public\/wp-content\/themes\/ws-child\/dist\/group_591f203675af0.min.json",
+		"oF": 0,
+		"oO": 1,
+		"oS": 1
+		},
+	"\/app\/public\/wp-content\/themes\/ws-child\/acf-json\/group_5922908dbb1e3.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/app\/public\/wp-content\/themes\/ws-child\/dist\/group_5922908dbb1e3.min.json",
+		"oF": 0,
+		"oO": 1,
+		"oS": 1
+		},
+	"\/app\/public\/wp-content\/themes\/ws-child\/acf-json\/group_5943a7eb3ad74.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/app\/public\/wp-content\/themes\/ws-child\/dist\/group_5943a7eb3ad74.min.json",
+		"oF": 0,
+		"oO": 1,
+		"oS": 1
+		},
+	"\/app\/public\/wp-content\/themes\/ws-child\/acf-json\/group_5943dd48e0b59.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/app\/public\/wp-content\/themes\/ws-child\/dist\/group_5943dd48e0b59.min.json",
+		"oF": 0,
+		"oO": 1,
+		"oS": 1
+		},
+	"\/app\/public\/wp-content\/themes\/ws-child\/acf-json\/group_5943ed088ca42.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/app\/public\/wp-content\/themes\/ws-child\/dist\/group_5943ed088ca42.min.json",
+		"oF": 0,
+		"oO": 1,
+		"oS": 1
+		},
+	"\/app\/public\/wp-content\/themes\/ws-child\/acf-json\/group_59478d4382410.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/app\/public\/wp-content\/themes\/ws-child\/dist\/group_59478d4382410.min.json",
 		"oF": 0,
 		"oO": 1,
 		"oS": 1
@@ -23174,86 +23238,6 @@
 		"oA": 2,
 		"oAP": "\/app\/public\/wp-content\/themes\/ws-starter-theme\/404.php",
 		"oF": 0
-		},
-	"\/app\/public\/wp-content\/themes\/ws-starter-theme\/acf-json\/group_5811c8f7ac4f2.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "\/app\/public\/wp-content\/themes\/ws-starter-theme\/dist\/group_5811c8f7ac4f2.min.json",
-		"oF": 0,
-		"oO": 1,
-		"oS": 1
-		},
-	"\/app\/public\/wp-content\/themes\/ws-starter-theme\/acf-json\/group_5812208b7478e.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "\/app\/public\/wp-content\/themes\/ws-starter-theme\/dist\/group_5812208b7478e.min.json",
-		"oF": 0,
-		"oO": 1,
-		"oS": 1
-		},
-	"\/app\/public\/wp-content\/themes\/ws-starter-theme\/acf-json\/group_591f020fd5988.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "\/app\/public\/wp-content\/themes\/ws-starter-theme\/dist\/group_591f020fd5988.min.json",
-		"oF": 0,
-		"oO": 1,
-		"oS": 1
-		},
-	"\/app\/public\/wp-content\/themes\/ws-starter-theme\/acf-json\/group_591f1967ba4af.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "\/app\/public\/wp-content\/themes\/ws-starter-theme\/dist\/group_591f1967ba4af.min.json",
-		"oF": 0,
-		"oO": 1,
-		"oS": 1
-		},
-	"\/app\/public\/wp-content\/themes\/ws-starter-theme\/acf-json\/group_591f203675af0.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "\/app\/public\/wp-content\/themes\/ws-starter-theme\/dist\/group_591f203675af0.min.json",
-		"oF": 0,
-		"oO": 1,
-		"oS": 1
-		},
-	"\/app\/public\/wp-content\/themes\/ws-starter-theme\/acf-json\/group_5922908dbb1e3.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "\/app\/public\/wp-content\/themes\/ws-starter-theme\/dist\/group_5922908dbb1e3.min.json",
-		"oF": 0,
-		"oO": 1,
-		"oS": 1
-		},
-	"\/app\/public\/wp-content\/themes\/ws-starter-theme\/acf-json\/group_5943a7eb3ad74.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "\/app\/public\/wp-content\/themes\/ws-starter-theme\/dist\/group_5943a7eb3ad74.min.json",
-		"oF": 0,
-		"oO": 1,
-		"oS": 1
-		},
-	"\/app\/public\/wp-content\/themes\/ws-starter-theme\/acf-json\/group_5943dd48e0b59.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "\/app\/public\/wp-content\/themes\/ws-starter-theme\/dist\/group_5943dd48e0b59.min.json",
-		"oF": 0,
-		"oO": 1,
-		"oS": 1
-		},
-	"\/app\/public\/wp-content\/themes\/ws-starter-theme\/acf-json\/group_5943ed088ca42.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "\/app\/public\/wp-content\/themes\/ws-starter-theme\/dist\/group_5943ed088ca42.min.json",
-		"oF": 0,
-		"oO": 1,
-		"oS": 1
-		},
-	"\/app\/public\/wp-content\/themes\/ws-starter-theme\/acf-json\/group_59478d4382410.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "\/app\/public\/wp-content\/themes\/ws-starter-theme\/dist\/group_59478d4382410.min.json",
-		"oF": 0,
-		"oO": 1,
-		"oS": 1
 		},
 	"\/app\/public\/wp-content\/themes\/ws-starter-theme\/acf\/carousel.php": {
 		"ft": 8192,
@@ -38255,12 +38239,6 @@
 		"oF": 0,
 		"oO": 1,
 		"oS": 1
-		},
-	"\/build\/.gitignore": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/build\/.gitignore",
-		"oF": 0
 		},
 	"\/conf\/apache\/apache2.conf": {
 		"ft": 8192,
