@@ -11,7 +11,7 @@ add_action( 'wp_loaded', function() {
 
 	global $pagenow;
 
-	if ( !get_field( 'maintenance_mode_enabled', 'option' ) )
+	if ( class_exists('acf') && !get_field( 'maintenance_mode_enabled', 'option' ) )
 		return;
 
 	if ( $pagenow !== 'wp-login.php' && !current_user_can( 'manage_options' ) && !is_admin() ) :
