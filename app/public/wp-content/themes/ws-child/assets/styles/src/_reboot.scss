@@ -1,6 +1,8 @@
 * {
   outline: none !important;
   box-shadow: none !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
