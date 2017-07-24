@@ -15,7 +15,7 @@ add_action( 'init', function() {
       'singular_name'     => __( 'Project', 'ws-starter' )
     ),
     'public'              => true,
-    'exclude_from_search' => true,
+    'exclude_from_search' => false,
     'can_export'          => false,
     'has_archive'         => true,
     'menu_icon'           => 'dashicons-images-alt2',
