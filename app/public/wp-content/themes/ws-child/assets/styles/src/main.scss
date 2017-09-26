@@ -5,9 +5,9 @@
 @import "_variables.scss";
 
 // Vendor
-@import "../../../vendor/bootstrap/scss/bootstrap.scss";
-@import "../../../vendor/components-font-awesome/css/font-awesome.css";
-@import "../../../vendor/lightbox2/dist/css/lightbox.css";
+@import "../../../../ws-starter-theme/vendor/bootstrap/scss/bootstrap.scss";
+@import "../../../../ws-starter-theme/vendor/font-awesome/scss/font-awesome.scss";
+// @import "../../../vendor/lightbox2/dist/css/lightbox.css";
 
 // Components
 @import "_reboot.scss";

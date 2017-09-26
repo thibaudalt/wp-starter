@@ -37,6 +37,7 @@
     "jquery": "^3.2.1"
   },
   "resolutions": {
-    "jquery": ">=1.9.1"
+    "jquery": ">=1.9.1",
+    "bootstrap": "^4.0.0"
   }
 }

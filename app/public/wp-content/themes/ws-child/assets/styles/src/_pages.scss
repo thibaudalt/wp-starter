@@ -9,11 +9,11 @@
 .page-title {
   @extend .mb-3;
   @extend .pb-1;
-  border-bottom: 1px solid $gray-lighter;
+  border-bottom: 1px solid $gray-200;
 }
 
 .page-footer {
   @extend .mt-3;
   @extend .pt-2;
-  border-top: 1px solid $gray-lighter;
+  border-top: 1px solid $gray-200;
 }

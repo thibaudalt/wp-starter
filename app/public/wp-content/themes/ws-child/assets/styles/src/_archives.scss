@@ -1,7 +1,7 @@
 .widget {
   @extend .mb-3;
   @extend .pb-3;
-  border-bottom: 1px solid $gray-lighter;
+  border-bottom: 1px solid $gray-200;
 
   h1 {
     @extend .h3;
