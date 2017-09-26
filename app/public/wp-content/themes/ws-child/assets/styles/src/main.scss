@@ -5,9 +5,9 @@
 @import "_variables.scss";
 
 // Vendor
+@import "../../../../.vendor/tether/src/css/tether.sass";
 @import "../../../../.vendor/bootstrap/scss/bootstrap.scss";
 @import "../../../../.vendor/font-awesome/scss/font-awesome.scss";
-@import "../../../../.vendor/lightbox/scss/lightbox.scss";
 
 // Components
 @import "_reboot.scss";
