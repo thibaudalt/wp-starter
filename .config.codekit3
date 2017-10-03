@@ -32402,13 +32402,13 @@
 "manualImportLinks": {
 	"\/app\/public\/wp-content\/themes\/ws-child\/assets\/scripts\/src\/main.js": [
 		{
-			"followForSyntaxChecking": 1,
+			"followForSyntaxChecking": 0,
 			"linkedFileAbbreviatedPath": "\/app\/public\/wp-content\/themes\/ws-child\/assets\/scripts\/src\/jquery.js",
 			"position": 0,
 			"type": 0
 			},
 		{
-			"followForSyntaxChecking": 1,
+			"followForSyntaxChecking": 0,
 			"linkedFileAbbreviatedPath": "\/app\/public\/wp-content\/themes\/.vendor\/tether\/dist\/js\/tether.js",
 			"position": 1,
 			"type": 0
@@ -32441,8 +32441,8 @@
 	},
 "projectAttributes": {
 	"creationDate": 516892286,
-	"displayValue": "ws-starter",
-	"displayValueWasSetByUser": 0,
+	"displayValue": "WS Starter Theme",
+	"displayValueWasSetByUser": 1,
 	"iconImageName": "\/.codekit.png"
 	},
 "projectSettings": {

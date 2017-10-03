@@ -78,17 +78,24 @@ add_filter('mod_rewrite_rules', function( $rules ) {
 
 	$htpasswd = ABSPATH . '.htpasswd';
 	$enabled 	= 'apache_authentification_enabled';
+	$allSite 	= 'apache_authentification_all_site';
+	$all 			= get_field( $allSite, 'option' ) === 'all';
+	$specific = str_replace( get_site_url(), '', get_field( 'apache_authentification_specific_page', 'option' ) );
 
 	if ( !get_field( $enabled, 'option' ) )
 		return $rules;
 
 	$content  = PHP_EOL;
-	$content .= '# Apache Authentification' . PHP_EOL;
+	$content .= '# Apache Authentification' . ( $all ? '' : ' on "' . $specific . '"' ) . PHP_EOL;
+	$content .= ( $all ? '' : 'SetEnvIf Request_URI ^' . $specific . ' require_auth=true' . PHP_EOL );
 	$content .= 'AuthType Basic' . PHP_EOL;
-	$content .= 'AuthName "Password Protected Area"' . PHP_EOL;
+	$content .= 'AuthName "Password Protected ' . ( $all ? 'Website' : 'Page (' . $specific . ')' ) . '"' . PHP_EOL;
+	$content .= 'AuthBasicProvider file' . PHP_EOL;
 	$content .= 'AuthUserFile ' . $htpasswd . PHP_EOL;
+	$content .= ( $all ? '' : 'Order Deny,Allow' . PHP_EOL .'Deny from all' . PHP_EOL . 'Satisfy any' . PHP_EOL );
 	$content .= 'Require valid-user' . PHP_EOL;
-	$content .= '# END Apache Authentification' . PHP_EOL;
+	$content .= ( $all ? '' : 'Allow from env=!require_auth' . PHP_EOL );
+	$content .= '# END Apache Authentification' . ( $all ? '' : ' on "' . $specific . '"' ) . PHP_EOL;
 	$content .= PHP_EOL;
 
 	return $content . $rules;

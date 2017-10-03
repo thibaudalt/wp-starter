@@ -22,6 +22,73 @@
             "ui_off_text": ""
         },
         {
+            "key": "field_59d34367b46db",
+            "label": "All site \/ One page",
+            "name": "apache_authentification_all_site",
+            "type": "radio",
+            "instructions": "Enable Apache authentification on all site or only on one specific page.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5922908dbe3c7",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "all": "All site",
+                "one": "One page"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "all",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
+            "key": "field_59d343a4b46dc",
+            "label": "Specific page",
+            "name": "apache_authentification_specific_page",
+            "type": "page_link",
+            "instructions": "Specific page to protect.",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5922908dbe3c7",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_59d34367b46db",
+                        "operator": "==",
+                        "value": "one"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "page",
+                "post"
+            ],
+            "taxonomy": [],
+            "allow_null": 0,
+            "allow_archives": 0,
+            "multiple": 0
+        },
+        {
             "key": "field_59229b9531986",
             "label": "Users",
             "name": "apache_authentification_users",
@@ -106,5 +173,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1495531309
+    "modified": 1507018031
 }
