@@ -55,19 +55,15 @@ add_action( 'after_setup_theme', function() {
   add_theme_support( 'automatic-feed-links' );
   add_theme_support( 'post-thumbnails' );
 
-  add_image_size('col-2', 370);
-  add_image_size('col-4', 370);
-  add_image_size('col-8', 750);
-  add_image_size('col-12', 1130);
-  add_image_size( '90x90', 90, 90, true );
-  add_image_size( '160x160', 160, 160, true );
-  add_image_size( '255x255', 255, 255, true );
-  add_image_size( '350x350', 350, 350, true );
-  add_image_size( '510x510', 510, 510, true );
-  add_image_size( '1920x180', 1920, 180, true );
-  add_image_size( '1920x480', 1920, 480, true );
-  add_image_size( '1920x780', 1920, 780, true );
-  add_image_size( '1920x1080', 1920, 1080, true );
+  add_image_size( '90x90',      90,     90,     true );
+  add_image_size( '160x160',    160,    160,    true );
+  add_image_size( '255x255',    255,    255,    true );
+  add_image_size( '350x350',    350,    350,    true );
+  add_image_size( '510x510',    510,    510,    true );
+  add_image_size( '1920x180',   1920,   180,    true );
+  add_image_size( '1920x480',   1920,   480,    true );
+  add_image_size( '1920x780',   1920,   780,    true );
+  add_image_size( '1920x1080',  1920,   1080,   true );
 
 });
 

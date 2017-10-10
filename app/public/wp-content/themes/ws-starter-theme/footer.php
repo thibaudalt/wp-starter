@@ -4,7 +4,7 @@
     <?php get_socials_networks() ?>
 
     <div class="credits float-md-right">
-      <small>&copy <?php bloginfo('name').' '.date('Y') ?> | <?php _e( 'Developed by', 'ws-starter' ) ?>
+      <small>&copy <?php echo bloginfo('name').' '.date('Y') ?> | <?php _e( 'Developed by', 'ws-starter' ) ?>
         <a href="https://we-studio.ch/" target="_blank">We studio</a>
       </small>
     </div><!-- /.credits -->

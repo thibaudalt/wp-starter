@@ -21,3 +21,8 @@ add_filter( 'wp_resource_hints', function( $urls, $relation_type ) {
   endif;
   return $urls;
 }, 10, 2 );
+
+// Filters the JPEG compression quality
+// add_filter( 'jpeg_quality', function() {
+//   return 100;
+// });
