@@ -72,6 +72,31 @@ function the_asset( $file, $folder = 'images' ) {
   echo get_asset( $file, $folder );
 }
 
+// Check if the current user is an administrator
+function is_user_administrator() {
+  return current_user_can( 'administrator' );
+}
+
+// Check if the current user is an editor
+function is_user_editor() {
+  return current_user_can( 'editor' );
+}
+
+// Check if the current user is an author
+function is_user_author() {
+  return current_user_can( 'author' );
+}
+
+// Check if the current user is a contributor
+function is_user_contributor() {
+  return current_user_can( 'contributor' );
+}
+
+// Check if the current user is a subscriber
+function is_user_subscriber() {
+  return current_user_can( 'subscriber' );
+}
+
 // Returns the good occurrence size
 function get_mosaic_size( $i, $count ) {
   if ( $i >= $count )
