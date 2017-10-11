@@ -7,6 +7,7 @@
             "label": "Enabled",
             "name": "apache_authentification_enabled",
             "type": "true_false",
+            "value": null,
             "instructions": "Enable \/ Disable the Apache authentification.",
             "required": 0,
             "conditional_logic": 0,
@@ -26,6 +27,7 @@
             "label": "All site \/ One page",
             "name": "apache_authentification_all_site",
             "type": "radio",
+            "value": null,
             "instructions": "Enable Apache authentification on all site or only on one specific page.",
             "required": 0,
             "conditional_logic": [
@@ -58,6 +60,7 @@
             "label": "Specific page",
             "name": "apache_authentification_specific_page",
             "type": "page_link",
+            "value": null,
             "instructions": "Specific page to protect.",
             "required": 1,
             "conditional_logic": [
@@ -93,6 +96,7 @@
             "label": "Users",
             "name": "apache_authentification_users",
             "type": "repeater",
+            "value": null,
             "instructions": "The list of authorized users.",
             "required": 0,
             "conditional_logic": [
@@ -120,6 +124,7 @@
                     "label": "Name",
                     "name": "apache_authentification_users_name",
                     "type": "text",
+                    "value": null,
                     "instructions": "Must not contain any special characters.",
                     "required": 1,
                     "conditional_logic": 0,
@@ -139,6 +144,7 @@
                     "label": "Password",
                     "name": "apache_authentification_users_password",
                     "type": "password",
+                    "value": null,
                     "instructions": "Must not be encrypted.",
                     "required": 1,
                     "conditional_logic": 0,
@@ -162,6 +168,11 @@
                 "param": "options_page",
                 "operator": "==",
                 "value": "acf-options-restricted-access"
+            },
+            {
+                "param": "current_user_role",
+                "operator": "==",
+                "value": "administrator"
             }
         ]
     ],
@@ -173,5 +184,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1507018031
+    "modified": 1507728937
 }

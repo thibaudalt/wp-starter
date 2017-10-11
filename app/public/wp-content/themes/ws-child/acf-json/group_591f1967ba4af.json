@@ -7,6 +7,7 @@
             "label": "Excerpt length",
             "name": "constants_excerpt_length",
             "type": "number",
+            "value": null,
             "instructions": "The number of characters to display for an excerpt.",
             "required": 0,
             "conditional_logic": 0,
@@ -28,6 +29,7 @@
             "label": "SEO Keywords",
             "name": "meta_keywords",
             "type": "text",
+            "value": null,
             "instructions": "Enter keywords separated by commas.",
             "required": 0,
             "conditional_logic": 0,
@@ -49,6 +51,11 @@
                 "param": "options_page",
                 "operator": "==",
                 "value": "acf-options-general"
+            },
+            {
+                "param": "user_role",
+                "operator": "==",
+                "value": "administrator"
             }
         ]
     ],
@@ -60,5 +67,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1498035788
+    "modified": 1507728955
 }

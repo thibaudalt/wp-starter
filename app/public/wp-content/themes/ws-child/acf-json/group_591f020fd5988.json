@@ -7,6 +7,7 @@
             "label": "Enabled",
             "name": "maintenance_mode_enabled",
             "type": "true_false",
+            "value": null,
             "instructions": "Enable \/ Disable maintenance mode.",
             "required": 0,
             "conditional_logic": 0,
@@ -26,6 +27,7 @@
             "label": "Title",
             "name": "maintenance_mode_title",
             "type": "text",
+            "value": null,
             "instructions": "The title to display below the site icon.",
             "required": 0,
             "conditional_logic": [
@@ -53,6 +55,7 @@
             "label": "Text",
             "name": "maintenance_mode_text",
             "type": "text",
+            "value": null,
             "instructions": "A little text to display below the site icon.",
             "required": 0,
             "conditional_logic": [
@@ -80,6 +83,7 @@
             "label": "Background color",
             "name": "maintenance_mode_background_color",
             "type": "color_picker",
+            "value": null,
             "instructions": "The main background color.",
             "required": 0,
             "conditional_logic": [
@@ -105,6 +109,11 @@
                 "param": "options_page",
                 "operator": "==",
                 "value": "acf-options-restricted-access"
+            },
+            {
+                "param": "current_user_role",
+                "operator": "==",
+                "value": "administrator"
             }
         ]
     ],
@@ -116,5 +125,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1495440776
+    "modified": 1507728969
 }

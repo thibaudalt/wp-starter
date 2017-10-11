@@ -7,6 +7,7 @@
             "label": "Nav on touch devices",
             "name": "gallery_options_nav_touch",
             "type": "true_false",
+            "value": null,
             "instructions": "Show \/ Hide Nav on touch devices.",
             "required": 0,
             "conditional_logic": 0,
@@ -26,6 +27,7 @@
             "label": "Lightbox images numbers",
             "name": "gallery_options_images_numbers",
             "type": "true_false",
+            "value": null,
             "instructions": "Show \/ Hide the text below the caption.",
             "required": 0,
             "conditional_logic": 0,
@@ -45,6 +47,7 @@
             "label": "Lightbox images label",
             "name": "gallery_options_album_label",
             "type": "text",
+            "value": null,
             "instructions": "The text displayed below the caption.",
             "required": 0,
             "conditional_logic": [
@@ -72,6 +75,7 @@
             "label": "Lightbox page scrolling",
             "name": "gallery_options_page_scrolling",
             "type": "true_false",
+            "value": null,
             "instructions": "Enable \/ Disabled the page scrolling.",
             "required": 0,
             "conditional_logic": 0,
@@ -91,6 +95,7 @@
             "label": "Lightbox cycle continuously",
             "name": "gallery_options_wrap",
             "type": "true_false",
+            "value": null,
             "instructions": "Cycle continuously or have hard stops.",
             "required": 0,
             "conditional_logic": 0,
@@ -110,6 +115,7 @@
             "label": "Lightbox fade duration",
             "name": "gallery_options_fade",
             "type": "number",
+            "value": null,
             "instructions": "The time for the Lightbox to show up in ms.",
             "required": 0,
             "conditional_logic": 0,
@@ -131,6 +137,7 @@
             "label": "Lightbox resize duration",
             "name": "gallery_options_resize",
             "type": "number",
+            "value": null,
             "instructions": "The time for the container to animate transition in ms",
             "required": 0,
             "conditional_logic": 0,
@@ -154,6 +161,11 @@
                 "param": "options_page",
                 "operator": "==",
                 "value": "acf-options-layouts"
+            },
+            {
+                "param": "current_user_role",
+                "operator": "==",
+                "value": "administrator"
             }
         ]
     ],
@@ -165,5 +177,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1497620417
+    "modified": 1507729009
 }

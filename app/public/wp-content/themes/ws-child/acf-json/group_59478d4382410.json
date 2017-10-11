@@ -7,6 +7,7 @@
             "label": "Zoom level",
             "name": "map_options_zoom",
             "type": "number",
+            "value": null,
             "instructions": "The initial Map zoom level.",
             "required": 0,
             "conditional_logic": 0,
@@ -28,6 +29,7 @@
             "label": "Enable user interface",
             "name": "map_options_ui",
             "type": "true_false",
+            "value": null,
             "instructions": "Enable \/ Disable all default user interfaces.",
             "required": 0,
             "conditional_logic": 0,
@@ -47,6 +49,7 @@
             "label": "Enable click zoom",
             "name": "map_options_click_zoom",
             "type": "true_false",
+            "value": null,
             "instructions": "Enable \/ Disable zoom and center on double click.",
             "required": 0,
             "conditional_logic": 0,
@@ -66,6 +69,7 @@
             "label": "Enable draggable",
             "name": "map_options_draggable",
             "type": "true_false",
+            "value": null,
             "instructions": "Enable \/ Disable the map from being dragged.",
             "required": 0,
             "conditional_logic": 0,
@@ -85,6 +89,7 @@
             "label": "Enable scrollwheel",
             "name": "map_options_scrollwheel",
             "type": "true_false",
+            "value": null,
             "instructions": "Enable \/ Disable scrollwheel zooming on the map.",
             "required": 0,
             "conditional_logic": 0,
@@ -106,6 +111,11 @@
                 "param": "options_page",
                 "operator": "==",
                 "value": "acf-options-general"
+            },
+            {
+                "param": "current_user_role",
+                "operator": "==",
+                "value": "administrator"
             }
         ]
     ],
@@ -117,5 +127,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1497861921
+    "modified": 1507729024
 }
