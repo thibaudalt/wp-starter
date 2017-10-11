@@ -22,7 +22,7 @@ if ( !class_exists('acf') ) :
 endif;
 
 // Resgister options pages
-if( function_exists('acf_add_options_page') ) :
+if( function_exists('acf_add_options_page') && is_user_administrator() ) :
 
 	$parent = acf_add_options_page(array(
     'page_title' => 'Theme Options',
