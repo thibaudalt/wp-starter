@@ -103,6 +103,26 @@
             "ui": 1,
             "ui_on_text": "",
             "ui_off_text": ""
+        },
+        {
+            "key": "field_59f337cc60e6f",
+            "label": "Fade effect",
+            "name": "carousel_options_fade",
+            "type": "true_false",
+            "value": null,
+            "instructions": "Enable fade effect instead of slide effect.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
         }
     ],
     "location": [
@@ -111,11 +131,6 @@
                 "param": "options_page",
                 "operator": "==",
                 "value": "acf-options-layouts"
-            },
-            {
-                "param": "current_user_role",
-                "operator": "==",
-                "value": "administrator"
             }
         ]
     ],
@@ -127,5 +142,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1507728994
+    "modified": 1509111837
 }
