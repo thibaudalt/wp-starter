@@ -4,6 +4,8 @@
 function get_page_title() {
     if( is_front_page() )
       echo get_bloginfo( 'name' ) . ' - ' . get_bloginfo( 'description' );
+    else if( is_home() )
+      echo get_the_title( get_option( 'page_for_posts' ) ) . ' - ' . get_bloginfo( 'name' );
     else
       echo get_the_title() . ' - ' . get_bloginfo( 'name' );
 }
