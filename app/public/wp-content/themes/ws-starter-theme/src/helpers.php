@@ -117,6 +117,35 @@ function get_mosaic_size( $i, $count ) {
   endswitch;
 }
 
+// Displays pagination
+function get_pagination( $pages = null, $range = 2 ) {
+
+    global $paged, $wp_query;
+    $showitems = $range * 2 + 1;
+
+    if ( !$paged )                                        $paged = 1;
+    if ( !$pages && !$pages = $wp_query->max_num_pages )  $pages = 1;
+    if ( $pages <= 1 )                                    return;
+
+    $output = '<ul class="pagination">';
+
+    if ( $paged > 2 )             $output .= '<li><a href="' . get_pagenum_link( 1 ) . '">&laquo;</a></li>';
+    if ( $paged > 1 )             $output .= '<li><a href="' . get_pagenum_link( $paged - 1 ) . '">&lsaquo;</a></li>';
+
+    // Page numbers
+    for ( $i = 1; $i <= $pages; ++$i )
+      if ( 1 != $pages && ( !($i >= $paged + $range + 1 || $i <= $paged - $range - 1) || $pages <= $showitems ) )
+        $output .= $paged == $i ? '<li class="active"><span class="current">' . $i . '</span></li>' :  '<li><a href="' . get_pagenum_link( $i ) . '" class="inactive" >' . $i . '</a></li>';
+
+    if ( $paged < $pages )        $output .= '<li><a href="' . get_pagenum_link( $paged + 1 ) . '">&rsaquo;</a></li>';
+    if ( $paged < $pages - 1 )    $output .= '<li><a href="' . get_pagenum_link( $pages ) . '">&raquo;</a></li>';
+
+    $output .= '</ul>';
+
+    echo $output;
+
+}
+
 /**
  * Like get_template_part() put lets you pass args to the template file
  * Args are available in the tempalte as $args array
