@@ -11,18 +11,19 @@
   $pause           = get_acf_option( $args[ 'OPTION' ] . '_pause', null, 'hover' );       // acf_dump( '$pause', $pause );
   $wrap            = get_acf_option( $args[ 'OPTION' ] . '_wrap', 'false', 'true' );      // acf_dump( '$wrap', $wrap );
   $keyboard        = get_acf_option( $args[ 'OPTION' ] . '_keyboard', 'false', 'true' );  // acf_dump( '$keyboard', $keyboard );
+  $fade            = get_acf_option( $args[ 'OPTION' ] . '_fade', false, true );          // acf_dump( '$fade', $fade );
 
 ?>
 
 <div  id="carousel-<?php echo $ID ?>"
-      class="carousel slide"
+      class="carousel slide <?php if ( $fade ) echo 'carousel-fade'; ?>"
       data-ride="carousel"
       data-interval="<?php echo $interval; ?>"
       data-pause="<?php echo $pause; ?>"
       data-wrap="<?php echo $wrap; ?>"
       data-keyboard="<?php echo $keyboard; ?>">
 
-  <div class="carousel-inner" role="listbox">
+  <div class="carousel-inner" role="listbox" <?php if ( $fade ) echo 'style="min-height:' . $height . 'px;"'; ?>>
     <?php foreach( $images as $i => $image ):
           $id         = $image[ 'id' ];                                 // acf_dump( '$title', $title);
           $title      = $image[ 'title' ];                              // acf_dump( '$title', $title);
