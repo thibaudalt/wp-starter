@@ -1,17 +1,20 @@
-<!DOCTYPE html>
-<html class="no-js" <?php language_attributes() ?>>
+<!-- Doctype HTML5 -->
+<!doctype html>
+<html class="no-js" dir="ltr" <?php language_attributes() ?>>
 
 <head>
 
   <meta charset="<?php bloginfo( 'charset' ) ?>" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <link rel="pingback" href="<?php bloginfo( 'pingback_url' ) ?>" />
 
-  <meta name="viewport"     content="width=device-width, initial-scale=1.0" />
+  <title><?php get_page_title() ?></title>
+
   <meta name="author"       content="We studio" />
   <meta name="description"  content="<?php bloginfo( 'description' ); ?>"/>
   <meta name="keywords"     content="<?php acf_option( 'meta_keywords' ); ?>"/>
-
-  <title><?php get_page_title() ?></title>
 
   <?php get_favicons() ?>
 
