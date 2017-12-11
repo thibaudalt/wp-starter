@@ -24,8 +24,10 @@
     </li>
   <?php endif; ?>
 
+  <?php if ( get_acf_option( 'socials_networks_rss' ) ) : ?>
     <li class="rss">
       <a class="px-1" href="<?php bloginfo('rss2_url'); ?>" title="RSS" target="_blank"><i class="fa fa-rss-square" aria-hidden="true"></i></a>
     </li>
+  <?php endif; ?>
 
 </ul>

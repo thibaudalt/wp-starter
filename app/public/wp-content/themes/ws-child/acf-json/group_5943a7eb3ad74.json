@@ -7,7 +7,6 @@
             "label": "Facebook",
             "name": "socials_networks_facebook",
             "type": "url",
-            "value": null,
             "instructions": "The url of the Facebook page to link with the website.",
             "required": 0,
             "conditional_logic": 0,
@@ -24,7 +23,6 @@
             "label": "Twitter",
             "name": "socials_networks_twitter",
             "type": "url",
-            "value": null,
             "instructions": "The url of the Twitter page to link with the website.",
             "required": 0,
             "conditional_logic": 0,
@@ -41,7 +39,6 @@
             "label": "Google+",
             "name": "socials_networks_gplus",
             "type": "url",
-            "value": null,
             "instructions": "The url of the Google+ page to link with the website.",
             "required": 0,
             "conditional_logic": 0,
@@ -58,7 +55,6 @@
             "label": "Email",
             "name": "socials_networks_mail",
             "type": "email",
-            "value": null,
             "instructions": "The email address on which the contact requests will be sent.",
             "required": 0,
             "conditional_logic": 0,
@@ -71,6 +67,25 @@
             "placeholder": "",
             "prepend": "",
             "append": ""
+        },
+        {
+            "key": "field_5a2e87128cf17",
+            "label": "RSS",
+            "name": "socials_networks_rss",
+            "type": "true_false",
+            "instructions": "Show \/ Hide the rss link.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "Show",
+            "ui_off_text": "Hide"
         }
     ],
     "location": [
@@ -94,6 +109,5 @@
     "instruction_placement": "label",
     "hide_on_screen": "",
     "active": 1,
-    "description": "",
-    "modified": 1507729097
+    "description": ""
 }
