@@ -1,11 +1,11 @@
 <button class="btn btn-offcanvas hidden-md-up" data-toggle="offcanvas" data-target="#offcanvas">
-  <i class="fa fa-bars" aria-hidden="true"></i>
+  <span class="hamburger"></span>
 </button>
 
 <div id="offcanvas" class="offcanvas">
 
   <button class="btn btn-close" data-toggle="offcanvas" data-target="#offcanvas">
-    <i class="fa fa-times" aria-hidden="true"></i>
+    <span class="cross"></span>
   </button>
 
   <?php

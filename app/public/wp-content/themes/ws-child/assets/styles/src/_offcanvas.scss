@@ -30,13 +30,13 @@
     text-align: center;
 
     li {
-
       width: 100%;
-    }
 
-    a {
-      width: 100%;
-      padding: 4px 8px;
+      a {
+        width: 100%;
+        padding: 4px 8px;
+      }
+
     }
 
   }
@@ -48,12 +48,62 @@
   position: absolute;
   top: 0; right: 0;
   border: 0;
-  padding: 15px 21px;
   font-size: 24px;
-  color: theme-color("primary");
+  color: $brand-primary;
   background: transparent !important;
 }
 
 .btn-offcanvas {
   margin-top: -8px;
+  padding: 43px 21px;
+
+  .hamburger {
+    display: inline-block;
+    position: relative;
+    top: -7px;
+    width: 23px;
+    height: 3px;
+    background-color: $brand-primary;
+
+    &:before,
+    &:after {
+      position: absolute;
+      top: -7px;
+      left: 0; right: 0;
+      height: 3px;
+      background-color: $brand-primary;
+      content: '';
+    }
+
+    &:after {
+      top: 7px;
+    }
+
+  }
+
+}
+
+.btn-close {
+  padding: 20px;
+
+  .cross {
+    display: inline-block;
+    position: relative;
+    top: -7px;
+    width: 23px;
+    height: 3px;
+    background-color: $brand-primary;
+    transform: rotate(45deg);
+
+    &:before {
+      position: absolute;
+      left: 0; right: 0;
+      height: 3px;
+      background-color: $brand-primary;
+      transform: rotate(90deg);
+      content: '';
+    }
+
+  }
+
 }
