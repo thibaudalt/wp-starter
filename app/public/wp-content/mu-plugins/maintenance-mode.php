@@ -14,7 +14,8 @@ add_action( 'wp_loaded', function() {
 	if ( class_exists('acf') && !get_field( 'maintenance_mode_enabled', 'option' ) )
 		return;
 
-	if ( $pagenow !== 'wp-login.php' && !current_user_can( 'manage_options' ) && !is_admin() ) :
+		if ( $pagenow !== 'wp-login.php' && !( current_user_can('editor') || current_user_can('administrator') )  ) :
+
 
     header( $_SERVER["SERVER_PROTOCOL"] . ' 503 Service Temporarily Unavailable', true, 503 );
 		header( 'Content-Type: text/html; charset=utf-8' );
