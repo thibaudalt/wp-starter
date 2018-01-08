@@ -10,12 +10,12 @@
 add_action( 'wp_loaded', function() {
 
 	global $pagenow;
+	$allowEditor = get_acf_option( 'maintenance_mode_editor' ) && current_user_can( 'editor' );
 
 	if ( class_exists('acf') && !get_field( 'maintenance_mode_enabled', 'option' ) )
 		return;
 
-		if ( $pagenow !== 'wp-login.php' && !( current_user_can( 'editor' ) || current_user_can( 'administrator' ) )  && !is_admin() ) :
-
+	if ( $pagenow !== 'wp-login.php' && !is_admin() && !( current_user_can( 'administrator' ) || $allowEditor ) ) :
 
     header( $_SERVER["SERVER_PROTOCOL"] . ' 503 Service Temporarily Unavailable', true, 503 );
 		header( 'Content-Type: text/html; charset=utf-8' );
