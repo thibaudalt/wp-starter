@@ -22,6 +22,12 @@ add_filter( 'wp_resource_hints', function( $urls, $relation_type ) {
   return $urls;
 }, 10, 2 );
 
+// Allow SVG uploads
+add_filter('upload_mimes', function ( $mimes ) {
+  $mimes[ 'svg' ] = 'image/svg+xml';
+  return $mimes;
+});
+
 // Filters the JPEG compression quality
 // add_filter( 'jpeg_quality', function() {
 //   return 100;
