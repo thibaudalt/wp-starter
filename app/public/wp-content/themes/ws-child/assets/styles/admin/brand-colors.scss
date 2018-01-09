@@ -1,0 +1,35 @@
+@import "../src/variables";
+
+// $brand-primary:   #2C3E50;
+// $brand-secondary: #2980b9;
+
+$link:                            $brand-secondary;
+$link-focus:                      darken( $brand-secondary, 10% );;
+$button-color:                    $brand-secondary;
+
+$menu-text:                       $white;
+$menu-icon:                       $white;
+$menu-background:                 $brand-primary;
+$adminbar-avatar-frame:           $brand-primary;
+
+$menu-highlight-text:             $brand-secondary;
+$menu-highlight-icon:             $white;
+$menu-highlight-background:       darken( $brand-primary, 5% );
+
+$menu-current-text:               $white;
+$menu-current-icon:               $white;
+$menu-current-background:         $brand-secondary;
+
+$menu-submenu-text:               $white;
+$menu-submenu-background:         darken( $brand-primary, 5% );
+$menu-submenu-background-alt:     darken( $brand-primary, 5% );
+
+$menu-submenu-focus-text:         $brand-secondary;
+$menu-submenu-current-text:       $brand-secondary;
+
+$menu-bubble-text:                $brand-secondary;
+$menu-bubble-background:          $white;
+$menu-bubble-current-text:        $brand-secondary;
+$menu-bubble-current-background:  $white;
+
+@import "admin";

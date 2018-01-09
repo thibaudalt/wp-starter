@@ -28,7 +28,7 @@ if( function_exists('acf_add_options_page') && is_user_administrator() ) :
     'page_title' => 'Theme Options',
   	'menu_slug'  => 'ws-starter-options',
   	'position'   => 63.3,
-  	'icon_url'   => 'dashicons-admin-customizer',
+  	'icon_url'   => 'dashicons-admin-generic',
 	));
 
 	acf_add_options_sub_page( array(

@@ -7,7 +7,6 @@
             "label": "Full width",
             "name": "carousel_options_full_width",
             "type": "true_false",
-            "value": null,
             "instructions": "The carousel takes the full width of the page or not.",
             "required": 0,
             "conditional_logic": 0,
@@ -27,7 +26,6 @@
             "label": "Interval",
             "name": "carousel_options_interval",
             "type": "number",
-            "value": null,
             "instructions": "Delay between automatically cycling in ms.",
             "required": 0,
             "conditional_logic": 0,
@@ -49,7 +47,6 @@
             "label": "Pause on hover",
             "name": "carousel_options_pause",
             "type": "true_false",
-            "value": null,
             "instructions": "Pauses the cycling on mouse over.",
             "required": 0,
             "conditional_logic": 0,
@@ -69,7 +66,6 @@
             "label": "Cycle continuously",
             "name": "carousel_options_wrap",
             "type": "true_false",
-            "value": null,
             "instructions": "Cycle continuously or have hard stops.",
             "required": 0,
             "conditional_logic": 0,
@@ -89,7 +85,6 @@
             "label": "React to keyboard",
             "name": "carousel_options_keyboard",
             "type": "true_false",
-            "value": null,
             "instructions": "React to keyboard events or not.",
             "required": 0,
             "conditional_logic": 0,
@@ -109,7 +104,6 @@
             "label": "Fade effect",
             "name": "carousel_options_fade",
             "type": "true_false",
-            "value": null,
             "instructions": "Enable fade effect instead of slide effect.",
             "required": 0,
             "conditional_logic": 0,
@@ -131,6 +125,11 @@
                 "param": "options_page",
                 "operator": "==",
                 "value": "acf-options-layouts"
+            },
+            {
+                "param": "current_user_role",
+                "operator": "==",
+                "value": "administrator"
             }
         ]
     ],
@@ -141,6 +140,6 @@
     "instruction_placement": "label",
     "hide_on_screen": "",
     "active": 1,
-    "description": "",
-    "modified": 1509111837
+    "description": "Theme Options - Layouts",
+    "modified": 1515490184
 }

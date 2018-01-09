@@ -7,7 +7,6 @@
             "label": "Excerpt length",
             "name": "constants_excerpt_length",
             "type": "number",
-            "value": null,
             "instructions": "The number of characters to display for an excerpt.",
             "required": 0,
             "conditional_logic": 0,
@@ -29,7 +28,6 @@
             "label": "SEO Keywords",
             "name": "meta_keywords",
             "type": "text",
-            "value": null,
             "instructions": "Enter keywords separated by commas.",
             "required": 0,
             "conditional_logic": 0,
@@ -66,6 +64,6 @@
     "instruction_placement": "label",
     "hide_on_screen": "",
     "active": 1,
-    "description": "",
-    "modified": 1507728955
+    "description": "Theme Options - General",
+    "modified": 1515489824
 }

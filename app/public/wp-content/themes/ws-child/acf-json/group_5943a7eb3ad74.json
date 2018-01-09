@@ -67,25 +67,6 @@
             "placeholder": "",
             "prepend": "",
             "append": ""
-        },
-        {
-            "key": "field_5a2e87128cf17",
-            "label": "RSS",
-            "name": "socials_networks_rss",
-            "type": "true_false",
-            "instructions": "Show \/ Hide the rss link.",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "message": "",
-            "default_value": 0,
-            "ui": 1,
-            "ui_on_text": "Show",
-            "ui_off_text": "Hide"
         }
     ],
     "location": [
@@ -94,11 +75,6 @@
                 "param": "options_page",
                 "operator": "==",
                 "value": "acf-options-general"
-            },
-            {
-                "param": "current_user_role",
-                "operator": "==",
-                "value": "administrator"
             }
         ]
     ],
@@ -109,5 +85,6 @@
     "instruction_placement": "label",
     "hide_on_screen": "",
     "active": 1,
-    "description": ""
+    "description": "Theme Options - General",
+    "modified": 1515490023
 }

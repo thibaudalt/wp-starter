@@ -28,6 +28,11 @@ add_filter('upload_mimes', function ( $mimes ) {
   return $mimes;
 });
 
+// Force color scheme to be the brand one
+add_filter( 'get_user_option_admin_color', function ( $color_scheme ) {
+  return 'brand';
+}, 5 );
+
 // Filters the JPEG compression quality
 // add_filter( 'jpeg_quality', function() {
 //   return 100;
