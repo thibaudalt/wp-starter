@@ -107,3 +107,8 @@ add_action( 'wp_logout', function() {
   wp_redirect( home_url() );
   exit();
 });
+
+// Remove the Admin Bar push down
+add_action( 'get_header', function() {
+  remove_action( 'wp_head', '_admin_bar_bump_cb' );
+});
