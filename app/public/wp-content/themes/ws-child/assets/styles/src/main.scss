@@ -1,32 +1,35 @@
 // Libraries
-@import "bourbon";
+@import 'bourbon';
 
 // Variables
-@import "_variables.scss";
+@import '_variables.scss';
 
 // Vendor
-@import "../../../../.vendor/tether/src/css/tether.sass";
-@import "../../../../.vendor/bootstrap/scss/bootstrap.scss";
-@import "../../../../.vendor/font-awesome/scss/font-awesome.scss";
+@import '../../../../.vendor/tether/src/css/tether.sass';
+@import '../../../../.vendor/bootstrap/scss/bootstrap.scss';
+@import '../../../../.vendor/font-awesome/web-fonts-with-css/scss/fontawesome.scss';
+@import '../../../../.vendor/font-awesome/web-fonts-with-css/scss/fa-solid.scss';
+@import '../../../../.vendor/font-awesome/web-fonts-with-css/scss/fa-regular.scss';
+@import '../../../../.vendor/font-awesome/web-fonts-with-css/scss/fa-brands.scss';
 
 // Components
-@import "_reboot.scss";
-@import "_header.scss";
-@import "_footer.scss";
-@import "_languages.scss";
-@import "_buttons.scss";
-@import "_offcanvas.scss";
-@import "_pagination.scss";
-@import "_lightbox.scss";
-@import "_socials.scss";
+@import '_reboot.scss';
+@import '_header.scss';
+@import '_footer.scss';
+@import '_languages.scss';
+@import '_buttons.scss';
+@import '_offcanvas.scss';
+@import '_pagination.scss';
+@import '_lightbox.scss';
+@import '_socials.scss';
 
 // Blocks
-@import "_carousel.scss";
-@import "_gallery.scss";
-@import "_masonry.scss";
-@import "_mosaic.scss";
-@import "_map.scss";
+@import '_carousel.scss';
+@import '_gallery.scss';
+@import '_masonry.scss';
+@import '_mosaic.scss';
+@import '_map.scss';
 
 // Pages
-@import "_pages.scss";
-@import "_archives.scss";
+@import '_pages.scss';
+@import '_archives.scss';
