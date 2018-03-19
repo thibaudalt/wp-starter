@@ -43,6 +43,10 @@ a {
 
 }
 
+.container {
+  position: relative;
+}
+
 .current-menu-item > a,
 .active > a {
   color: $link-color !important;

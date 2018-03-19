@@ -1,4 +1,4 @@
-<footer class="footer py-2 bg-faded">
+<footer class="footer py-2 bg-dark">
   <div class="container">
 
     <?php get_socials_networks() ?>

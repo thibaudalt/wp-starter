@@ -61,7 +61,7 @@
   top: -7px;
   width: 23px;
   height: 3px;
-  background-color: $brand-primary;
+  background-color: $white;
 
   &:before,
   &:after {
@@ -69,7 +69,7 @@
     top: -7px;
     left: 0; right: 0;
     height: 3px;
-    background-color: $brand-primary;
+    background-color: $white;
     content: '';
   }
 

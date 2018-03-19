@@ -26,7 +26,7 @@
 
 <body <?php body_class() ?>>
 
-  <header class="header py-2 fixed-top bg-faded">
+  <header class="header py-2 fixed-top bg-dark">
     <div class="container">
 
       <a class="brand float-left" href="<?php echo home_url() ?>" title="<?php bloginfo( 'name' ) ?>" rel="home">
@@ -37,7 +37,7 @@
         wp_nav_menu( array(
           'theme_location'  => 'main',
           'menu_id'         => 'main-menu',
-          'container_class' => 'main-menu hidden-sm-down',
+          'container_class' => 'main-menu d-none d-md-inline-block',
           'depth'           => 2,
         ) )
       ?>

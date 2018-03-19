@@ -1,4 +1,4 @@
-<button class="btn btn-offcanvas hidden-md-up" data-toggle="offcanvas" data-target="#offcanvas">
+<button class="btn btn-offcanvas d-md-none" data-toggle="offcanvas" data-target="#offcanvas">
   <span class="hamburger"></span>
 </button>
 
