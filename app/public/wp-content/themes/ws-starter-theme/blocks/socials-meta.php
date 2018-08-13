@@ -15,17 +15,17 @@
   <meta name="twitter:card"         content="summary_large_image" />
   <meta name="twitter:site"         content="@we_studio">
   <meta name="twitter:creator"      content="@we_studio" />
-  <meta name="twitter:url"          content="<?php the_permalink(); ?>" />
+  <meta name="twitter:url"          content="<?php the_permalink() ?>" />
 
 <?php if( is_single() ) : ?>
 
   <meta property="og:type"          content="article" />
   <meta property="og:url"           content="<?php the_permalink() ?>"/>
-  <meta property="og:title"         content="<?php the_title(); ?>" />
+  <meta property="og:title"         content="<?php the_title() ?>" />
   <meta property="og:description"   content="<?php echo wp_strip_all_tags( $excerpt ); ?>" />
   <meta property="og:image"         content="<?php echo $thumbnail; ?>" />
 
-  <meta name="twitter:title"        content="<?php the_title(); ?>" />
+  <meta name="twitter:title"        content="<?php the_title() ?>" />
   <meta name="twitter:description"  content="<?php echo wp_strip_all_tags( $excerpt ); ?>" />
   <meta name="twitter:image"        content="<?php echo $thumbnail; ?>" />
 

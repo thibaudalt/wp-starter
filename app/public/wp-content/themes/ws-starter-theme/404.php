@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_header() ?>
 
     <div class="main">
 
@@ -21,4 +21,4 @@
 
     </div><!-- .main -->
 
-<?php get_footer(); ?>
+<?php get_footer() ?>

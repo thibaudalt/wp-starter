@@ -6,7 +6,7 @@
 
   <meta charset="<?php bloginfo( 'charset' ) ?>" />
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
 
   <link rel="pingback" href="<?php bloginfo( 'pingback_url' ) ?>" />
 

@@ -32,6 +32,10 @@ ul {
   list-style: none;
 }
 
+select, input, textarea {
+  -webkit-appearance: none;
+}
+
 a {
   display: inline-block;
   transition: all 400ms;

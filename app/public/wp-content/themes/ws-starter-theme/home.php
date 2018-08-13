@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_header() ?>
 
   <div class="main">
 
@@ -6,7 +6,7 @@
       <div class="container">
 
         <div class="page-header">
-          <h1 class="page-title"><?php get_the_title(); ?></h1>
+          <h1 class="page-title"><?php get_the_title() ?></h1>
         </div><!-- .page-header -->
 
         <div class="row">
@@ -35,7 +35,7 @@
 
           </div>
 
-          <?php get_sidebar(); ?>
+          <?php get_sidebar() ?>
 
         </div><!-- .row -->
 
@@ -44,4 +44,4 @@
 
   </div><!-- .main -->
 
-<?php get_footer(); ?>
+<?php get_footer() ?>

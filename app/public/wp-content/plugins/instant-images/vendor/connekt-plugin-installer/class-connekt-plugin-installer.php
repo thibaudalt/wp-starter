@@ -133,7 +133,7 @@ if( !class_exists('Connekt_Plugin_Installer') ) {
                   <a class="<?php echo $button_classes; ?>"
                   	data-slug="<?php echo $api->slug; ?>"
 								data-name="<?php echo $api->name; ?>"
-									href="<?php echo get_admin_url(); ?>/update.php?action=install-plugin&amp;plugin=<?php echo $api->slug; ?>&amp;_wpnonce=<?php echo wp_create_nonce('install-plugin_'. $api->slug) ?>">
+									href="<?php echo get_admin_url() ?>/update.php?action=install-plugin&amp;plugin=<?php echo $api->slug; ?>&amp;_wpnonce=<?php echo wp_create_nonce('install-plugin_'. $api->slug) ?>">
 							<?php echo $button_text; ?>
                   </a>
                </li>

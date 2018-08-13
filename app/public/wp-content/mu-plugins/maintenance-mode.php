@@ -10,10 +10,11 @@
 add_action( 'wp_loaded', function() {
 
 	global $pagenow;
-	$allowEditor = get_acf_option( 'maintenance_mode_editor' ) && current_user_can( 'editor' );
 
-	if ( class_exists('acf') && !get_field( 'maintenance_mode_enabled', 'option' ) )
+	if ( !class_exists('acf') || !get_acf_option( 'maintenance_mode_enabled' ) )
 		return;
+
+	$allowEditor = get_acf_option( 'maintenance_mode_editor' ) && current_user_can( 'editor' );
 
 	if ( $pagenow !== 'wp-login.php' && !is_admin() && !( current_user_can( 'administrator' ) || $allowEditor ) ) :
 
