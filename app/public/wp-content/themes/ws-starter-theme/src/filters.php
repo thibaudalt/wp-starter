@@ -1,6 +1,8 @@
 <?php
 
 add_filter( 'pre_option_link_manager_enabled', 'wb_are_links_enabled' );
+add_filter( 'auto_update_plugin', '__return_true' );
+add_filter( 'auto_update_theme', '__return_true' );
 
 add_filter( 'excerpt_length', 'EXCERPT_LENGTH' );
 
