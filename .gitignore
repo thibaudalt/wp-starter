@@ -4,6 +4,7 @@
 app/sql
 app/public/*.log
 app/public/.DS_Store
+app/public/.htpasswd
 app/public/wp-admin
 app/public/wp-content/themes/.vendor
 app/public/wp-content/themes/ws-starter-theme/vendor

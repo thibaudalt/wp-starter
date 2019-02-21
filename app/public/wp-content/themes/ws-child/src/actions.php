@@ -8,6 +8,8 @@ add_action( 'wp_enqueue_scripts', function() {
 
   wp_deregister_script( 'jquery' );
   wp_enqueue_script( 'jquery', '//code.jquery.com/jquery-3.3.1.min.js', false, null);
-  wp_enqueue_script( 'ws-starter-js', get_asset( 'main.min.js', 'scripts/dist' ), array( 'jquery' ) , null );
+
+  wp_enqueue_script( 'gtag', 'https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXXXX-Y', null );
+  wp_enqueue_script( 'ws-starter-js', get_asset( 'main.min.js', 'scripts/dist' ), array( 'jquery', 'gtag' ) , null );
 
 });
