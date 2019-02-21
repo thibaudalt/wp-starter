@@ -1,5 +1,5 @@
-# ws-starter-theme
-The "We studio - Starter Theme" is a custom starter theme for WordPress. Built by <a href="https://we-studio.ch/" title="We studio" target="_blank">We studio</a> in 2017.
+# wt-starter-theme
+The "Web Tailor - Starter Theme" is a custom starter theme for WordPress. Built by <a href="http://web-tailor.ch" title="Web Tailor" target="_blank">Web Tailor</a> in 2019.
 
 ## Support
 - Responsive
@@ -11,3 +11,7 @@ The "We studio - Starter Theme" is a custom starter theme for WordPress. Built b
 
 ## Build with
 - CodeKit
+
+
+## Contributors
+- We studio
