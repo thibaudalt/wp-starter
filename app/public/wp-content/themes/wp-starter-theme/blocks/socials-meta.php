@@ -13,8 +13,8 @@
   <meta property="og:site_name"     content="<?php bloginfo( 'name' ); ?>" />
 
   <meta name="twitter:card"         content="summary_large_image" />
-  <meta name="twitter:site"         content="@we_studio">
-  <meta name="twitter:creator"      content="@we_studio" />
+  <meta name="twitter:site"         content="@web_tailor">
+  <meta name="twitter:creator"      content="@web_tailor" />
   <meta name="twitter:url"          content="<?php the_permalink() ?>" />
 
 <?php if( is_single() ) : ?>

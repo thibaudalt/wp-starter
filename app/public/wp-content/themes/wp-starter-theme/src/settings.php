@@ -5,7 +5,7 @@
 ////////////////////////////////
 
 
-// Westudio Bootstrap
+// Web Tailor Bootstrap
 // -----------------------------
 
 $_wb_settings = array(

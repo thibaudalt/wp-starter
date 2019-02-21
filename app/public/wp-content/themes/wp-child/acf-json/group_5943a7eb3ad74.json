@@ -49,7 +49,7 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "https:\/\/twitter.com\/we_studio",
+            "default_value": "https:\/\/twitter.com\/web_tailor",
             "placeholder": ""
         },
         {
@@ -65,7 +65,7 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "https:\/\/linkedin.com\/we_studio",
+            "default_value": "https:\/\/linkedin.com\/web_tailor",
             "placeholder": ""
         },
         {
@@ -81,7 +81,7 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "https:\/\/youtube.com\/we_studio",
+            "default_value": "https:\/\/youtube.com\/web_tailor",
             "placeholder": ""
         },
         {
