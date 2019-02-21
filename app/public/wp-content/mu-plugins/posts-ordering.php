@@ -4,7 +4,7 @@
  * Description: Order posts using a drag and drop sortable JavaScript.
  * Version: 1.0
  * Author: Thibaud
- * Author URI: mailto:thibaud@we-studio.ch
+ * Author URI: mailto:thibaud@web-tailor.ch
 */
 
 define( 'POSTS_TYPE', 'post' );

@@ -4,7 +4,7 @@
  * Description: Displays a coming soon page for anyone who's not logged in. The login page gets excluded so that you can login if necessary.
  * Version: 1.0
  * Author: Thibaud
- * Author URI: mailto:thibaud@we-studio.ch
+ * Author URI: mailto:thibaud@web-tailor.ch
 */
 
 add_action( 'wp_loaded', function() {

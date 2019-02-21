@@ -5,7 +5,7 @@
  * Description: Add a new admin color scheme based on default site colors.
  * Version: 1.0
  * Author: Thibaud
- * Author URI: mailto:thibaud@we-studio.ch
+ * Author URI: mailto:thibaud@web-tailor.ch
 */
 
 class Brand_Color_Scheme {

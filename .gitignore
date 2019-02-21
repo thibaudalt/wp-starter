@@ -8,13 +8,8 @@ app/public/.htpasswd
 app/public/wp-admin
 app/public/wp-content/themes/.vendor
 app/public/wp-content/themes/ws-starter-theme/vendor
-app/public/wp-content/plugins/advanced-custom-fields-pro
-app/public/wp-content/plugins/sitepress-multilingual-cms
-app/public/wp-content/plugins/regenerate-thumbnails
-app/public/wp-content/plugins/symple-shortcodes
-app/public/wp-content/plugins/symple-shortcodes
-app/public/wp-content/plugins/classic-editor
-app/public/wp-content/languages/*
+app/public/wp-content/plugins/*/
+app/public/wp-content/languages
 app/public/wp-content/uploads
 app/public/wp-content/upgrade
 app/public/wp-includes

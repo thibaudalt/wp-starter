@@ -4,7 +4,7 @@
  * Description: Enable the user Apache Authentification via .htacess file.
  * Version: 1.0
  * Author: Thibaud
- * Author URI: mailto:thibaud@we-studio.ch
+ * Author URI: mailto:thibaud@web-tailor.ch
 */
 
 // Encrypt password on save
