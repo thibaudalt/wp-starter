@@ -1,4 +1,4 @@
-# wt-starter-theme
+# wp-starter
 The "Web Tailor - Starter Theme" is a custom starter theme for WordPress. Built by <a href="http://web-tailor.ch" title="Web Tailor" target="_blank">Web Tailor</a> in 2019.
 
 ## Support
